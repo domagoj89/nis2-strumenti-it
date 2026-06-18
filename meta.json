@@ -1,0 +1,96 @@
+{
+  "site_id": "nis2-narzedzia-pl",
+  "domain_target": "nis2-strumenti.it",
+  "domain_alt": ["ksc-narzedzia.pl", "narzedzia-nis2.pl"],
+  "pipeline_stage": "RECOVERING",
+  "pipeline": "A",
+  "niche": "nis2_cybersecurity_compliance",
+  "market": "PL",
+  "language": "pl",
+  "created": "2026-06-13",
+  "last_updated": "2026-06-13",
+  "opportunity": {
+    "profit_score": 8,
+    "cpa_min": 60,
+    "cpa_max": 150,
+    "model": "affiliate_saas",
+    "demand_gate": "PASS",
+    "bridge_gap_gate": "PASS",
+    "barrier": "low",
+    "new_site_rankable": true
+  },
+  "target_keywords": [
+    "narzędzia NIS2 Polska",
+    "oprogramowanie NIS2 KSC",
+    "porównanie narzędzi NIS2",
+    "kalkulator KSC",
+    "podmiot kluczowy NIS2",
+    "NIS2 compliance software Polska",
+    "czy podlegam NIS2",
+    "ISMS oprogramowanie Polska"
+  ],
+  "pages": [
+    {"path": "index.html", "type": "homepage", "status": "built"},
+    {"path": "porownanie.html", "type": "comparison", "status": "built"},
+    {"path": "kalkulator.html", "type": "tool", "status": "built"},
+    {"path": "faq.html", "type": "faq", "status": "built"},
+    {"path": "narzedzia/reglyze.html", "type": "review", "status": "built"},
+    {"path": "narzedzia/secfix.html", "type": "review", "status": "built"},
+    {"path": "narzedzia/isms-online.html", "type": "review", "status": "built"},
+    {"path": "narzedzia/sprinto.html", "type": "review", "status": "built"},
+    {"path": "narzedzia/vanta.html", "type": "review", "status": "built"},
+    {"path": "narzedzia/microsoft-purview.html", "type": "review", "status": "built"}
+  ],
+  "affiliate_programs": [
+    {
+      "vendor": "Reglyze",
+      "url": "https://reglyze.com",
+      "program_url": null,
+      "cpa_estimate": "€50-100/conversion",
+      "notes": "Check their affiliate/partner page"
+    },
+    {
+      "vendor": "Secfix",
+      "url": "https://secfix.com",
+      "program_url": null,
+      "cpa_estimate": "€150-300/lead",
+      "notes": "German GRC platform — contact for partner program"
+    },
+    {
+      "vendor": "Sprinto",
+      "url": "https://sprinto.com",
+      "program_url": "https://sprinto.com/partners/",
+      "cpa_estimate": "€100+/trial or €500+/closed",
+      "notes": "Has documented affiliate/referral program"
+    },
+    {
+      "vendor": "Vanta",
+      "url": "https://vanta.com",
+      "program_url": "https://vanta.com/partners",
+      "cpa_estimate": "€200-500/referral",
+      "notes": "Enterprise referral program exists"
+    }
+  ],
+  "timeline": {
+    "domain_registration": "pending",
+    "hosting_setup": "pending",
+    "content_published": "pending",
+    "google_search_console": "pending",
+    "first_affiliate_link": "pending",
+    "first_traffic": null,
+    "first_revenue": null,
+    "target_first_revenue_weeks": "10-20",
+    "mandate_deadline": "2026-10-03",
+    "notes": "October 3, 2026 KSC self-identification deadline creates search spike. Build and index before September 2026."
+  },
+  "monetization": {
+    "primary": "affiliate_saas",
+    "secondary": "lead_gen_consultants",
+    "tertiary": "google_adsense"
+  },
+  "hosting": {
+    "recommendation": "Cloudflare Pages (free tier) or Netlify — static HTML, zero server cost",
+    "cdn": "Cloudflare CDN recommended",
+    "domain_registrar": "Namecheap or OVH (PL-friendly)"
+  }
+}
