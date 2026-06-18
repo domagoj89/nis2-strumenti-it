@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME940XQ5N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME940XQ5N');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 per Cloud Service Provider in Italia — Guida Annex I 2026</title>
+  <meta name="description" content="Obblighi NIS2 per provider IaaS, PaaS, SaaS in Italia. Baseline di sicurezza, notifica incidenti 24h, SOC 2, ISO 27001. Scadenza 2026.">
+  <link rel="canonical" href="https://nis2-strumenti.it/sektory/cloud-providers.html">
+  <meta property="og:title" content="NIS2 per Cloud Service Provider in Italia — Guida Annex I 2026">
+  <meta property="og:description" content="Obblighi NIS2 per provider IaaS, PaaS, SaaS in Italia. Baseline di sicurezza, notifica incidenti 24h, SOC 2, ISO 27001. Scadenza 2026.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-strumenti.it/sektory/cloud-providers.html">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="NIS2-Strumenti.it">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 per Cloud Service Provider in Italia — Guida Annex I 2026">
+  <meta name="twitter:description" content="Obblighi NIS2 per provider IaaS, PaaS, SaaS in Italia. Baseline di sicurezza, notifica incidenti 24h, SOC 2, ISO 27001. Scadenza 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Pagina principale",
+      "item": "https://nis2-strumenti.it/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Settori",
+      "item": "https://nis2-strumenti.it/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 per Cloud Service Provider in Italia — Requisiti Annex I e Compliance 2026",
+      "item": "https://nis2-strumenti.it/sektory/cloud-providers.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Come devo classificare un incidente multi-tenant che non ha interessato nessun cliente, ma ha compromesso un servizio di supporto interno?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Se il servizio di supporto è parte infrastrutturale critica per erogazione servizi al cliente (es. ticketing per security incidents), devi comunque notificare ACN entro 24 ore perché l'incidente affetta indirettamente disponibilità servizio. Implementa classificazione basata su 'impatto potenziale cliente' non solo 'impatto clienti effettivamente colpiti'."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quale è il perimetro esatto di SOC 2 Type II richiesto per NIS2 multi-tenant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SOC 2 deve coprire Trust Service Categories C (disponibilità) e S (sicurezza), con audit di 6+ mesi su produzione live. Deve includere controlli isolamento tenant, gestione accesso, crittografia, logging e change management. Se usi subprocessor (CDN, DDoS mitigation), includili nel report SOC 2 con carve-out o inclusione esplicita."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quali sono le sanzioni per mancata notifica incidente entro 24 ore in Italia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ACN può comminare sanzioni amministrative fino a €10 milioni o 2% fatturato annuale globale per violazioni critiche (Art. 32 D.Lgs. 138/2024). La mancata notifica incidente è considérata violazione grave. Inoltre, i clienti possono avviare azioni risarcitorie separate per inadempienza contrattuale su SLA."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Strumenti</span>.it</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Confronto strumenti</a></li>
+        <li><a href="../kalkulator.html">Calcolatore NIS2</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Verifica se sei soggetto →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Pagina principale</a><span>›</span>
+    <a href="index.html">Settori</a><span>›</span>
+    NIS2 per Cloud Service Provider in Italia — Requisiti Annex I e Compliance 2026
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato I — Ente essenziale</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Cloud Service Provider in Italia — Requisiti Annex I e Compliance 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è destinata a provider di servizi cloud (IaaS, PaaS, SaaS) con significativa base clienti UE che operano in Italia. Scoprirai come implementare baseline di sicurezza multi-tenant, gestire la notifica incidenti entro 24 ore e documentare correttamente il modello di responsabilità condivisa secondo il D.Lgs. 138/2024.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano nell'ambito NIS2 i provider di servizi cloud (IaaS, PaaS, SaaS) che forniscono servizi a clienti UE e superano soglie di criticità definite dall'ACN, in particolare quelli con infrastruttura multi-tenant che supportano servizi online di terzi. L'ACN italiano applica criteri di numero di utenti finali, volume di dati gestiti e dipendenza da servizi critici dell'economia digitale europea.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Obblighi chiave NIS2 per questo settore</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Baseline di sicurezza per infrastrutture multi-tenant</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare controlli di isolamento dei dati tra tenant, crittografia end-to-end, segmentazione di rete e gestione identità avanzata (MFA obbligatoria per accesso amministrativo). La baseline deve coprire tutti i layer infrastrutturali (hypervisor, storage, rete) e essere sottoposta a audit annuale da verificatore indipendente. Documentazione OWASP Cloud Top 10 e NIST CSF è consigliata per dimostrare conformità.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Notifica incidenti entro 24 ore e classificazione NIS2 dedicata</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Entro 24 ore dal rilevamento di un incidente che interessi la disponibilità, integrità o confidenzialità dei servizi, devi notificare l'ACN italiano e i clienti enterprise interessati. Devi implementare un processo separato di classificazione incidenti specifico NIS2 (non generico), con criteri chiari per distinguere incidenti che richiedono notifica entro 24h da quelli con notifica 72h per dettagli completi.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Documentazione del modello di responsabilità condivisa per clienti enterprise</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Fornisci a ogni cliente enterprise un documento vincolante che definisca chiaramente quali controlli di sicurezza sono tua responsabilità (infrastruttura, patch management hypervisor, backup) e quali sono del cliente (configurazione applicativa, gestione credenziali utente, logging applicativo). Includi matrice responsabilità per ogni servizio (IaaS, PaaS, SaaS) e aggiornala almeno semestralmente.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Certificazione SOC 2 Type II e ISO 27001 come baseline minima</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi ottenere e mantenere certificazione SOC 2 Type II (audit di 6+ mesi) con focus su disponibilità, sicurezza e riservatezza, e certificazione ISO 27001 valida. Questi documenti devono essere messi a disposizione dell'ACN su richiesta e comunicati ai clienti enterprise come prova di compliance. Rinnova certificazioni annualmente e mantieni audit trail completo di risultati e remediation.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Controlli di residenza dati e localizzazione per clienti UE</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Implementa meccanismi tecnici che garantiscano ai clienti il controllo su dove i loro dati risiedono fisicamente all'interno dell'UE, con opzione di residenza in Italia se richiesto. Documentazione deve specificare locazioni datacenter, politiche di replicazione, backup geografici e procedure di accesso da parte di personale. Audit semestrale di conformità residenza dati è obbligatoria.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Lacune tipiche di conformità in questo settore</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza di processo formale di classificazione incidenti specifico per NIS2: molti provider usano unica tassonomia sicurezza senza distinguere fra incidenti NIS2 riportabili (24h) e violazioni generiche, causando ritardi di notifica.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SLA di notifica clienti non allineate a requisiti NIS2: contratti indicano notifica entro 7-30 giorni, non 24 ore; aggiorna immediati terms of service e implementa workflow automatico con ACN e clienti.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Documentazione modello responsabilità insufficiente o generica: molti provider offrono solo tabelle RACI incomplete; richiede matrice dettagliata per ogni servizio, scenario di incidente, e gestione delle patch di terze parti.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Valutazione supply chain limitata per operatori datacentre e hardware: non mappi rischi di fornitori di infrastruttura fisica, power, HVAC; devi estendere NIS2 assessment a supply chain critica con SLA di security e incident notification.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Strumenti consigliati per questo settore</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Vanta</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Drata</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Sprinto</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Domande frequenti</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Come devo classificare un incidente multi-tenant che non ha interessato nessun cliente, ma ha compromesso un servizio di supporto interno?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Se il servizio di supporto è parte infrastrutturale critica per erogazione servizi al cliente (es. ticketing per security incidents), devi comunque notificare ACN entro 24 ore perché l'incidente affetta indirettamente disponibilità servizio. Implementa classificazione basata su 'impatto potenziale cliente' non solo 'impatto clienti effettivamente colpiti'.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale è il perimetro esatto di SOC 2 Type II richiesto per NIS2 multi-tenant?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">SOC 2 deve coprire Trust Service Categories C (disponibilità) e S (sicurezza), con audit di 6+ mesi su produzione live. Deve includere controlli isolamento tenant, gestione accesso, crittografia, logging e change management. Se usi subprocessor (CDN, DDoS mitigation), includili nel report SOC 2 con carve-out o inclusione esplicita.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni per mancata notifica incidente entro 24 ore in Italia?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">ACN può comminare sanzioni amministrative fino a €10 milioni o 2% fatturato annuale globale per violazioni critiche (Art. 32 D.Lgs. 138/2024). La mancata notifica incidente è considérata violazione grave. Inoltre, i clienti possono avviare azioni risarcitorie separate per inadempienza contrattuale su SLA.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Verifica i requisiti per la tua organizzazione</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      ACN/NIS2 · Italia · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Avvia il calcolatore →
+    </a>
+  </div>
+</div>
+
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Strumenti.it · ACN/NIS2 · ACN
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Pagina principale</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Settori</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Confronto strumenti</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

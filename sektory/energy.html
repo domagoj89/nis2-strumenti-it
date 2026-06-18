@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME940XQ5N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME940XQ5N');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 per Gestori Energetici in Italia — Obbligi 2026</title>
+  <meta name="description" content="Guida NIS2/D.Lgs. 138/2024 per generatori elettrici, gestori rete, distributori gas. Obbligi OT/SCADA, incident reporting, scadenza ottobre 2024.">
+  <link rel="canonical" href="https://nis2-strumenti.it/sektory/energy.html">
+  <meta property="og:title" content="NIS2 per Gestori Energetici in Italia — Obbligi 2026">
+  <meta property="og:description" content="Guida NIS2/D.Lgs. 138/2024 per generatori elettrici, gestori rete, distributori gas. Obbligi OT/SCADA, incident reporting, scadenza ottobre 2024.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-strumenti.it/sektory/energy.html">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="NIS2-Strumenti.it">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 per Gestori Energetici in Italia — Obbligi 2026">
+  <meta name="twitter:description" content="Guida NIS2/D.Lgs. 138/2024 per generatori elettrici, gestori rete, distributori gas. Obbligi OT/SCADA, incident reporting, scadenza ottobre 2024.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Pagina principale",
+      "item": "https://nis2-strumenti.it/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Settori",
+      "item": "https://nis2-strumenti.it/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 per Produttori Elettrici, Gestori di Rete e Distributori di Gas in Italia — Requisiti di Conformità 2026",
+      "item": "https://nis2-strumenti.it/sektory/energy.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Se un operatore deve accedere da remoto a un PLC in una sottostazione per regolare i parametri di carico, quali misure di sicurezza sono obbligatorie secondo NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Devi implementare un jump server dedicato (bastion host) con autenticazione multi-fattore, stabilire una sessione VPN crittografata TLS 1.2+ con timeout automatico, e registrare ogni comando inviato al PLC in un log centrale immutabile per 12 mesi. L'accesso deve essere limitato alle sole porte e funzioni necessarie, con revisione bimestrale dei privilegi assegnati."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quale è il processo di notifica se un attacco ransomware colpisce il sistema SCADA di una stazione di compressione gas con potenziale impatto sulla distribuzione?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entro 72 ore dal rilevamento della compromissione, devi notificare l'ACN fornendo: natura e data dell'incidente, sistemi compromessi e dati interessati, impatto sulla continuità di servizio (interruzioni, riduzioni di pressione), azioni di contenimento già avviate, e analisi preliminare della causa. L'ACN valuterà se l'impatto è transfrontaliero e coordinerà la notifica ad altri gestori UE secondo il protocollo CER."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quali sanzioni sono previste se a settembre 2026 non sono state implementate la segmentazione SCADA e le procedure di incident reporting NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Secondo D.Lgs. 138/2024, le violazioni degli obblighi di sicurezza delle reti per entità essenziali comportano sanzioni da 100.000 euro fino a 5.000.000 euro (o il 2% del fatturato globale annuale, se superiore), oltre a sospensione temporanea dell'autorizzazione a operare infrastrutture critiche. L'ACN può condurre ispezioni a sorpresa per verificare conformità."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Strumenti</span>.it</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Confronto strumenti</a></li>
+        <li><a href="../kalkulator.html">Calcolatore NIS2</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Verifica se sei soggetto →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Pagina principale</a><span>›</span>
+    <a href="index.html">Settori</a><span>›</span>
+    NIS2 per Produttori Elettrici, Gestori di Rete e Distributori di Gas in Italia — Requisiti di Conformità 2026
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato I — Entità Essenziale</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Produttori Elettrici, Gestori di Rete e Distributori di Gas in Italia — Requisiti di Conformità 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa pagina è indirizzata a responsabili della sicurezza informatica, gestori OT e compliance officer delle infrastrutture energetiche critiche italiane. Apprenderai gli obblighi specifici di segmentazione SCADA, incident reporting transfrontaliero e supply chain security imposti da NIS2 come entità essenziale dell'Allegato I.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano nell'ambito NIS2 i gestori di reti di trasmissione e distribuzione elettrica, i produttori di energia elettrica connessi alla rete pubblica con capacità superiore a 50 MW, i distributori di gas naturale con almeno 400.000 punti di consegna, i gestori di reti di teleriscaldamento con potenza utile superiore a 30 MW, e i fornitori di carburanti per il trasporto. L'Autorità di Controllo Nazionale (ACN) applica la normativa a queste categorie indipendentemente dalle dimensioni aziendali.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Obblighi chiave NIS2 per questo settore</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza dei Sistemi OT/SCADA e Segmentazione di Rete</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare una segmentazione rigorosa tra le reti SCADA/ICS e le reti IT aziendali, impedendo il traffico diretto tra sistemi di controllo e infrastrutture office. Tutti i dispositivi OT (PLC, RTU, server SCADA) devono essere inventariati, classificati per funzione critica e monitorati in tempo reale. L'accesso remoto ai sistemi critici di controllo è ammesso solo tramite protocolli crittografici (SSH, TLS 1.2+) con autenticazione multi-fattore e registrazione completa di tutti gli accessi.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Incident Reporting per Incidenti di Sicurezza Transfrontalieri</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Entro 72 ore dal rilevamento di un incidente di sicurezza con potenziale impatto sulla stabilità di rete o distribuzione di energia in altri Stati UE, devi notificarlo all'ACN italiano e alle autorità coinvolte. La comunicazione deve includere natura dell'incidente, sistemi colpiti, impatto operativo rilevato o stimato, e misure di contenimento attuate. L'ACN a sua volta lo comunicherà ad altri gestori di infrastrutture critiche attraverso i canali CER (Circolo d'Emergenza Reti).</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza della Catena di Fornitura per Hardware, Firmware e Software Critico</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi condurre valutazioni di rischio su tutti i fornitori di componenti critici per SCADA, switch di rete industriale, e firmware per dispositivi OT. Stabilisci contratti che richiedono trasparenza su aggiornamenti di sicurezza, pratiche di sviluppo sicuro del software, e limitazioni geografiche su dove il codice viene sviluppato e conservato. Monitora gli avvisi di vulnerabilità CVE per ogni componente critico e applica patch entro 30 giorni per vulnerabilità ad alto rischio.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza Fisica delle Sottostazioni Combinata con Monitoraggio Cyber</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Le sottostazioni critiche di trasmissione e distribuzione devono disporre di controlli di accesso fisico (badge, biometria, sorveglianza), combinati con rilevazione di intrusioni cyber sugli switch e router di rete interna. Implementa logging centralizzato di tutti i tentativi di accesso fisico e logico, con alert in tempo reale per anomalie (porte aperte fuori orario, accessi non autorizzati a pannelli, login falliti multipli).</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Gestione dell'Accesso Remoto dei Fornitori Terzi e Logging</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni accesso remoto di tecnici e partner per manutenzione SCADA deve essere mediato tramite jump server con MFA e sesioni registrate. Non è consentito l'accesso diretto via Telnet, FTP o protocolli non crittografati. Limita temporalmente ogni sessione (max 4 ore), revoca l'accesso immediatamente al termine dell'intervento, e conserva log dettagliati per almeno 12 mesi con revisioni trimestrali.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Lacune tipiche di conformità in questo settore</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi SCADA ancora in esecuzione su reti piatte senza segmentazione: il traffico di controllo raggiunge liberamente i PC degli operatori e i server aziendali, creando vettori di attacco critici che ransomware e malware possono sfruttare per propagarsi verso i sistemi produttivi.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Accesso remoto ai controllori logici programmabili (PLC) e RTU (Remote Terminal Unit) mediante protocolli non crittografati (Telnet, FTP) senza log di sessione: chiunque intercetti il traffico di rete o indovini le credenziali può modificare le istruzioni di controllo senza traccia.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di inventario centralizzato e accurato di tutti i dispositivi OT: non è possibile applicare patch, rilevare dispositivi non autorizzati o valutare l'esposizione complessiva ai rischi di sicurezza.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Accesso remoto da parte dei fornitori di infrastrutture SCADA non controllato né limitato nel tempo: tecnici di assistenza mantengono account permanenti con accesso totale ai sistemi critici senza scadenza, registrazione o autenticazione aggiuntiva.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Strumenti consigliati per questo settore</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Secfix</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Vanta</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">ISMS.online</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Domande frequenti</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Se un operatore deve accedere da remoto a un PLC in una sottostazione per regolare i parametri di carico, quali misure di sicurezza sono obbligatorie secondo NIS2?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Devi implementare un jump server dedicato (bastion host) con autenticazione multi-fattore, stabilire una sessione VPN crittografata TLS 1.2+ con timeout automatico, e registrare ogni comando inviato al PLC in un log centrale immutabile per 12 mesi. L'accesso deve essere limitato alle sole porte e funzioni necessarie, con revisione bimestrale dei privilegi assegnati.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale è il processo di notifica se un attacco ransomware colpisce il sistema SCADA di una stazione di compressione gas con potenziale impatto sulla distribuzione?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Entro 72 ore dal rilevamento della compromissione, devi notificare l'ACN fornendo: natura e data dell'incidente, sistemi compromessi e dati interessati, impatto sulla continuità di servizio (interruzioni, riduzioni di pressione), azioni di contenimento già avviate, e analisi preliminare della causa. L'ACN valuterà se l'impatto è transfrontaliero e coordinerà la notifica ad altri gestori UE secondo il protocollo CER.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sanzioni sono previste se a settembre 2026 non sono state implementate la segmentazione SCADA e le procedure di incident reporting NIS2?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Secondo D.Lgs. 138/2024, le violazioni degli obblighi di sicurezza delle reti per entità essenziali comportano sanzioni da 100.000 euro fino a 5.000.000 euro (o il 2% del fatturato globale annuale, se superiore), oltre a sospensione temporanea dell'autorizzazione a operare infrastrutture critiche. L'ACN può condurre ispezioni a sorpresa per verificare conformità.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Verifica i requisiti per la tua organizzazione</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      ACN/NIS2 · Italia · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Avvia il calcolatore →
+    </a>
+  </div>
+</div>
+
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Strumenti.it · ACN/NIS2 · ACN
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Pagina principale</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Settori</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Confronto strumenti</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

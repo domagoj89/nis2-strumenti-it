@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME940XQ5N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME940XQ5N');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 per Grande Distribuzione e E-commerce in Italia 2026</title>
+  <meta name="description" content="Guida NIS2/D.Lgs. 138/2024 per retailer e operatori e-commerce: obblighi di sicurezza POS, protezione dati clienti e notifica breach entro 2026.">
+  <link rel="canonical" href="https://nis2-strumenti.it/sektory/retail.html">
+  <meta property="og:title" content="NIS2 per Grande Distribuzione e E-commerce in Italia 2026">
+  <meta property="og:description" content="Guida NIS2/D.Lgs. 138/2024 per retailer e operatori e-commerce: obblighi di sicurezza POS, protezione dati clienti e notifica breach entro 2026.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-strumenti.it/sektory/retail.html">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="NIS2-Strumenti.it">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 per Grande Distribuzione e E-commerce in Italia 2026">
+  <meta name="twitter:description" content="Guida NIS2/D.Lgs. 138/2024 per retailer e operatori e-commerce: obblighi di sicurezza POS, protezione dati clienti e notifica breach entro 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Pagina principale",
+      "item": "https://nis2-strumenti.it/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Settori",
+      "item": "https://nis2-strumenti.it/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 per la Grande Distribuzione e E-commerce in Italia — Requisiti e Scadenze 2026",
+      "item": "https://nis2-strumenti.it/sektory/retail.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Un terminale POS installato da 10 anni non supporta le ultime patch di sicurezza: entro quando devo sostituirlo per NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La sostituzione o l'isolamento in segmento dedicato è obbligatorio entro 18 mesi dall'entrata in vigore del decreto (18 novembre 2024), quindi entro maggio 2026. Non è consentito mantenere POS legacy direttamente connessi alla rete centrale di pagamento. Se la sostituzione completa non è fattibile, implementate una soluzione di segmentazione di rete e VPN crittografata come misura transitoria, documentata nel vostro piano di remediation inviato all'ACN."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanti dati di clienti posso conservare nel mio database di loyalty program secondo NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NIS2 rimanda ai principi GDPR di data minimization: potete conservare solo dati strettamente necessari alle finalità dichiarate. Per loyalty program, ciò significa storici transazionali massimo 36 mesi e profili di preferenza massimo 24 mesi se non aggiornati. Dati sensibili quali numero di tessera sanitaria o identificativi biometrici devono essere pseudonimizzati o cancellati immediatamente dopo uso. Conducete una Data Protection Impact Assessment e documentate la policy nel vostro registro di compliance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Se un mio fornitore logistico subisce un breach che compromette dati clienti memorizzati nei loro sistemi, chi è responsabile della notifica all'ACN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La responsabilità è vostra come entità di importanza nazionale, non del fornitore. Dovete notificare l'Autorità entro 24 ore dal rilevamento del breach, indipendentemente da chi lo ha causato. Per questo motivo è essenziale che i contratti di fornitura includano una clausola che obblighi il fornitore a comunicarvi gli incidenti entro 4 ore dal rilevamento, in modo da rispettare il vostro SLA di segnalazione. Inoltre, il fornitore deve essere sottoposto ad audit annuali di conformità NIS2."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Strumenti</span>.it</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Confronto strumenti</a></li>
+        <li><a href="../kalkulator.html">Calcolatore NIS2</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Verifica se sei soggetto →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Pagina principale</a><span>›</span>
+    <a href="index.html">Settori</a><span>›</span>
+    NIS2 per la Grande Distribuzione e E-commerce in Italia — Requisiti e Scadenze 2026
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato II — Entità di importanza nazionale</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per la Grande Distribuzione e E-commerce in Italia — Requisiti e Scadenze 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è destinata a responsabili della sicurezza, compliance officer e direttori IT di catene retail e operatori e-commerce con significativo volume di dati clienti e transazioni di pagamento. Scoprirai gli obblighi specifici, i gap comuni e le strategie pratiche per raggiungere la conformità entro il termine normativo.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano nella categoria di entità importante ai sensi dell'Allegato II tutte le catene di distribuzione moderna e gli operatori e-commerce con almeno 250 dipendenti o fatturato superiore ai 50 milioni di euro annui, che operano attività critica nel settore del commercio al dettaglio e gestiscono infrastrutture di pagamento, dati personali di clienti su larga scala e sistemi di gestione dell'inventario interconnessi. La classificazione è automatica e obbligatoria: non è richiesta una comunicazione preliminare all'ACN, ma è necessaria l'iscrizione nel registro nazionale degli operatori di importanza nazionale.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Obblighi chiave NIS2 per questo settore</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza delle infrastrutture di pagamento e terminali POS</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dovete implementare controlli di sicurezza fisica e logica su tutti i terminali POS, casse automatiche e gateway di pagamento, garantendo conformità contemporanea a NIS2 e PCI-DSS 3.2.1. Ciò include crittografia end-to-end delle transazioni, autenticazione multifactorial per accesso amministrativo ai sistemi di pagamento, e audit logging di tutte le operazioni critiche. I terminali POS legacy non conformi devono essere sostituiti o isolati in segmenti di rete dedicati entro 18 mesi dall'entrata in vigore del decreto.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Protezione e gestione del ciclo di vita dei dati personali dei clienti</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dovete implementare principi di data minimization e retention policy documentate per tutti i dati di clienti raccolti tramite transazioni, registrazione a programmi fedeltà e sistemi di CRM. I database di loyalty program devono essere sottoposti a valutazione d'impatto sulla privacy e copie sensibili devono essere gestite con crittografia di archivio a livello di database. La retention massima per dati non essenziali alla transazione è di 36 mesi; superare questo termine costituisce non conformità diretta.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza della supply chain e accesso dei fornitori a sistemi critici</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dovete mappare e gestire i rischi di sicurezza introdotti da fornitori logistici, operatori di warehouse automation e sistemi di inventory management di terzi. Ogni fornitore con accesso a sistemi critici deve sottoscrivere una Addendum di Sicurezza che includa: controlli di accesso basati su principio di privilegi minimi, isolamento logico dei servizi forniti, notificazione di incident entro 24 ore, e audit annuali. Verificate che i contratti di procurement richiedano esplicitamente conformità NIS2.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Notifica degli incidenti a carattere infortunistico e segnalazione all'Autorità</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">In caso di disruption significativa alle operazioni di vendita al dettaglio (impossibilità di processare transazioni per oltre 4 ore, indisponibilità di sistemi di inventario critico, o compromissione di dati personali di oltre 10.000 clienti), dovete notificare l'Autorità Competente Nazionale entro 24 ore dal rilevamento. La notifica deve includere natura dell'incidente, numero di clienti/transazioni impattate, misure di contenimento adottate e ETA del ripristino completo.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Governance della sicurezza e comunicazione al personale critico</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dovete nominare formalmente un responsabile della sicurezza delle informazioni (CISO o figura equivalente) con accesso diretto al management. La governance deve includere una politica scritta di sicurezza approvata dal board, programmi di consapevolezza annuali obbligatori per il personale con accesso a sistemi di pagamento e dati clienti, e un registro aggiornato di tutte le eccezioni di sicurezza autorizzate. La valutazione della conformità deve essere effettuata almeno semestralmente da revisori interni o terzi certificati.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Lacune tipiche di conformità in questo settore</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Terminali POS legacy non integrati in un sistema di patch management centralizzato, con firmware non aggiornabili e privi di audit logging: verificate il perimetro di scope PCI-DSS e assicurate che tutti i dispositivi di pagamento siano coperti da vulnerability management entro 180 giorni.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Database di loyalty program e customer profiling con retention di dati illimitata o non documentata, in violazione del principio di minimizzazione: conducete un audit immediato dei periodi di conservazione e implementate una policy di cancellazione automatica allineata ai 36 mesi normativi.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Accesso di fornitori logistici e operatori di warehouse automation ai sistemi di inventario centrale senza segmentazione di rete, autenticazione multifactorial o logging: classificate l'accesso di terzi su una matrice rischio-impatto e applicate il principio zero-trust entro 12 mesi.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di un CISO nominato formalmente o di funzione di sicurezza dedicata a livello di governance: questa è una causa frequente di diniego di certificazioni NIS2 e comporta sanzioni amministrative fino a 10 milioni di euro.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Strumenti consigliati per questo settore</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Reglyze</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">ISMS.online</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">NordLayer</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">nordlayer.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Domande frequenti</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Un terminale POS installato da 10 anni non supporta le ultime patch di sicurezza: entro quando devo sostituirlo per NIS2?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La sostituzione o l'isolamento in segmento dedicato è obbligatorio entro 18 mesi dall'entrata in vigore del decreto (18 novembre 2024), quindi entro maggio 2026. Non è consentito mantenere POS legacy direttamente connessi alla rete centrale di pagamento. Se la sostituzione completa non è fattibile, implementate una soluzione di segmentazione di rete e VPN crittografata come misura transitoria, documentata nel vostro piano di remediation inviato all'ACN.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quanti dati di clienti posso conservare nel mio database di loyalty program secondo NIS2?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">NIS2 rimanda ai principi GDPR di data minimization: potete conservare solo dati strettamente necessari alle finalità dichiarate. Per loyalty program, ciò significa storici transazionali massimo 36 mesi e profili di preferenza massimo 24 mesi se non aggiornati. Dati sensibili quali numero di tessera sanitaria o identificativi biometrici devono essere pseudonimizzati o cancellati immediatamente dopo uso. Conducete una Data Protection Impact Assessment e documentate la policy nel vostro registro di compliance.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Se un mio fornitore logistico subisce un breach che compromette dati clienti memorizzati nei loro sistemi, chi è responsabile della notifica all'ACN?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La responsabilità è vostra come entità di importanza nazionale, non del fornitore. Dovete notificare l'Autorità entro 24 ore dal rilevamento del breach, indipendentemente da chi lo ha causato. Per questo motivo è essenziale che i contratti di fornitura includano una clausola che obblighi il fornitore a comunicarvi gli incidenti entro 4 ore dal rilevamento, in modo da rispettare il vostro SLA di segnalazione. Inoltre, il fornitore deve essere sottoposto ad audit annuali di conformità NIS2.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Verifica i requisiti per la tua organizzazione</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      ACN/NIS2 · Italia · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Avvia il calcolatore →
+    </a>
+  </div>
+</div>
+
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Strumenti.it · ACN/NIS2 · ACN
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Pagina principale</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Settori</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Confronto strumenti</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

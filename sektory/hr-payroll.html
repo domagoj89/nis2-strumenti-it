@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME940XQ5N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME940XQ5N');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 per fornitori software HR e payroll in Italia 2026</title>
+  <meta name="description" content="Guida NIS2 per vendor software HR e payroll: obblighi di sicurezza dati dipendenti, isolamento multi-tenant, notifica incidenti. Scadenza ottobre 2024.">
+  <link rel="canonical" href="https://nis2-strumenti.it/sektory/hr-payroll.html">
+  <meta property="og:title" content="NIS2 per fornitori software HR e payroll in Italia 2026">
+  <meta property="og:description" content="Guida NIS2 per vendor software HR e payroll: obblighi di sicurezza dati dipendenti, isolamento multi-tenant, notifica incidenti. Scadenza ottobre 2024.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-strumenti.it/sektory/hr-payroll.html">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="NIS2-Strumenti.it">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 per fornitori software HR e payroll in Italia 2026">
+  <meta name="twitter:description" content="Guida NIS2 per vendor software HR e payroll: obblighi di sicurezza dati dipendenti, isolamento multi-tenant, notifica incidenti. Scadenza ottobre 2024.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Pagina principale",
+      "item": "https://nis2-strumenti.it/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Settori",
+      "item": "https://nis2-strumenti.it/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 per fornitori di software HR e servizi di payroll in Italia — Requisiti 2026",
+      "item": "https://nis2-strumenti.it/sektory/hr-payroll.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Se la mia piattaforma HR SaaS è ospitata in cloud ibrido (some data on-premises, some on AWS), come dimostro l'isolamento dei tenant alla ACN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Devi documentare un architettura di sicurezza che descriva il posizionamento fisico e logico di ogni cliente, con diagrammi di data flow, criteri di crittografia per ciascun segmento (on-premises, cloud), e results di penetration test o audit di isolamento almeno annuali. La ACN accetta evidenza tecnica (policy RBAC, log di accesso cross-tenant negati, risultati di security scanning) integrata in una relazione di conformità strutturata secondo i profili di rischio NIS2."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual è la differenza tra MFA hardware e MFA software secondo NIS2, e cosa significa concretamente per i nostri admin?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MFA hardware richiede un dispositivo fisico (token FIDO2, smartcard, yubikey) che non può essere compromesso da malware nel PC dell'admin; MFA software (Google Authenticator, SMS, push notification) è vulnerabile a phishing e SIM swap. Per i vostri admin di payroll, questo significa obbligare token hardware per ogni accesso privilegiato, registrare l'uso di ogni token e revocare immediatamente i token in caso di smarrimento, con log di tracciamento conservati 24 mesi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Se un cliente termina il contratto il 15 novembre, entro quale data precisa devo avere cancellato tutti i suoi dati e come dimostro la cancellazione alla ACN?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Entro 30 giorni (15 dicembre) devi cancellare tutti i dati del cliente da sistemi produttivi, backup e archivi offline, con certificazione firmata di distruzione. La dimostrazione alla ACN avviene mediante report di deletion con hash crittografici dei file distrutti, dichiarazione del responsabile dell'infrastruttura, e risultati di forensic verification che confermino l'assenza dei dati nei sistemi. La mancanza di questa evidenza in caso di audit espone a sanzioni amministrative fino a 500.000 euro."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Strumenti</span>.it</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Confronto strumenti</a></li>
+        <li><a href="../kalkulator.html">Calcolatore NIS2</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Verifica se sei soggetto →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Pagina principale</a><span>›</span>
+    <a href="index.html">Settori</a><span>›</span>
+    NIS2 per fornitori di software HR e servizi di payroll in Italia — Requisiti 2026
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato II — Entità importante</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per fornitori di software HR e servizi di payroll in Italia — Requisiti 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Se gestisci dati retributivi e personali di dipendenti per multiple organizzazioni clienti, questa pagina illustra gli obblighi specifici di cybersecurity secondo il D.Lgs. 138/2024. Apprenderai come implementare protezioni tecniche, isolamento dei dati e processi di notifica incidenti per conformarti alle scadenze normative.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">I fornitori di software HR e servizi di payroll sono classificati come entità importanti se forniscono servizi digitali critici a organizzazioni clienti in settori infrastrutturali o pubblici, oppure se gestiscono dati personali e retributivi di oltre 500 dipendenti distribuiti su multiple clienti. La soglia di importanza include provider SaaS multi-tenant con accesso amministrativo ai sistemi di gestione stipendi e archivi di dati sensibili di terzi.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Obblighi chiave NIS2 per questo settore</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Isolamento e segmentazione dei dati dei clienti</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare controlli tecnici di isolamento dei tenant in architetture multi-cliente per garantire che i dati retributivi, anagrafici e sensibili di un cliente non siano accessibili a un altro cliente, neppure in caso di violazione di una singola istanza. Questo include crittografia a riposo per tenant, politiche RBAC granulari, e separazione fisica o logica dei database. La verifica deve essere documentata mediante audit tecnici almeno semestrali.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Controllo degli accessi amministrativi con MFA hardware</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Gli accessi amministrativi ai sistemi di gestione payroll e ai dati dei clienti devono essere protetti da autenticazione a fattori multipli (MFA) basata su hardware (token FIDO2, smartcard), non solo SMS o app software. Ogni accesso amministrativo deve generare log dettagliati con timestamp, identificativo utente, azioni eseguite e durata della sessione. I logs devono essere conservati per almeno 24 mesi e sottoposti a monitoraggio continuo per rilevare anomalie.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Notifica di incidenti di sicurezza come fornitore di servizi digitali</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Se subisci una violazione di dati che interessa i sistemi di payroll o i dati personali gestiti per conto di clienti, sei obbligato a notificarla all'Autorità per la Cybersicurezza Nazionale (ACN) entro 72 ore dalla scoperta, e ai clienti interessati entro 24 ore. La notifica deve includere natura della violazione, numero di dipendenti/clienti interessati, misure di contenimento adottate e contatti per ulteriori dettagli. Ritardi ingiustificati espongono a sanzioni fino a 500.000 euro.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Gestione del ciclo di vita dei dati e cancellazione alla fine del contratto</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi stabilire e documentare un processo formale per la cancellazione sicura di tutti i dati di cliente (dati anagrafici, retributivi, fiscali, documenti afferenti) entro 30 giorni dalla fine del contratto di servizio, con certificazione della distruzione. Questo include backup, archivi offline e copie temporanee. La mancanza di questo processo compromette il trattamento GDPR e viola l'obbligo NIS2 di protezione della disponibilità dei dati.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Valutazione della sicurezza della supply chain dei fornitori critici</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Se utilizzi subappaltatori, fornitori di infrastruttura cloud, o servizi di backup per memorizzare dati di payroll, devi eseguire valutazioni di rischio scritte e richiedere garanzie contrattuali di conformità NIS2. Le valutazioni devono coprire crittografia, isolamento dati, incident response, e audit rights. Almeno una volta all'anno devi verificare il mantenimento dei controlli mediante questionari di security, audit o penetration test su componenti critiche.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Lacune tipiche di conformità in questo settore</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Architetture multi-tenant senza isolamento logico verificato: dati di clienti diversi risiedono nello stesso schema database con controlli di accesso insufficienti, esponendo il rischio di data leakage tra tenant in caso di errore di configurazione o exploit.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Accessi amministrativi ai sistemi di payroll protetti solo da password o MFA software (app/SMS): questa pratica non soddisfa il requisito di MFA hardware e consente attacchi di phishing o compromissione di device.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di processo formale di data deletion post-contratto: dati di clienti dimissionari rimangono nei backup e archivi, violando sia GDPR che la disponibilità richiesta da NIS2 e creando rischi di accesso non autorizzato.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza di incident response plan specifico per incidenti multi-cliente: quando una violazione colpisce infrastrutture condivise, non è chiara la procedura di notifica simultanea all'ACN e ai clienti entro i tempi prescritti, espandendo i danni reputazionali e normativi.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Strumenti consigliati per questo settore</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Sprinto</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Secfix</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Drata</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Domande frequenti</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Se la mia piattaforma HR SaaS è ospitata in cloud ibrido (some data on-premises, some on AWS), come dimostro l'isolamento dei tenant alla ACN?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Devi documentare un architettura di sicurezza che descriva il posizionamento fisico e logico di ogni cliente, con diagrammi di data flow, criteri di crittografia per ciascun segmento (on-premises, cloud), e results di penetration test o audit di isolamento almeno annuali. La ACN accetta evidenza tecnica (policy RBAC, log di accesso cross-tenant negati, risultati di security scanning) integrata in una relazione di conformità strutturata secondo i profili di rischio NIS2.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Qual è la differenza tra MFA hardware e MFA software secondo NIS2, e cosa significa concretamente per i nostri admin?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">MFA hardware richiede un dispositivo fisico (token FIDO2, smartcard, yubikey) che non può essere compromesso da malware nel PC dell'admin; MFA software (Google Authenticator, SMS, push notification) è vulnerabile a phishing e SIM swap. Per i vostri admin di payroll, questo significa obbligare token hardware per ogni accesso privilegiato, registrare l'uso di ogni token e revocare immediatamente i token in caso di smarrimento, con log di tracciamento conservati 24 mesi.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Se un cliente termina il contratto il 15 novembre, entro quale data precisa devo avere cancellato tutti i suoi dati e come dimostro la cancellazione alla ACN?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Entro 30 giorni (15 dicembre) devi cancellare tutti i dati del cliente da sistemi produttivi, backup e archivi offline, con certificazione firmata di distruzione. La dimostrazione alla ACN avviene mediante report di deletion con hash crittografici dei file distrutti, dichiarazione del responsabile dell'infrastruttura, e risultati di forensic verification che confermino l'assenza dei dati nei sistemi. La mancanza di questa evidenza in caso di audit espone a sanzioni amministrative fino a 500.000 euro.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Verifica i requisiti per la tua organizzazione</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      ACN/NIS2 · Italia · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Avvia il calcolatore →
+    </a>
+  </div>
+</div>
+
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Strumenti.it · ACN/NIS2 · ACN
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Pagina principale</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Settori</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Confronto strumenti</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

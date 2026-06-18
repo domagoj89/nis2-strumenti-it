@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME940XQ5N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GME940XQ5N');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIS2 Trasporti Italia 2026: Compagnie Aeree, Ferrovie, Porti</title>
+  <meta name="description" content="Guida NIS2/D.Lgs. 138/2024 per operatori trasporto essenziali in Italia. Obblighi di cybersecurity, incident reporting e resilienza operativa entro 2026.">
+  <link rel="canonical" href="https://nis2-strumenti.it/sektory/transport.html">
+  <meta property="og:title" content="NIS2 Trasporti Italia 2026: Compagnie Aeree, Ferrovie, Porti">
+  <meta property="og:description" content="Guida NIS2/D.Lgs. 138/2024 per operatori trasporto essenziali in Italia. Obblighi di cybersecurity, incident reporting e resilienza operativa entro 2026.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://nis2-strumenti.it/sektory/transport.html">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="NIS2-Strumenti.it">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NIS2 Trasporti Italia 2026: Compagnie Aeree, Ferrovie, Porti">
+  <meta name="twitter:description" content="Guida NIS2/D.Lgs. 138/2024 per operatori trasporto essenziali in Italia. Obblighi di cybersecurity, incident reporting e resilienza operativa entro 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Pagina principale",
+      "item": "https://nis2-strumenti.it/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Settori",
+      "item": "https://nis2-strumenti.it/sektory/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "NIS2 per le Infrastrutture di Trasporto in Italia — Obblighi 2026 per Operatori Essenziali",
+      "item": "https://nis2-strumenti.it/sektory/transport.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Se la nostra compagnia aerea ha un sistema di prenotazione legacy con più di 15 anni, possiamo rimandare la migrazione fino al 2027?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Il D.Lgs. 138/2024 richiede compliance entro il 31 ottobre 2026 per tutte le entità essenziali, senza eccezioni per sistemi legacy. Devi pianificare una migrazione strutturata o implementare controlli compensativi severi (segmentazione di rete, crittografia end-to-end, WAF dedicato) per il sistema attuale. L'ACN e il tuo settore di controllo (ENAC per l'aviazione civile, RFI per le ferrovie) verificheranno il piano di azione entro il 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quale soglia di 'disruption' richiede segnalazione all'ACN per un operatore portuale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non esiste una soglia numerica assoluta, ma le linee guida dell'ACN indicano che qualsiasi incidente causante interruzione della continuità operativa superiore a 4 ore consecutive, impatto su porti esteri o sulla sicurezza di merci critiche deve essere segnalato entro 72 ore. Consulta l'ACN e l'AdSP (Autorità di Sistema Portuale) competente per definire la soglia specifica del tuo porto in base al volume di traffico."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Che cosa succede se non raggiungiamo la conformità entro il 31 ottobre 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'ACN può irrogare sanzioni amministrative fino a 10 milioni di euro o il 2% del fatturato annuale globale (la maggiore delle due), oltre alla sospensione dell'autorizzazione operativa nel caso di entità essenziali. Inizieranno controlli a campione a partire dal novembre 2026; la mancanza di un piano di azione documentato o di misure di security by design comporterà sanzioni immediate e obbligo di conformità forzata sotto supervisione."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">NIS2<span>Strumenti</span>.it</a>
+      <ul class="nav__links">
+        <li><a href="../porownanie.html">Confronto strumenti</a></li>
+        <li><a href="../kalkulator.html">Calcolatore NIS2</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
+      </ul>
+      <a href="../kalkulator.html" class="nav__cta">Verifica se sei soggetto →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container" style="padding-top:1.5rem;">
+  <div class="breadcrumb">
+    <a href="../index.html">Pagina principale</a><span>›</span>
+    <a href="index.html">Settori</a><span>›</span>
+    NIS2 per le Infrastrutture di Trasporto in Italia — Obblighi 2026 per Operatori Essenziali
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
+  <div class="container--narrow">
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato I — Entità Essenziale</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per le Infrastrutture di Trasporto in Italia — Obblighi 2026 per Operatori Essenziali</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è destinata a responsabili cybersecurity, direttori operativi e compliance manager di compagnie aeree, operatori ferroviari, società di trasporto stradale, società di navigazione e operatori portuali italiani. Scoprirai gli obblighi specifici della normativa NIS2, i rischi critici del tuo settore e come implementare controlli conformi entro il 31 ottobre 2026.</p>
+  </div>
+</div>
+
+<!-- WHO QUALIFIES -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano negli obblighi NIS2 gli operatori di trasporto passeggeri o merci con significativa rilevanza economica e strategica in Italia, indipendentemente dalla dimensione aziendale. Sono incluse compagnie aeree che operano servizi di linea regolari, operatori ferroviari con gestione di infrastrutture critiche, società di trasporto stradale con flotte significative, società di navigazione marittime e operatori di porti commerciali. La classificazione come entità essenziale comporta obblighi rafforzati di gestione dei rischi cyber e continuità operativa.</p>
+  </div>
+</div>
+
+<!-- OBLIGATIONS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1.25rem;">Obblighi chiave NIS2 per questo settore</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza dei Sistemi Operazionali e della Coordinazione</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare controlli di sicurezza dedicati per tutti i sistemi operazionali critici: sistemi di controllo del traffico aereo (ATC), piattaforme di gestione della flotta, sistemi di prenotazione e ticketing online, e sistemi di coordinamento portuale. Questi sistemi devono essere sottoposti a valutazione del rischio almeno annuale e dotati di monitoraggio continuo per rilevare anomalie. La segmentazione di rete tra sistemi IT e OT è obbligatoria per evitare che compromissioni nei sistemi amministrativi raggiungano i sistemi operazionali critici.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Segnalazione Incidenti e Disruption Management</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi notificare all'Agenzia della Cybersicurezza Nazionale (ACN) e alle autorità di settore competenti qualsiasi incidente di sicurezza che impatti la sicurezza dei passeggeri, l'integrità operativa transfrontaliera, o causi disruption superiore a una soglia definita (ad esempio, interruzione servizio > 4 ore). La segnalazione deve avvenire entro 72 ore dal rilevamento dell'incidente e includere descrizione dell'evento, sistemi interessati, impatto sulla continuità operativa e azioni di contenimento intraprese. Devi mantenere un registro strutturato di tutti gli incidenti per analisi e audit.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Cybersecurity della Supply Chain e Avionica</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi estendere i controlli di sicurezza alle tue relazioni con fornitori critici: produttori di avionica, fornitori di software di gestione flotta, produttori di sistemi di ticketing e operatori di servizi cloud. Ogni contratto con fornitori critici deve includere clausole di security by design, audit right, notifica di incidenti e compliance ai medesimi standard NIS2. Conduci valutazioni di sicurezza periodiche sui fornitori e mantieni un inventario aggiornato delle dipendenze critiche di software e hardware con relative vulnerabilità note.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Formazione Cybersecurity e Consapevolezza del Personale Operativo</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare un programma obbligatorio di formazione cybersecurity per tutto il personale operativo e amministrativo, con focus specifico su rilevamento di anomalie nei sistemi, igiene della password, phishing awareness e protocolli di escalation. Il personale operativo (piloti, controllori di volo, operatori portuali, macchinisti) deve ricevere training dedicato su come riconoscere possibili compromissioni dei sistemi che controllano. La formazione deve essere documentata, ripetuta almeno annualmente, e integrata negli onboarding di nuovi dipendenti.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Resilienza e Continuità Operativa dei Sistemi di Prenotazione</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi garantire che i sistemi di prenotazione e ticketing mantengano disponibilità minima del 99,5% annuale con RTO (Recovery Time Objective) non superiore a 4 ore e RPO (Recovery Point Objective) non superiore a 1 ora. Devono essere implementati backup geograficamente distribuiti, failover automatico, e test di disaster recovery almeno semestrali documentati. Qualsiasi interruzione del sistema di prenotazione che causi cancellazione di voli o mancata emissione di biglietti deve essere gestita con un piano di continuità pre-definito e comunicato ai passeggeri secondo le normative di settore.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPICAL GAPS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Lacune tipiche di conformità in questo settore</h2>
+  <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
+    
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi di prenotazione legacy (sviluppati pre-2010) non conformi agli standard moderni di crittografia e protezione dai dati; molti operatori mantengono questi sistemi per ragioni di costo, creando superfici di attacco significative che non vengono monitorate adeguatamente.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di segmentazione di rete tra reti IT (amministrative) e OT (operazionali); gli operatori ferroviari e portuali spesso gestiscono flotte con sistemi embedded connessi alle stesse reti amministrative senza isolamento, aumentando il rischio di propagazione di malware da ambienti compromessi ai sistemi critici.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Personale operativo (piloti, controllori di volo, operatori portuali) non riceve training dedicato su cybersecurity; la consapevolezza rimane circoscritta a staff IT, lasciando i sistemi operazionali vulnerabili a social engineering e mancato riconoscimento di anomalie di sistema.
+    </li>
+    <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Catena di fornitura non sottoposta a valutazione formale di cybersecurity; fornitori di software avionico, piattaforme di gestione flotta e operatori di infrastruttura cloud non sono vincolati contrattualmente a standard NIS2 né sottoposti ad audit periodici di sicurezza.
+    </li>
+  </ul>
+</div>
+
+<!-- TOOLS -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Strumenti consigliati per questo settore</h2>
+  <div style="display:grid;gap:1rem;">
+    
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Secfix</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">ISMS.online</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
+        <strong style="color:var(--navy);font-size:1rem;">Vanta</strong>
+        <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
+      </div>
+      <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
+      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container--narrow" style="padding:2.5rem 1.25rem;" itemscope itemtype="https://schema.org/FAQPage">
+  <h2 style="font-size:1.3rem;color:var(--navy);margin:0 0 1rem;">Domande frequenti</h2>
+  <div style="border-top:1px solid var(--gray-100);">
+    
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Se la nostra compagnia aerea ha un sistema di prenotazione legacy con più di 15 anni, possiamo rimandare la migrazione fino al 2027?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">No. Il D.Lgs. 138/2024 richiede compliance entro il 31 ottobre 2026 per tutte le entità essenziali, senza eccezioni per sistemi legacy. Devi pianificare una migrazione strutturata o implementare controlli compensativi severi (segmentazione di rete, crittografia end-to-end, WAF dedicato) per il sistema attuale. L'ACN e il tuo settore di controllo (ENAC per l'aviazione civile, RFI per le ferrovie) verificheranno il piano di azione entro il 2026.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale soglia di 'disruption' richiede segnalazione all'ACN per un operatore portuale?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Non esiste una soglia numerica assoluta, ma le linee guida dell'ACN indicano che qualsiasi incidente causante interruzione della continuità operativa superiore a 4 ore consecutive, impatto su porti esteri o sulla sicurezza di merci critiche deve essere segnalato entro 72 ore. Consulta l'ACN e l'AdSP (Autorità di Sistema Portuale) competente per definire la soglia specifica del tuo porto in base al volume di traffico.</p>
+    </div>
+  </div>
+  <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Che cosa succede se non raggiungiamo la conformità entro il 31 ottobre 2026?</h3>
+    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">L'ACN può irrogare sanzioni amministrative fino a 10 milioni di euro o il 2% del fatturato annuale globale (la maggiore delle due), oltre alla sospensione dell'autorizzazione operativa nel caso di entità essenziali. Inizieranno controlli a campione a partire dal novembre 2026; la mancanza di un piano di azione documentato o di misure di security by design comporterà sanzioni immediate e obbligo di conformità forzata sotto supervisione.</p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:var(--navy);padding:3rem 1.25rem;text-align:center;margin-top:2rem;">
+  <div class="container--narrow">
+    <h2 style="color:#fff;font-size:1.4rem;margin:0 0 .75rem;">Verifica i requisiti per la tua organizzazione</h2>
+    <p style="color:rgba(255,255,255,.75);margin:0 0 1.5rem;font-size:.95rem;">
+      ACN/NIS2 · Italia · 2026
+    </p>
+    <a href="../kalkulator.html" style="display:inline-block;background:#16a34a;color:#fff;padding:.85rem 2.25rem;border-radius:8px;font-weight:700;font-size:1rem;text-decoration:none;">
+      Avvia il calcolatore →
+    </a>
+  </div>
+</div>
+
+<footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
+  <div class="container">
+    <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
+      © 2026 NIS2-Strumenti.it · ACN/NIS2 · ACN
+      <br>Informacje mają charakter edukacyjny i nie stanowią porady prawnej.
+      <br><a href="../index.html" style="color:var(--gray-400);">Pagina principale</a> ·
+      <a href="index.html" style="color:var(--gray-400);">Settori</a> ·
+      <a href="../porownanie.html" style="color:var(--gray-400);">Confronto strumenti</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
