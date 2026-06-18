@@ -22,7 +22,7 @@ export async function onRequestPost(context) {
     return json({ error: "Invalid request body." }, 400);
   }
 
-  const { sector, size, revenue, budget, lang = "pl", domain = "" } = body;
+  const { sector, size, revenue, budget, lang = "pl", domain = "", email = "" } = body;
 
   if (!sector || !size || !revenue || !budget) {
     return json({ error: "Missing quiz answers." }, 400);
@@ -53,8 +53,13 @@ export async function onRequestPost(context) {
 
     const aiData = await aiResp.json();
     const reportHtml = aiData.content?.[0]?.text || "";
+    const fullHtml = wrapReport(reportHtml, lang);
 
-    return json({ html: wrapReport(reportHtml, lang) });
+    if (email && context.env.RESEND_API_KEY) {
+      await sendReportEmail({ email, html: fullHtml, lang, env: context.env });
+    }
+
+    return json({ html: fullHtml });
   } catch (err) {
     console.error("generate-report error:", err);
     return json({ error: "Unexpected error." }, 500);
@@ -263,6 +268,38 @@ function wrapReport(content, lang) {
 </div>
 </body>
 </html>`;
+}
+
+// ── Email delivery via Resend ─────────────────────────────────────────────────
+
+async function sendReportEmail({ email, html, lang, env }) {
+  const from = env.RESEND_FROM_EMAIL || "report@nis2-narzedzia.pl";
+
+  const subject = {
+    pl: "Twój Raport Zgodności NIS2",
+    cs: "Váš přehled souladu NIS2",
+    sk: "Váš prehľad súladu NIS2",
+    ro: "Raportul dumneavoastră de conformitate NIS2",
+    hr: "Vaše izvješće o usklađenosti s NIS2",
+    hu: "Az Ön NIS2 megfelelőségi jelentése",
+    it: "Il tuo rapporto di conformità NIS2",
+  }[lang] || "Your NIS2 Compliance Report";
+
+  try {
+    const r = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${env.RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ from, to: [email], subject, html }),
+    });
+    if (!r.ok) {
+      console.error("Resend error:", await r.text());
+    }
+  } catch (err) {
+    console.error("Resend send failed:", err);
+  }
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
