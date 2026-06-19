@@ -55,9 +55,10 @@ export async function onRequestPost({ request, env }) {
           email,
           reactivate_existing: true,
           send_welcome_email: true,
-          utm_source: "nis2-narzedzia.pl",
+          utm_source: "nis2-strumenti.it",
           utm_medium: "email-gate",
           utm_campaign: body.source || "inline",
+          tags: buildTags(body),
         }),
       }
     );
@@ -74,6 +75,35 @@ export async function onRequestPost({ request, env }) {
       status: 200, headers: { ...corsHeaders, "Content-Type": "application/json" }
     });
   }
+}
+
+// Build Beehiiv tags from quiz answers for segmented email sequences
+function buildTags(body) {
+  const tags = [];
+  const qa   = body.quiz_answers || {};
+  const score = Number(qa.score) || 0;
+
+  // Score tier — drives which nurture sequence subscriber receives
+  if (score <= 3)      tags.push("score_low");
+  else if (score <= 6) tags.push("score_mid");
+  else                 tags.push("score_high");
+
+  // Sector
+  if (qa.sector) tags.push("sector_" + qa.sector);
+
+  // Role
+  if (qa.role)   tags.push("role_" + qa.role);
+
+  // Missing items — used for personalised email subject lines + content
+  if (qa.registered === "no" || qa.registered === "unknown") tags.push("missing_registration");
+  if (qa.has_isms === "no" || qa.has_isms === "partial")      tags.push("missing_isms");
+  if (qa.has_training === "no")                               tags.push("missing_training");
+  if (qa.has_insurance === "no" || qa.has_insurance === "unknown") tags.push("missing_insurance");
+
+  // Source tag
+  if (body.source) tags.push("source_" + body.source.replace(/[^a-z0-9_]/gi, "_"));
+
+  return tags.filter(Boolean);
 }
 
 // Handle CORS preflight
