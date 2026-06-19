@@ -160,6 +160,7 @@
     score = Math.min(10, Math.max(1, score));
     state.score   = score;
     state.missing = missing;
+    try { sessionStorage.setItem("nis2_quiz_gaps", JSON.stringify(missing)); } catch(e) {}
     return { score, missing };
   }
 
