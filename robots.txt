@@ -1,4 +1,43 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nis2-narzedzia.pl/sitemap.xml
+Sitemap: https://nis2-strumenti.it/sitemap.xml
+
+# --- AI answer engines (GEO): allowed ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# llms.txt: https://nis2-strumenti.it/llms.txt

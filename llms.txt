@@ -1,0 +1,29 @@
+# NIS2-Strumenti.it
+
+> Independent, Italian-language comparison hub that helps security and compliance professionals quickly identify and select the right NIS2-compliant tools, saving weeks of vendor evaluation while ensuring alignment with D.Lgs. 138/2024 and ACN requirements
+
+NIS2-Strumenti.it covers Cybersecurity & Regulatory Compliance (NIS2 Directive Compliance Tools for Italian Enterprises) for IT.
+
+## Key pages
+- [Home](https://nis2-strumenti.it/): NIS2-Strumenti.it — NIS2 Directive Compliance Tools for Italian Enterprises
+- [Cyber Insurance e NIS2: Gestione del Rischio in Italia](https://nis2-strumenti.it/assicurazione-cyber.html)
+- [Calcolatore sanzioni NIS2](https://nis2-strumenti.it/calcolatore-sanzioni.html)
+- [Calcolatore NIS2 2026](https://nis2-strumenti.it/calcolatore.html)
+- [ISO 27001 e NIS2: Come la certificazione riduce il gap di compliance](https://nis2-strumenti.it/certificazione-iso-27001.html)
+- [10 migliori strumenti NIS2 2026](https://nis2-strumenti.it/confronto.html)
+- [FAQ NIS2 Italia 2026](https://nis2-strumenti.it/faq.html)
+- [Formazione Cybersecurity NIS2: Obblighi Legali e Implementazione](https://nis2-strumenti.it/formazione-nis2.html)
+- [Metodologia di valutazione e politica di affiliazione](https://nis2-strumenti.it/metodologia.html)
+- [Registrazione NIS2 in Italia: Guida per l'ACN](https://nis2-strumenti.it/registrazione-nis2.html)
+- [Regolamento 2024/2690 NIS2: Guida per MSP e Provider Cloud](https://nis2-strumenti.it/regolamento-attuativo-nis2.html)
+- [Settori soggetti a NIS2 in Italia 2026 – elenco completo Allegato I e II](https://nis2-strumenti.it/settori-nis2.html)
+- [NIS2 Articolo 21(2)(d): Sicurezza della Catena di Fornitura](https://nis2-strumenti.it/sicurezza-catena-fornitura.html)
+- [Penetration Testing NIS2: Requisiti e Obblighi Annuali per le Aziende](https://nis2-strumenti.it/test-penetrazione.html)
+
+## Collections
+- [sektory/](https://nis2-strumenti.it/sektory/): 31 pages
+- [strumenti/](https://nis2-strumenti.it/strumenti/): 15 pages
+
+## Notes
+- Independent, it-language resource.
+- Content is free to cite with attribution + a link.
