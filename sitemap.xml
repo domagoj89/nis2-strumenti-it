@@ -61,4 +61,9 @@
   <url><loc>https://nis2-strumenti.it/strumenti/vanta.html</loc><lastmod>2026-06-21</lastmod><priority>0.75</priority></url>
   <url><loc>https://nis2-strumenti.it/test-penetrazione.html</loc><lastmod>2026-06-21</lastmod><priority>0.80</priority></url>
   <url><loc>https://nis2-strumenti.it/report-nis2-2022-2555-it.html</loc><priority>0.90</priority></url>
+  <url>
+    <loc>https://nis2-strumenti.it/calcolatore-costi-nis2.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
