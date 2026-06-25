@@ -119,66 +119,24 @@ function buildTags(body) {
 // Immediate sequence email — sent the moment someone subscribes
 async function sendSequenceEmail0(email, tier, env) {
   const EMAILS = {
-    A: {
-      subject: "Twój plan działania NIS2 — 3 dni, 3 kroki",
-      html: `<p style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;">
-Właśnie ukończyłeś quiz NIS2 — Twój wynik wskazuje, że masz jeszcze dużo do zrobienia przed terminem.
-<br><br>
-<strong>Dobra wiadomość:</strong> Firmy w podobnej sytuacji osiągają zgodność w 60–90 dni, jeśli zaczną od właściwych kroków.
-</p>
-<h3 style="font-family:sans-serif;color:#1e3a5f;">Twój 3-dniowy plan startowy:</h3>
-<p style="font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;">
-<strong>Dzień 1 (30 min) — Sprawdź status KSC:</strong><br>
-<a href="https://nis2-strumenti.it/kalkulator.html" style="color:#1e3a5f;">Zweryfikuj czy Twoja firma podlega KSC →</a>
-<br><br>
-<strong>Dzień 2 (20 min) — Uruchom darmowy ISMS:</strong><br>
-<a href="https://isms.online/" style="color:#1e3a5f;">ISMS.online — bezpłatny plan do 25 pracowników →</a>
-<br><br>
-<strong>Dzień 3 (30 min) — Przeszkol zarząd:</strong><br>
-<a href="https://www.knowbe4.com/" style="color:#1e3a5f;">KnowBe4 — 14-dniowy trial →</a>
-<br><br>
-<a href="https://nis2-strumenti.it/#tracker-section" style="color:#1e3a5f;">Śledź swój postęp w trackerze NIS2 →</a>
-</p>`,
-    },
-    B: {
-      subject: "Twój wynik NIS2: dobry start — oto co dobić do 100%",
-      html: `<p style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;">
-Masz już podstawy NIS2 — to dobry znak. Brakuje Ci 2–3 elementów najczęściej sprawdzanych przez organ nadzoru.
-</p>
-<p style="font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;">
-<strong>Testy penetracyjne (Art. 21(2)(f)):</strong><br>
-<a href="https://cobalt.io/" style="color:#1e3a5f;">Cobalt.io — testy na żądanie →</a>
-<br><br>
-<strong>MFA dla kont uprzywilejowanych (Art. 21(2)(i)):</strong><br>
-<a href="https://1password.com/" style="color:#1e3a5f;">1Password Business — MFA + menedżer haseł →</a>
-<br><br>
-<strong>Bezpieczeństwo łańcucha dostaw (Art. 21(2)(d)):</strong><br>
-<a href="https://nis2-strumenti.it/sicurezza-catena-fornitura.html" style="color:#1e3a5f;">Przewodnik bezpieczeństwa dostawców →</a>
-<br><br>
-<a href="https://nis2-strumenti.it/#tracker-section" style="color:#1e3a5f;">Zaznacz postęp w trackerze NIS2 →</a>
-</p>`,
-    },
-    C: {
-      subject: "Świetny wynik NIS2 — oto Twój ostatni krok",
-      html: `<p style="font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;">
-Wysoki poziom gotowości NIS2 — naprawdę dobry wynik. Jeden niezałatwiony punkt: formalna walidacja zewnętrzna.
-</p>
-<p style="font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;">
-<strong>Test penetracyjny</strong> — dowód skuteczności zabezpieczeń (Art. 21(2)(f)):<br>
-<a href="https://cobalt.io/" style="color:#1e3a5f;">Cobalt.io →</a>
-<br><br>
-<strong>Certyfikacja ISO 27001</strong> — zewnętrzna walidacja całego ISMS:<br>
-<a href="https://nis2-strumenti.it/certificazione-iso-27001.html" style="color:#1e3a5f;">Przewodnik ISO 27001 →</a>
-<br><br>
-<a href="https://nis2-strumenti.it/#tracker-section" style="color:#1e3a5f;">Sprawdź ostatnie checkboxy →</a>
-</p>`,
-    },
-  };
+  "A": {
+    "subject": "Il tuo piano d'azione NIS2 — 3 giorni, 3 passi",
+    "html": "<p style=\"font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;\">Hai appena completato il quiz NIS2 — il tuo punteggio indica che c'è ancora molto da fare prima della scadenza.<br><br><strong>La buona notizia:</strong> Le aziende in situazioni simili raggiungono la conformità in 60–90 giorni, se partono dai passi giusti.</p><h3 style=\"font-family:sans-serif;color:#1e3a5f;\">Il tuo piano di partenza in 3 giorni:</h3><p style=\"font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;\"><strong>Giorno 1 (30 min) — Verifica se sei soggetto alla NIS2:</strong><br><a href=\"https://nis2-strumenti.it/calcolatore.html\" style=\"color:#1e3a5f;\">Scopri se la tua azienda rientra nell'ambito NIS2 →</a><br><br><strong>Giorno 2 (20 min) — Avvia un ISMS gratuito:</strong><br><a href=\"https://isms.online/\" style=\"color:#1e3a5f;\">ISMS.online — piano gratuito fino a 25 dipendenti →</a><br><br><strong>Giorno 3 (30 min) — Forma il tuo management:</strong><br><a href=\"https://www.knowbe4.com/\" style=\"color:#1e3a5f;\">KnowBe4 — trial gratuito 14 giorni →</a><br><br><a href=\"https://nis2-strumenti.it/#tracker-section\" style=\"color:#1e3a5f;\">Monitora i tuoi progressi nel tracker NIS2 →</a></p>"
+  },
+  "B": {
+    "subject": "Il tuo punteggio NIS2: buona base — ecco come arrivare al 100%",
+    "html": "<p style=\"font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;\">Hai già le basi della NIS2 — è un buon segnale. Mancano 2–3 elementi che le autorità di vigilanza controllano più spesso.</p><p style=\"font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;\"><strong>Test di penetrazione (Art. 21(2)(f)):</strong><br><a href=\"https://nis2-strumenti.it/test-penetrazione.html\" style=\"color:#1e3a5f;\">Guida ai penetration test NIS2 →</a><br><br><strong>MFA per gli account privilegiati (Art. 21(2)(i)):</strong><br><a href=\"https://nis2-strumenti.it/strumenti/1password.html\" style=\"color:#1e3a5f;\">1Password Business — MFA + gestore password →</a><br><br><strong>Sicurezza della catena di fornitura (Art. 21(2)(d)):</strong><br><a href=\"https://nis2-strumenti.it/sicurezza-catena-fornitura.html\" style=\"color:#1e3a5f;\">Guida alla sicurezza dei fornitori →</a><br><br><a href=\"https://nis2-strumenti.it/#tracker-section\" style=\"color:#1e3a5f;\">Segna i progressi nel tracker NIS2 →</a></p>"
+  },
+  "C": {
+    "subject": "Ottimo punteggio NIS2 — ecco il tuo ultimo passo",
+    "html": "<p style=\"font-family:sans-serif;font-size:15px;line-height:1.6;color:#111;\">Alto livello di preparazione NIS2 — un risultato davvero ottimo. Rimane un solo punto aperto: la validazione esterna formale.</p><p style=\"font-family:sans-serif;font-size:15px;line-height:1.7;color:#111;\"><strong>Test di penetrazione</strong> — prova dell'efficacia delle misure di sicurezza (Art. 21(2)(f)):<br><a href=\"https://nis2-strumenti.it/test-penetrazione.html\" style=\"color:#1e3a5f;\">Guida ai penetration test NIS2 →</a><br><br><strong>Certificazione ISO 27001</strong> — validazione esterna dell'intero ISMS:<br><a href=\"https://nis2-strumenti.it/certificazione-iso-27001.html\" style=\"color:#1e3a5f;\">Guida alla certificazione ISO 27001 →</a><br><br><a href=\"https://nis2-strumenti.it/#tracker-section\" style=\"color:#1e3a5f;\">Spunta le ultime voci nel tracker →</a></p>"
+  }
+};
 
   const msg = EMAILS[tier] || EMAILS["B"];
   const footer = `<hr style="margin:2rem 0;border:none;border-top:1px solid #e5e7eb;">
 <p style="font-family:sans-serif;font-size:12px;color:#9ca3af;">
-  NIS2-Narzedzia.pl &nbsp;|&nbsp;
+  NIS2-Strumenti.it &nbsp;|&nbsp;
   <a href="https://nis2-strumenti.it/unsubscribe?email=${encodeURIComponent(email)}" style="color:#9ca3af;">Wypisz się</a>
 </p>`;
 
