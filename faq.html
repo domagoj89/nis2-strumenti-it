@@ -28,37 +28,174 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Cos'è NIS2 e in cosa si differenzia dal D.Lgs. 138/2024?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "NIS2 è la direttiva dell'Unione Europea sulla sicurezza delle reti e dei sistemi informativi del 2022. Il D.Lgs. 138/2024 è il decreto legislativo italiano che recepisce NIS2 nell'ordinamento nazionale. Il decreto è entrato in vigore il 16 ottobre 2024, con piena applicabilità operativa a partire dal 28 febbraio 2026."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quando scade il termine per la registrazione NIS2 in Italia?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Il termine per la registrazione sulla piattaforma ACN è il 28 febbraio 2026. Le aziende devono entro tale data valutare se rientrano nell'ambito di applicazione della normativa e registrarsi nel registro tenuto dall'Agenzia per la Cybersicurezza Nazionale (ACN)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quali sanzioni sono previste per il mancato rispetto della NIS2 in Italia?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Per i soggetti essenziali: fino a 10.000.000 EUR o il 2% del fatturato mondiale annuo (l'importo più elevato). Per i soggetti importanti: fino a 7.000.000 EUR o l'1,4% del fatturato mondiale annuo. I dirigenti dei soggetti possono essere soggetti a responsabilità personale."
-        }
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "url": "https://nis2-strumenti.it/faq.html",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Cos'è NIS2 e in cosa si differenzia dal decreto italiano D.Lgs. 138/2024?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NIS2 è la direttiva del Parlamento Europeo e del Consiglio UE 2022/2555 sulla sicurezza delle reti e dei sistemi informativi — il secondo livello dei requisiti europei di cybersicurezza, adottato nel dicembre 2022. La direttiva non si applica direttamente alle aziende — doveva essere recepita nel diritto nazionale.\n\nIl D.Lgs. 138/2024 è il decreto legislativo italiano che implementa NIS2 nell'ordinamento giuridico nazionale. È entrato in vigore il 16 ottobre 2024, con piena applicabilità operativa a partire dal 28 febbraio 2026. È il decreto che vincola le aziende italiane — non direttamente la direttiva.\n\nDifferenza pratica: il D.Lgs. 138/2024 può contenere disposizioni più stringenti rispetto al minimo NIS2. Per le interpretazioni nazionali, fare riferimento all'autorità competente italiana: ACN (Agenzia per la Cybersicurezza Nazionale)."
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "Question",
+      "name": "Quando è entrata in vigore la normativa NIS2 in Italia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il D.Lgs. 138/2024 che recepisce NIS2 è entrato in vigore il 16 ottobre 2024. Il termine per la registrazione dei soggetti è il 28 febbraio 2026. I requisiti tecnici completi diventano obbligatori a partire dalla medesima data per i soggetti registrati."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quante aziende in Italia sono soggette alla NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le stime indicano circa 20.000 soggetti italiani che devono conformarsi alla NIS2 — un numero significativamente superiore rispetto a quelli inclusi nella precedente direttiva NIS1. L'aumento è dovuto all'ampliamento della definizione di \"settori critici\" e all'abbassamento delle soglie dimensionali per le aziende soggette alla normativa."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual è la differenza tra soggetto essenziale e soggetto importante?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Soggetti essenziali (Essential Entities): grandi aziende (250+ dipendenti o fatturato >50 mln EUR) nei settori dell'Allegato I (energia, trasporti, banche, sanità, acqua, infrastrutture digitali, pubblica amministrazione, settore spaziale). Sono soggetti a controlli attivi — l'autorità di supervisione conduce audit di propria iniziativa. Sanzioni: fino a 10 mln EUR o il 2% del fatturato.\n\nSoggetti importanti (Important Entities): medie aziende dell'Allegato I o aziende di qualsiasi dimensione dell'Allegato II (servizi postali, manifattura, chimica, alimentare, servizi digitali). Sono soggetti a controlli reattivi — audit solo in seguito a un incidente o a una segnalazione. Sanzioni: fino a 7 mln EUR o l'1,4% del fatturato.\n\nI requisiti tecnici sono simili per entrambe le categorie — ciò che cambia è l'intensità della supervisione e l'entità delle sanzioni."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Le microimprese e le piccole imprese sono esentate dalla NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì, in linea generale. Le microimprese (meno di 10 dipendenti e fatturato annuo inferiore a 2 mln EUR) e le piccole imprese (meno di 50 dipendenti e fatturato inferiore a 10 mln EUR) sono escluse dall'ambito di applicazione della NIS2.\n\nEccezioni importanti: le piccole aziende possono essere soggette alla NIS2 se: sono l'unico fornitore di un servizio critico in Italia; forniscono servizi fiduciari (firme elettroniche qualificate); gestiscono registri di nomi a dominio; forniscono servizi DNS; oppure l'autorità di regolazione le ritiene essenziali per l'impatto sulla sicurezza nazionale."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quando scade il termine per la registrazione NIS2 in Italia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il termine per la registrazione è il 28 febbraio 2026. Entro tale data ogni soggetto rientrante nella NIS2 deve:\n\nValutare se soddisfa i criteri di soggetto essenziale o importante\n\nRegistrarsi sulla piattaforma digitale dell'ACN (Agenzia per la Cybersicurezza Nazionale)\n\nDesignare un responsabile della cybersicurezza\n\nLa mancata registrazione entro il 28 febbraio 2026 può comportare sanzioni amministrative."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Entro quando devono essere pienamente implementati i requisiti tecnici?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La piena conformità tecnica (misure di gestione del rischio implementate, procedure, ISMS) è richiesta a partire dal 28 febbraio 2026, contestualmente alla registrazione. L'ACN può definire scadenze graduali per specifici adempimenti tecnici — verificare le indicazioni aggiornate sul sito ufficiale dell'ACN."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cosa significa \"designare un responsabile\"? Devo assumere un CISO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La normativa richiede la designazione di una persona o di un team responsabile della gestione della cybersicurezza. Non è necessariamente richiesto un CISO a tempo pieno — può trattarsi di:\n\nUn dipendente IT interno con responsabilità ampliate\n\nUn consulente esterno o un fornitore di servizi gestiti (MSSP)\n\nL'amministratore delegato o un dirigente nel caso di piccoli soggetti importanti\n\nL'elemento fondamentale è la designazione formale di tale ruolo nella documentazione aziendale e il suo effettivo esercizio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quali sono i tempi per la notifica degli incidenti di sicurezza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La NIS2 prevede una notifica degli incidenti di cybersicurezza articolata in tre fasi:\n\n24 ore dal rilevamento: pre-notifica all'ACN\n\n72 ore dal rilevamento: notifica completa dell'incidente con valutazione dell'impatto\n\n1 mese dal rilevamento: relazione finale dettagliata con analisi delle cause e delle misure adottate\n\nLa notifica riguarda solo gli incidenti significativi che hanno un impatto rilevante sulla continuità dei servizi — non ogni singolo alert di sicurezza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quali misure tecniche concrete devo implementare?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "L'articolo 21 della direttiva NIS2 (recepito dal D.Lgs. 138/2024) richiede almeno:\n\nPolitiche di analisi del rischio e sicurezza dei sistemi informativi\n\nProcedure di gestione degli incidenti di sicurezza (rilevamento, notifica, risposta)\n\nGestione della continuità operativa (backup, disaster recovery, gestione delle crisi)\n\nSicurezza della catena di approvvigionamento (valutazione di fornitori e partner)\n\nSicurezza nell'acquisizione, nello sviluppo e nella manutenzione di reti e sistemi\n\nPolitiche e procedure per valutare l'efficacia delle misure di gestione del rischio\n\nPratiche di base di igiene informatica e formazione\n\nPolitiche e procedure in materia di crittografia e cifratura\n\nSicurezza delle risorse umane, controllo degli accessi, gestione degli asset\n\nUso dell'autenticazione a più fattori (MFA) o SSO\n\nGli strumenti ISMS coprono tutti questi requisiti — confronta gli strumenti →"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "La certificazione ISO 27001 esonera dagli obblighi NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Non esonera completamente, ma facilita significativamente il rispetto dei requisiti. ISO 27001 e NIS2/D.Lgs. 138/2024 hanno un ambito sovrapposto — si stima che un'azienda certificata ISO 27001 soddisfi circa l'80-85% dei requisiti tecnici della NIS2.\n\nIl restante 15-20% comprende elementi specifici della NIS2: procedure di notifica degli incidenti alle autorità pubbliche, valutazione della sicurezza della catena di approvvigionamento secondo i criteri NIS2, registrazione nel registro dei soggetti presso l'ACN. Tuttavia, il possesso della certificazione ISO 27001 può attenuare le sanzioni ed è valutato positivamente dalle autorità di vigilanza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Devo acquistare un software specifico per la gestione della conformità?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, non esiste alcun obbligo legale di acquistare un software specifico. La NIS2 richiede il rispetto di requisiti tecnici e procedurali — non prescrive come l'azienda debba gestire tale processo.\n\nIn pratica, le grandi aziende (soggetti essenziali) avranno bisogno di uno strumento GRC per gestire documentazione, prove e monitoraggio — la gestione manuale è irrealistica con 50+ controlli. I piccoli soggetti importanti possono iniziare con il piano gratuito di Reglyze o Microsoft Purview. Confronta le opzioni →"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Cos'è un ISMS e perché è importante per la NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ISMS (Information Security Management System) è un sistema di gestione della sicurezza delle informazioni — un insieme di politiche, procedure, processi e controlli per la gestione del rischio di cybersicurezza. Lo standard che definisce l'ISMS è ISO/IEC 27001.\n\nLa NIS2/D.Lgs. 138/2024 non richiede la certificazione ISO 27001, ma impone l'implementazione degli elementi di un ISMS (politiche di sicurezza, gestione del rischio, procedure per gli incidenti). Strumenti come Reglyze, Secfix o ISMS.online automatizzano la costruzione e il mantenimento di un ISMS specificamente orientato alla NIS2."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto costa implementare la conformità alla NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "I costi di implementazione variano notevolmente in base all'approccio e alle dimensioni dell'azienda:\n\nPiccole aziende (soggetto importante, 50-100 dipendenti): €2.000–15.000 una tantum + €500–2.000/anno per strumenti e manutenzione\n\nMedie aziende (100-250 dipendenti): €10.000–50.000 per l'implementazione + €3.000–8.000/anno\n\nGrandi aziende (soggetto essenziale): €50.000–250.000+ per l'implementazione + €15.000–50.000/anno\n\nIl costo di un audit ISO 27001 (facoltativo ma utile) rappresenta un ulteriore investimento di €8.000–25.000 a seconda della società di revisione."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ho bisogno di un fornitore italiano di strumenti NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — la NIS2 non impone l'uso di software di fornitori italiani. È possibile utilizzare strumenti di qualsiasi paese UE o extra-UE, a condizione che i dati siano trattati in conformità al GDPR.\n\nTuttavia, vale la pena considerare: la localizzazione dei dati (UE vs. extra-UE), il supporto tecnico in lingua italiana, la conoscenza della normativa italiana da parte del fornitore. Vedi il confronto degli strumenti →"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quale strumento NIS2 scegliere per una piccola azienda?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Per le piccole aziende (soggetto importante, 50-100 dipendenti) raccomandiamo di iniziare da:\n\nReglyze (piano gratuito) — esegui l'autovalutazione e la gap analysis. Genera politiche di sicurezza tramite AI. Punto di partenza ideale, a costo zero.\n\nMicrosoft Purview (se hai M365 E3+) — template NIS2 già disponibile nello strumento che stai già pagando. Integra Reglyze con il monitoraggio di Purview.\n\nDopo la gap analysis: decidi se hai bisogno di uno strumento a pagamento (ISMS.online da £375/mese) sulla base delle carenze specifiche rilevate.\n\nUsa il calcolatore NIS2 → per verificare prima a quale categoria appartiene la tua azienda."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quali strumenti NIS2 hanno sede in UE e conservano i dati in UE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Strumenti con sede e trattamento dei dati in UE:\n\nReglyze — sede UE ✓\n\nComplyCloud — Danimarca ✓\n\nSecfix — Germania ✓ (dati in UE)\n\nISMS Copilot — Germania ✓\n\nGli strumenti con sede negli USA (Vanta, Drata, Sprinto) e nel Regno Unito (ISMS.online) possono trattare dati al di fuori dell'UE — verifica il loro DPA (Data Processing Agreement) e le SCCs prima dell'acquisto. Microsoft Purview tratta i dati nelle aree geografiche Azure — è possibile configurare l'EU Data Boundary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quali sanzioni sono previste per il mancato rispetto della NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Soggetti essenziali:\n\nFino a 10.000.000 EUR o il 2% del fatturato mondiale annuo totale (l'importo più elevato)\n\nDivieto per le persone responsabili della violazione di ricoprire funzioni dirigenziali\n\nSoggetti importanti:\n\nFino a 7.000.000 EUR o l'1,4% del fatturato mondiale annuo totale (l'importo più elevato)\n\nL'ACN può irrogare sanzioni per: mancata registrazione, assenza di ISMS, mancata notifica degli incidenti, mancato rispetto dei requisiti tecnici. Le prime sanzioni sono attese a partire dal 28 febbraio 2026."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Chi verifica che le aziende rispettino la NIS2 in Italia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La supervisione sulla NIS2 in Italia è affidata principalmente all'ACN (Agenzia per la Cybersicurezza Nazionale), che coordina l'attuazione della normativa e gestisce il registro dei soggetti. A seconda del settore, possono essere coinvolte anche altre autorità:\n\nACN — autorità nazionale competente NIS2, coordinamento generale\n\nARERA — settore energetico\n\nAGCOM — infrastrutture digitali e telecomunicazioni\n\nBanca d'Italia / CONSOB / IVASS — settore bancario e finanziario\n\nMinistero della Salute — settore sanitario\n\nMIT e ENAC — settore dei trasporti\n\nI soggetti essenziali sono soggetti ad audit attivi su iniziativa dell'autorità. I soggetti importanti sono soggetti a controlli reattivi (in seguito a un incidente o a una segnalazione)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Il dirigente di un'azienda può essere personalmente sanzionato per violazione della NIS2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sì. La NIS2 (art. 20) e il D.Lgs. 138/2024 impongono al management (amministratore delegato, consiglio di amministrazione, organo di controllo) l'obbligo di approvare e supervisionare le misure di gestione del rischio di cybersicurezza. In caso di incidenti gravi derivanti da negligenza, le autorità possono:\n\nEmettere una dichiarazione pub\n\nHai altre domande?\n\nNon hai trovato la risposta? Consulta le nostre recensioni dettagliate degli strumenti o utilizza il calcolatore NIS2.\n\nAvvia il calcolatore NIS2 →\n\nOltre 2 400 aziende italiane hanno verificato lo stato NIS2 su questa pagina"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
