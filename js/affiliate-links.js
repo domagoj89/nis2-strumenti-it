@@ -17,11 +17,21 @@ const AFFILIATE_MAP = [
   { match: "acronis.com",  affiliate: "https://www.tkqlhce.com/click-101804169-13492976" },  // 
 ];
 
+/* aff-compliance v1 */
 document.addEventListener("DOMContentLoaded", function () {
   AFFILIATE_MAP.forEach(function (entry) {
-    if (!entry.affiliate) return; // skip until affiliate URL is set
+    if (!entry.affiliate) return;
     document.querySelectorAll('a[href*="' + entry.match + '"]').forEach(function (el) {
       el.href = entry.affiliate;
+      el.rel = "sponsored noopener";
+      el.target = "_blank";
     });
   });
+  if (!document.getElementById("aff-disclosure")) {
+    var d = document.createElement("div");
+    d.id = "aff-disclosure";
+    d.textContent = "Informativa: questo sito contiene link di affiliazione. Se acquisti tramite questi link possiamo ricevere una commissione, senza costi aggiuntivi per te.";
+    d.style.cssText = "max-width:1100px;margin:1rem auto;padding:.5rem 1.25rem;font-size:.78rem;line-height:1.5;color:#94a3b8;text-align:center;";
+    (document.querySelector("footer") || document.body).appendChild(d);
+  }
 });
