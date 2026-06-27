@@ -14,7 +14,7 @@ const AFFILIATE_MAP = [
   { match: "1password.com",  affiliate: "" },  // 
   { match: "bitwarden.com",  affiliate: "" },  // 
   { match: "bitdefender.com",  affiliate: "" },  // 
-  { match: "acronis.com",  affiliate: "" },  // 
+  { match: "acronis.com",  affiliate: "https://www.tkqlhce.com/click-101804169-13492976" },  // 
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
