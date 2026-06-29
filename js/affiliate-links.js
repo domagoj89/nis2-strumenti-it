@@ -18,21 +18,6 @@ const AFFILIATE_MAP = [
 ];
 
 /* aff-compliance v1 */
-/* tg-channel-cta v1 */
-window.addEventListener("load", function () {
-  if (document.getElementById("tg-cta")) return;
-  var a = document.createElement("a");
-  a.id = "tg-cta";
-  a.href = "https://t.me/nis2strumenti";
-  a.target = "_blank";
-  a.rel = "noopener";
-  a.textContent = "📣 Aggiornamenti NIS2 su Telegram";
-  a.style.cssText = "display:inline-flex;align-items:center;gap:.4rem;margin:1rem auto;padding:.55rem 1.1rem;border-radius:999px;background:#229ED9;color:#fff;font-size:.85rem;font-weight:600;text-decoration:none;";
-  var wrap = document.createElement("div");
-  wrap.style.cssText = "text-align:center;";
-  wrap.appendChild(a);
-  (document.querySelector("footer") || document.body).appendChild(wrap);
-});
 
 document.addEventListener("DOMContentLoaded", function () {
   AFFILIATE_MAP.forEach(function (entry) {
