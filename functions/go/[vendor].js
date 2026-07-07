@@ -61,6 +61,21 @@ const MAP = {
     "url": "",
     "direct": "https://drata.com/",
     "subid_param": "subid"
+  },
+  "userway": {
+    "url": "",
+    "direct": "https://userway.org/",
+    "subid_param": "subid"
+  },
+  "equalweb": {
+    "url": "",
+    "direct": "https://equalweb.com/",
+    "subid_param": "subid"
+  },
+  "equalizedigital": {
+    "url": "",
+    "direct": "https://equalizedigital.com/",
+    "subid_param": "subid"
   }
 };
 
