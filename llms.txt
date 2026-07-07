@@ -19,6 +19,10 @@ NIS2-Strumenti.it covers Cybersecurity & Regulatory Compliance (NIS2 Directive C
 - [Settori soggetti a NIS2 in Italia 2026 – elenco completo Allegato I e II](https://nis2-strumenti.it/settori-nis2.html)
 - [NIS2 Articolo 21(2)(d): Sicurezza della Catena di Fornitura](https://nis2-strumenti.it/sicurezza-catena-fornitura.html)
 - [Penetration Testing NIS2: Requisiti e Obblighi Annuali per le Aziende](https://nis2-strumenti.it/test-penetrazione.html)
+- [Stato della Conformità NIS2 in Italia 2026: Readiness, Budget e Strumenti nei Settori Critici](https://nis2-strumenti.it/report-nis2-2022-2555-it.html)
+- [Stimatore costi NIS2 per le aziende italiane](https://nis2-strumenti.it/calcolatore-costi-nis2.html)
+- [NIS2 in Italia 2026: Il Vero Costo della Conformità](https://nis2-strumenti.it/report-costi-nis2.html)
+- [Confronto strumenti accessibilità EAA 2026](https://nis2-strumenti.it/strumenti-accessibilita-eaa.html)
 
 ## Collections
 - [sektory/](https://nis2-strumenti.it/sektory/): 31 pages
