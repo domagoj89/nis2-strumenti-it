@@ -68,7 +68,7 @@ const MAP = {
     "subid_param": "subid"
   },
   "equalweb": {
-    "url": "",
+    "url": "https://www.equalweb.com/#a_aid=080889&a_bid=11110002",
     "direct": "https://equalweb.com/",
     "subid_param": "subid"
   },
