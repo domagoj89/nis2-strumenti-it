@@ -75,7 +75,7 @@ const MAP = {
     "subid_param": "subid"
   },
   "equalizedigital": {
-    "url": "",
+    "url": "https://equalizedigital.com/accessibility-checker/?ref=partnerships@nis2-narzedzia.pl",
     "direct": "https://equalizedigital.com/",
     "subid_param": "subid"
   }
