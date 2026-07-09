@@ -23,6 +23,9 @@ NIS2-Strumenti.it covers Cybersecurity & Regulatory Compliance (NIS2 Directive C
 - [Stimatore costi NIS2 per le aziende italiane](https://nis2-strumenti.it/calcolatore-costi-nis2.html)
 - [NIS2 in Italia 2026: Il Vero Costo della Conformità](https://nis2-strumenti.it/report-costi-nis2.html)
 - [Confronto strumenti accessibilità EAA 2026](https://nis2-strumenti.it/strumenti-accessibilita-eaa.html)
+- [NIS2 Starter Pack, template di conformità editabili](https://nis2-strumenti.it/kit-partenza-nis2.html)
+- [Quanto sono accessibili i grandi siti di consumo? Studio 2026](https://nis2-strumenti.it/report-accessibilita-siti-it.html)
+- [Confronto strumenti conformità DORA 2026](https://nis2-strumenti.it/dora-strumenti.html)
 
 ## Collections
 - [sektory/](https://nis2-strumenti.it/sektory/): 31 pages
