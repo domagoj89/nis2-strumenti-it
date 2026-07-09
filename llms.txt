@@ -26,6 +26,7 @@ NIS2-Strumenti.it covers Cybersecurity & Regulatory Compliance (NIS2 Directive C
 - [NIS2 Starter Pack, template di conformità editabili](https://nis2-strumenti.it/kit-partenza-nis2.html)
 - [Quanto sono accessibili i grandi siti di consumo? Studio 2026](https://nis2-strumenti.it/report-accessibilita-siti-it.html)
 - [Confronto strumenti conformità DORA 2026](https://nis2-strumenti.it/dora-strumenti.html)
+- [Confronto software conformità ISO 27001 2026](https://nis2-strumenti.it/iso-27001-strumenti.html)
 
 ## Collections
 - [sektory/](https://nis2-strumenti.it/sektory/): 31 pages
