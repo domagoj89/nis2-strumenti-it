@@ -35,9 +35,9 @@ const MAP = {
     "subid_param": "subid"
   },
   "reglyze": {
-    "url": "",
+    "url": "https://reglyze.com/",
     "direct": "https://reglyze.com/",
-    "subid_param": "subid"
+    "subid_param": "via"
   },
   "secfix": {
     "url": "",
