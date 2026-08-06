@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 per Gestori Energetici in Italia — Obbligi 2026</title>
-  <meta name="description" content="Guida NIS2/D.Lgs. 138/2024 per generatori elettrici, gestori rete, distributori gas. Obbligi OT/SCADA, incident reporting, scadenza ottobre 2024.">
+  <title>NIS2 Gestori Energia e Gas Italia 2026 — Guida Conformità D.Lgs. 138/2024</title>
+  <meta name="description" content="Obblighi NIS2 per gestori rete elettrica, distributori gas e fornitori energia in Italia. Scadenze registrazione ACN e reporting incidenti entro 24-72 ore.">
   <link rel="canonical" href="https://nis2-strumenti.it/sektory/energy.html">
-  <meta property="og:title" content="NIS2 per Gestori Energetici in Italia — Obbligi 2026">
-  <meta property="og:description" content="Guida NIS2/D.Lgs. 138/2024 per generatori elettrici, gestori rete, distributori gas. Obbligi OT/SCADA, incident reporting, scadenza ottobre 2024.">
+  <meta property="og:title" content="NIS2 Gestori Energia e Gas Italia 2026 — Guida Conformità D.Lgs. 138/2024">
+  <meta property="og:description" content="Obblighi NIS2 per gestori rete elettrica, distributori gas e fornitori energia in Italia. Scadenze registrazione ACN e reporting incidenti entro 24-72 ore.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-strumenti.it/sektory/energy.html">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="NIS2-Strumenti.it">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 per Gestori Energetici in Italia — Obbligi 2026">
-  <meta name="twitter:description" content="Guida NIS2/D.Lgs. 138/2024 per generatori elettrici, gestori rete, distributori gas. Obbligi OT/SCADA, incident reporting, scadenza ottobre 2024.">
+  <meta name="twitter:title" content="NIS2 Gestori Energia e Gas Italia 2026 — Guida Conformità D.Lgs. 138/2024">
+  <meta name="twitter:description" content="Obblighi NIS2 per gestori rete elettrica, distributori gas e fornitori energia in Italia. Scadenze registrazione ACN e reporting incidenti entro 24-72 ore.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 per Produttori Elettrici, Gestori di Rete e Distributori di Gas in Italia — Requisiti di Conformità 2026",
+      "name": "NIS2 per Gestori Energia, Gas e Reti di Teleriscaldamento in Italia — Conformità 2026",
       "item": "https://nis2-strumenti.it/sektory/energy.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Se un operatore deve accedere da remoto a un PLC in una sottostazione per regolare i parametri di carico, quali misure di sicurezza sono obbligatorie secondo NIS2?",
+      "name": "Quale differenza c'è tra i tempi di reporting di 24 ore e 72 ore per gli incidenti?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Devi implementare un jump server dedicato (bastion host) con autenticazione multi-fattore, stabilire una sessione VPN crittografata TLS 1.2+ con timeout automatico, e registrare ogni comando inviato al PLC in un log centrale immutabile per 12 mesi. L'accesso deve essere limitato alle sole porte e funzioni necessarie, con revisione bimestrale dei privilegi assegnati."
+        "text": "Il D.Lgs. 138/2024 richiede una segnalazione iniziale all'ACN entro 24 ore dalla scoperta dell'incidente; questa deve contenere informazioni preliminari sulla natura, l'impatto e lo stato della risposta. Entro 72 ore, devi trasmettere un rapporto completo e dettagliato includendo la causa root, le contromisure adottate e il piano di remediation. Il mancato rispetto di questi termini espone l'organizzazione a sanzioni amministrative fino a €10 milioni o il 2% del fatturato annuale."
       }
     },
     {
       "@type": "Question",
-      "name": "Quale è il processo di notifica se un attacco ransomware colpisce il sistema SCADA di una stazione di compressione gas con potenziale impatto sulla distribuzione?",
+      "name": "Come devo gestire l'accesso remoto dei vendor ai sistemi SCADA per la manutenzione?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Entro 72 ore dal rilevamento della compromissione, devi notificare l'ACN fornendo: natura e data dell'incidente, sistemi compromessi e dati interessati, impatto sulla continuità di servizio (interruzioni, riduzioni di pressione), azioni di contenimento già avviate, e analisi preliminare della causa. L'ACN valuterà se l'impatto è transfrontaliero e coordinerà la notifica ad altri gestori UE secondo il protocollo CER."
+        "text": "L'accesso remoto di fornitori e service provider deve essere autorizzato formalmente tramite contratti che specificano i diritti di accesso, la durata massima della sessione (ad esempio 4 ore continuative), gli orari permessi, e l'obbligatorietà della registrazione completa della sessione (video, comandi eseguiti). Devi implementare un gateway di accesso centralizzato (bastion host) che medi ogni connessione, con MFA obbligatorio e alert in tempo reale al SOC aziendale. La pratica di \"standing remote access\" 24/7 non è ammessa dal NIS2."
       }
     },
     {
       "@type": "Question",
-      "name": "Quali sanzioni sono previste se a settembre 2026 non sono state implementate la segmentazione SCADA e le procedure di incident reporting NIS2?",
+      "name": "Quali sono le scadenze chiave per la conformità NIS2 in Italia nel 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Secondo D.Lgs. 138/2024, le violazioni degli obblighi di sicurezza delle reti per entità essenziali comportano sanzioni da 100.000 euro fino a 5.000.000 euro (o il 2% del fatturato globale annuale, se superiore), oltre a sospensione temporanea dell'autorizzazione a operare infrastrutture critiche. L'ACN può condurre ispezioni a sorpresa per verificare conformità."
+        "text": "La registrazione obbligatoria sulla piattaforma ACN deve avvenire entro il 28 febbraio 2025 (e successivamente ogni anno dal 1 gennaio al 28 febbraio). Il D.Lgs. 138/2024 è in vigore dal 16 ottobre 2024. Le sanzioni amministrative per violazioni degli obblighi di sicurezza possono raggiungere €10 milioni o il 2% del fatturato per entità essenziali, mentre per entità importanti il massimo è €7 milioni o l'1,4% del fatturato. Si consiglia di completare l'assessment interno e la mappatura dei gap di conformità entro dicembre 2024."
       }
     }
   ]
@@ -105,7 +105,7 @@
   <div class="breadcrumb">
     <a href="../index.html">Pagina principale</a><span>›</span>
     <a href="index.html">Settori</a><span>›</span>
-    NIS2 per Produttori Elettrici, Gestori di Rete e Distributori di Gas in Italia — Requisiti di Conformità 2026
+    NIS2 per Gestori Energia, Gas e Reti di Teleriscaldamento in Italia — Conformità 2026
   </div>
 </div>
 
@@ -113,15 +113,15 @@
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
     <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato I — Entità Essenziale</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Produttori Elettrici, Gestori di Rete e Distributori di Gas in Italia — Requisiti di Conformità 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa pagina è indirizzata a responsabili della sicurezza informatica, gestori OT e compliance officer delle infrastrutture energetiche critiche italiane. Apprenderai gli obblighi specifici di segmentazione SCADA, incident reporting transfrontaliero e supply chain security imposti da NIS2 come entità essenziale dell'Allegato I.</p>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Gestori Energia, Gas e Reti di Teleriscaldamento in Italia — Conformità 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa pagina è destinata a responsabili cybersecurity, direttori operativi e compliance officer delle società di generazione elettrica, gestione della rete, distribuzione gas e fornitura di carburanti in Italia. Scoprirai gli obblighi specifici del D.Lgs. 138/2024, i rischi di penalità fino a €10 milioni e come implementare un programma di conformità per sistemi critici di controllo.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano nell'ambito NIS2 i gestori di reti di trasmissione e distribuzione elettrica, i produttori di energia elettrica connessi alla rete pubblica con capacità superiore a 50 MW, i distributori di gas naturale con almeno 400.000 punti di consegna, i gestori di reti di teleriscaldamento con potenza utile superiore a 30 MW, e i fornitori di carburanti per il trasporto. L'Autorità di Controllo Nazionale (ACN) applica la normativa a queste categorie indipendentemente dalle dimensioni aziendali.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano in questa categoria i gestori della rete di trasmissione e distribuzione dell'energia elettrica, i gestori dei sistemi di distribuzione del gas naturale, gli operatori di reti di teleriscaldamento, i generatori di energia elettrica e i fornitori di carburanti liquidi e gassosi in Italia con infrastrutture critiche che supportano servizi essenziali. L'obbligo si applica indipendentemente dalle dimensioni aziendali, poiché lo status di entità essenziale è determinato dall'importanza strategica dell'infrastruttura, non dalla soglia di fatturato.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza dei Sistemi OT/SCADA e Segmentazione di Rete</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare una segmentazione rigorosa tra le reti SCADA/ICS e le reti IT aziendali, impedendo il traffico diretto tra sistemi di controllo e infrastrutture office. Tutti i dispositivi OT (PLC, RTU, server SCADA) devono essere inventariati, classificati per funzione critica e monitorati in tempo reale. L'accesso remoto ai sistemi critici di controllo è ammesso solo tramite protocolli crittografici (SSH, TLS 1.2+) con autenticazione multi-fattore e registrazione completa di tutti gli accessi.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza dei Sistemi OT/SCADA/ICS e Segmentazione di Rete</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare controlli di accesso robusti, crittografia end-to-end e segmentazione fisica tra i sistemi di controllo del processo (SCADA, PLC, sensori distribuiti) e le reti IT aziendali. Ogni accesso remoto a questi sistemi critici deve essere registrato, autenticato con fattori multipli e limitato a sessioni temporali predefinite. La supervisione continua della rete OT con IDS/IPS dedicati è obbligatoria per rilevare comportamenti anomali nei protocolli industriali (Modbus, DNP3, IEC 60870-5-104).</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Incident Reporting per Incidenti di Sicurezza Transfrontalieri</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Entro 72 ore dal rilevamento di un incidente di sicurezza con potenziale impatto sulla stabilità di rete o distribuzione di energia in altri Stati UE, devi notificarlo all'ACN italiano e alle autorità coinvolte. La comunicazione deve includere natura dell'incidente, sistemi colpiti, impatto operativo rilevato o stimato, e misure di contenimento attuate. L'ACN a sua volta lo comunicherà ad altri gestori di infrastrutture critiche attraverso i canali CER (Circolo d'Emergenza Reti).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Inventario Completo degli Asset OT e Gestione della Supply Chain</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi mantenere un registro aggiornato di tutti i dispositivi OT connessi (server di controllo, switch gestiti, router, modem), hardware firmwares e software, con indicazione della versione e dello stato di patching. Per ogni fornitore critico di hardware e firmware (ad esempio per sottostazioni, sistemi SCADA, sensori), devi documentare gli accordi di sicurezza, i controlli di accesso remoto del vendor e verificare l'integrità dei rilasci mediante certificati digitali e hash verificati.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza della Catena di Fornitura per Hardware, Firmware e Software Critico</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi condurre valutazioni di rischio su tutti i fornitori di componenti critici per SCADA, switch di rete industriale, e firmware per dispositivi OT. Stabilisci contratti che richiedono trasparenza su aggiornamenti di sicurezza, pratiche di sviluppo sicuro del software, e limitazioni geografiche su dove il codice viene sviluppato e conservato. Monitora gli avvisi di vulnerabilità CVE per ogni componente critico e applica patch entro 30 giorni per vulnerabilità ad alto rischio.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Reporting di Incidenti Entro 24 e 72 Ore</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Gli incidenti di cybersecurity che causano disservizio ai sistemi critici (blackout, mancanza di distribuzione gas, perdita di controllo di impianti) devono essere segnalati all'ACN entro 24 ore dalla scoperta; i dettagli completi devono seguire entro 72 ore. L'assenza di reporting puntuale espone l'organizzazione a sanzioni fino a €10 milioni o il 2% del fatturato. Devi designare un responsabile della gestione incidenti con procedure documentate e contatti diretti con l'ACN.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza Fisica delle Sottostazioni Combinata con Monitoraggio Cyber</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Le sottostazioni critiche di trasmissione e distribuzione devono disporre di controlli di accesso fisico (badge, biometria, sorveglianza), combinati con rilevazione di intrusioni cyber sugli switch e router di rete interna. Implementa logging centralizzato di tutti i tentativi di accesso fisico e logico, con alert in tempo reale per anomalie (porte aperte fuori orario, accessi non autorizzati a pannelli, login falliti multipli).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Accesso Remoto Controllato e Monitoraggio della Sicurezza Fisica</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni accesso remoto ai sistemi di controllo delle sottostazioni, impianti di generazione e centri di distribuzione deve essere mediato da gateway VPN enterprise-grade, con registrazione completa delle sessioni e timeout automatici dopo inattività. La sicurezza fisica deve essere integrata con il monitoraggio cyber: cancelli, telecamere e sensori di movimento in aree critiche devono essere correlati con alert di intrusione nei sistemi SCADA e ICS attraverso piattaforme SIEM dedicate.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Gestione dell'Accesso Remoto dei Fornitori Terzi e Logging</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni accesso remoto di tecnici e partner per manutenzione SCADA deve essere mediato tramite jump server con MFA e sesioni registrate. Non è consentito l'accesso diretto via Telnet, FTP o protocolli non crittografati. Limita temporalmente ogni sessione (max 4 ore), revoca l'accesso immediatamente al termine dell'intervento, e conserva log dettagliati per almeno 12 mesi con revisioni trimestrali.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Registrazione Annuale su Piattaforma ACN e Governance della Cybersecurity</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Entro il 28 febbraio di ogni anno, è obbligatorio registrarsi sulla piattaforma ACN (finestra annuale: 1 gennaio - 28 febbraio). Devi designare una figura responsabile della cybersecurity (CISO o equivalente) con ruolo direttivo, implementare una politica di sicurezza dell'informazione documentata, effettuare valutazioni del rischio annuali e mantenere evidenza di test di penetrazione e esercitazioni di risposta agli incidenti condotte almeno una volta l'anno.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi SCADA ancora in esecuzione su reti piatte senza segmentazione: il traffico di controllo raggiunge liberamente i PC degli operatori e i server aziendali, creando vettori di attacco critici che ransomware e malware possono sfruttare per propagarsi verso i sistemi produttivi.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi SCADA e PLC su reti flat condivise con infrastruttura IT aziendale senza segmentazione, consentendo pivot dall'ambiente office ai sistemi di controllo critico.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Accesso remoto ai controllori logici programmabili (PLC) e RTU (Remote Terminal Unit) mediante protocolli non crittografati (Telnet, FTP) senza log di sessione: chiunque intercetti il traffico di rete o indovini le credenziali può modificare le istruzioni di controllo senza traccia.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Accesso remoto ai sistemi di controllo via protocolli non criptati (Telnet, FTP, HTTP) o tramite VPN generiche senza registrazione delle sessioni e senza controllo del ciclo di vita dell'accesso.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di inventario centralizzato e accurato di tutti i dispositivi OT: non è possibile applicare patch, rilevare dispositivi non autorizzati o valutare l'esposizione complessiva ai rischi di sicurezza.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza totale di inventario formalizzato degli asset OT, versioni firmware, patch applicate e dipendenze critiche da fornitori di hardware e software.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Accesso remoto da parte dei fornitori di infrastrutture SCADA non controllato né limitato nel tempo: tecnici di assistenza mantengono account permanenti con accesso totale ai sistemi critici senza scadenza, registrazione o autenticazione aggiuntiva.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Accesso non monitorato di vendor e service provider ai sistemi SCADA per manutenzione remota, senza autorizzazione preliminare, time window definiti, o audit trail della sessione.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Se un operatore deve accedere da remoto a un PLC in una sottostazione per regolare i parametri di carico, quali misure di sicurezza sono obbligatorie secondo NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale differenza c'è tra i tempi di reporting di 24 ore e 72 ore per gli incidenti?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Devi implementare un jump server dedicato (bastion host) con autenticazione multi-fattore, stabilire una sessione VPN crittografata TLS 1.2+ con timeout automatico, e registrare ogni comando inviato al PLC in un log centrale immutabile per 12 mesi. L'accesso deve essere limitato alle sole porte e funzioni necessarie, con revisione bimestrale dei privilegi assegnati.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Il D.Lgs. 138/2024 richiede una segnalazione iniziale all'ACN entro 24 ore dalla scoperta dell'incidente; questa deve contenere informazioni preliminari sulla natura, l'impatto e lo stato della risposta. Entro 72 ore, devi trasmettere un rapporto completo e dettagliato includendo la causa root, le contromisure adottate e il piano di remediation. Il mancato rispetto di questi termini espone l'organizzazione a sanzioni amministrative fino a €10 milioni o il 2% del fatturato annuale.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale è il processo di notifica se un attacco ransomware colpisce il sistema SCADA di una stazione di compressione gas con potenziale impatto sulla distribuzione?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Come devo gestire l'accesso remoto dei vendor ai sistemi SCADA per la manutenzione?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Entro 72 ore dal rilevamento della compromissione, devi notificare l'ACN fornendo: natura e data dell'incidente, sistemi compromessi e dati interessati, impatto sulla continuità di servizio (interruzioni, riduzioni di pressione), azioni di contenimento già avviate, e analisi preliminare della causa. L'ACN valuterà se l'impatto è transfrontaliero e coordinerà la notifica ad altri gestori UE secondo il protocollo CER.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">L'accesso remoto di fornitori e service provider deve essere autorizzato formalmente tramite contratti che specificano i diritti di accesso, la durata massima della sessione (ad esempio 4 ore continuative), gli orari permessi, e l'obbligatorietà della registrazione completa della sessione (video, comandi eseguiti). Devi implementare un gateway di accesso centralizzato (bastion host) che medi ogni connessione, con MFA obbligatorio e alert in tempo reale al SOC aziendale. La pratica di "standing remote access" 24/7 non è ammessa dal NIS2.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sanzioni sono previste se a settembre 2026 non sono state implementate la segmentazione SCADA e le procedure di incident reporting NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le scadenze chiave per la conformità NIS2 in Italia nel 2026?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Secondo D.Lgs. 138/2024, le violazioni degli obblighi di sicurezza delle reti per entità essenziali comportano sanzioni da 100.000 euro fino a 5.000.000 euro (o il 2% del fatturato globale annuale, se superiore), oltre a sospensione temporanea dell'autorizzazione a operare infrastrutture critiche. L'ACN può condurre ispezioni a sorpresa per verificare conformità.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La registrazione obbligatoria sulla piattaforma ACN deve avvenire entro il 28 febbraio 2025 (e successivamente ogni anno dal 1 gennaio al 28 febbraio). Il D.Lgs. 138/2024 è in vigore dal 16 ottobre 2024. Le sanzioni amministrative per violazioni degli obblighi di sicurezza possono raggiungere €10 milioni o il 2% del fatturato per entità essenziali, mentre per entità importanti il massimo è €7 milioni o l'1,4% del fatturato. Si consiglia di completare l'assessment interno e la mappatura dei gap di conformità entro dicembre 2024.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Settori correlati" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Settori correlati</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="fintech.html">NIS2 per Fintech Italia 2026</a></li><li style="margin:0"><a href="food.html">NIS2 Decreto Legislativo 138/2024 Agroalimentare Italia 2026</a></li><li style="margin:0"><a href="hospitals.html">NIS2 per Ospedali e Cliniche in Italia</a></li><li style="margin:0"><a href="hr-payroll.html">NIS2 per fornitori software HR e payroll in Italia 2026</a></li><li style="margin:0"><a href="index.html">Settori soggetti a NIS2 in Italia 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2 Assicurazioni Italia 2026 - Guida Conformità D.Lgs. 138/2024</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -283,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

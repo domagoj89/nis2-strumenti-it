@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 per Fintech Italia 2026 — Guida Compliance D.Lgs. 138/2024</title>
-  <meta name="description" content="Conformità NIS2 per fintech, payment processor e neobank italiane. Obblighi ICT, test API, protezione dati, reporting incidenti entro 2026.">
+  <title>NIS2 Fintech Italia 2026 | Guida Compliance D.Lgs. 138/2024</title>
+  <meta name="description" content="Conformità NIS2 per fintech, payment processor e neobank in Italia. Scadenze 2026, obblighi ICT, reporting incidenti e sanzioni fino a €7 milioni.">
   <link rel="canonical" href="https://nis2-strumenti.it/sektory/fintech.html">
-  <meta property="og:title" content="NIS2 per Fintech Italia 2026 — Guida Compliance D.Lgs. 138/2024">
-  <meta property="og:description" content="Conformità NIS2 per fintech, payment processor e neobank italiane. Obblighi ICT, test API, protezione dati, reporting incidenti entro 2026.">
+  <meta property="og:title" content="NIS2 Fintech Italia 2026 | Guida Compliance D.Lgs. 138/2024">
+  <meta property="og:description" content="Conformità NIS2 per fintech, payment processor e neobank in Italia. Scadenze 2026, obblighi ICT, reporting incidenti e sanzioni fino a €7 milioni.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-strumenti.it/sektory/fintech.html">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="NIS2-Strumenti.it">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 per Fintech Italia 2026 — Guida Compliance D.Lgs. 138/2024">
-  <meta name="twitter:description" content="Conformità NIS2 per fintech, payment processor e neobank italiane. Obblighi ICT, test API, protezione dati, reporting incidenti entro 2026.">
+  <meta name="twitter:title" content="NIS2 Fintech Italia 2026 | Guida Compliance D.Lgs. 138/2024">
+  <meta name="twitter:description" content="Conformità NIS2 per fintech, payment processor e neobank in Italia. Scadenze 2026, obblighi ICT, reporting incidenti e sanzioni fino a €7 milioni.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 per Fintech, Payment Processor e Neobank in Italia — Conformità D.Lgs. 138/2024",
+      "name": "NIS2 per Fintech, Payment Processor e Neobank in Italia — Requisiti e Compliance 2026",
       "item": "https://nis2-strumenti.it/sektory/fintech.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Quando esattamente devo notificare l'ACN di un incident NIS2 come fintech?",
+      "name": "Quando deve avvenire la registrazione presso l'ACN e quale documentazione è necessaria?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Devi notificare l'ACN entro 72 ore dal momento in cui rilevi un incidente che impatti disponibilità (disruption >30 minuti), confidenzialità o integrità di dati critici clienti. Se il tuo sistema di pagamento è down anche per 45 minuti, è notificabile. Usa il modulo ufficiale ACN e includi timeline dell'evento, numero di utenti/transazioni impattate, e azioni correttive in corso. Non aspettare di aver risolto tutto: notifica il prima possibile con dati preliminari e aggiorna entro 5 giorni."
+        "text": "Ogni fintech classificata come entità importante deve registrarsi sul portale ACN tra il 1 gennaio e il 28 febbraio di ciascun anno (prima registrazione entro il 28 febbraio 2025). La registrazione richiede: denominazione dell'organizzazione, servizio critico fornito (pagamenti, prestiti, autenticazione), numero di clienti/transazioni, ubicazione dei data center e contatti del responsabile ICT/compliance. La mancata registrazione espone a sanzioni fino a €7 milioni o 1,4% del fatturato."
       }
     },
     {
       "@type": "Question",
-      "name": "La mia neobank usa solo infrastruttura cloud. Quali controlli su AWS/Azure devo formalizzare?",
+      "name": "Quale è il differenziale tra le soglie di segnalazione di incidenti NIS2 (24 ore) e GDPR (72 ore)?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Il tuo contratto cloud deve includere: (1) SLA di disponibilità con penali contrattuali, (2) obbligo del provider di notificarti entro 24 ore da incidents che impattano la tua piattaforma, (3) diritto di audit e penetration test annuali da parte tua o di terzi certificati, (4) garanzie sulla residenza geografica dei dati e sulle cifrature applicate. Mantieni un risk register dei servizi cloud critici e rivaluta il provider ogni 12 mesi. Chiedi esplicitamente al provider se accetta di essere notificato all'ACN in caso di data breach."
+        "text": "Un incidente NIS2 deve essere notificato all'ACN entro 24 ore se comporta interruzione di servizio di pagamento, perdita di integrità di transazioni o unavailability prolungata dell'infrastruttura critica. La notifica GDPR (72 ore) riguarda l'esposizione di dati personali e segue timeline diverse. Un incidente può rientrare in entrambe le categorie: in questo caso il fintech deve notificare all'ACN entro 24 ore e ai clienti/Garante entro 72 ore, mantenendo registri separati."
       }
     },
     {
       "@type": "Question",
-      "name": "Quale scadenza devo rispettare per essere completamente conforme? C'è rischio di sanzioni?",
+      "name": "Quali sono le sanzioni per mancata conformità NIS2 e quali elementi le determinano?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "La deadline ufficiale è il 31 dicembre 2025 per avere tutti i controlli NIS2 operativi e documentati. Dal gennaio 2026, l'ACN può verificare e irrogare sanzioni fino a 10 milioni di euro o il 3% del fatturato annuale per mancanze critiche (assenza risk management, no incident reporting, API non testate). Inizia adesso con assessment interno e usa i prossimi mesi per colmare i gap critici elencati in questa guida."
+        "text": "Per entità importanti (fintech, payment processor), le sanzioni vanno fino a €7 milioni o 1,4% del fatturato annuale globale, a seconda di quale sia più elevato. L'importo varia in base a: gravità della violazione (mancata gestione del rischio ICT vale più di documentazione incompleta), numero di clienti/transazioni colpite, recidività e cooperazione con l'ACN durante l'indagine. Una violazione critica (incidente di pagamento non segnalato in 24 ore) porta generalmente a sanzioni nel range superiore."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Pagina principale</a><span>›</span>
     <a href="index.html">Settori</a><span>›</span>
-    NIS2 per Fintech, Payment Processor e Neobank in Italia — Conformità D.Lgs. 138/2024
+    NIS2 per Fintech, Payment Processor e Neobank in Italia — Requisiti e Compliance 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Annex II — Entità Importante</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Fintech, Payment Processor e Neobank in Italia — Conformità D.Lgs. 138/2024</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è destinata a responsabili compliance, CISO e founder di fintech, payment processor e piattaforme di lending digitale classificate come entità importante secondo l'Annex II. Scoprirai gli obblighi concreti di gestione del rischio ICT, i test di sicurezza obbligatori per API e app mobile, e come allineare NIS2 con GDPR e PSD2.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato II — Entità importante</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Fintech, Payment Processor e Neobank in Italia — Requisiti e Compliance 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è rivolta a responsabili compliance, CISO e founder di fintech, payment processor, neobank e piattaforme di prestiti digitali classificati come entità importante secondo l'Allegato II del D.Lgs. 138/2024. Scopri gli obblighi concreti di gestione dei rischi ICT, le scadenze di registrazione e i rischi di non conformità.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano in questa classificazione le società fintech, i payment processor, le neobank e le piattaforme di lending digitale che operano in Italia e raggiungono una massa critica di utenti o transazioni tale da essere considerate importanti per la stabilità dei servizi finanziari digitali. L'ACN applica criteri di valutazione basati sul numero di clienti, dal volume di transazioni elaborate e dalla criticità del servizio erogato. Anche società di medie dimensioni con elevata concentrazione di clienti retail possono rientrare in questa categoria.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano in questa categoria i payment processor, le neobank, le piattaforme fintech di prestiti e le società di servizi di pagamento che operano in Italia e gestiscono servizi critici per il sistema finanziario nazionale. La classificazione come entità importante dipende dalla natura del servizio, dal numero di utenti e dall'impatto potenziale di un incidente di cybersicurezza sulla continuità operativa del settore. Microimprese e startup con fatturato inferiore a determinati soglie possono beneficiare di misure proporzionate, ma rimangono obbligate alla registrazione presso l'ACN entro il 28 febbraio di ciascun anno.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Gestione del Rischio ICT Proporzionata alla Dimensione e Criticità del Servizio</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare un sistema di gestione del rischio ICT documentato che identifichi, valuti e mitighhi i rischi specifici dei tuoi servizi di pagamento e lending digitale. Questo include una mappatura degli asset critici (database clienti, server di transazione, API di integrazione), una valutazione annuale del rischio e piani di trattamento formali. La documentazione deve essere aggiornata entro il 31 dicembre 2025 e presentata in formato strutturato all'ACN.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Gestione del rischio ICT proporzionata al profilo di criticità</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni fintech deve implementare un programma di gestione del rischio ICT che identifichi i sistemi critici (piattaforme di pagamento, gateway API, infrastrutture di autenticazione) e valuti la minaccia di interruzione del servizio. La gestione deve includere analisi delle minacce specifiche del settore (frodi, furto di credenziali, ransomware su infrastrutture cloud) e mitigazione mediante controlli tecnici e organizzativi documentati. Per payment processor e piattaforme di lending, ciò include test di resistenza, simulazioni di disastro e piani di continuità operativa con RTO/RPO certificati.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Test di Sicurezza Obbligatori per API di Pagamento e Applicazioni Mobile</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi condurre test di penetrazione e vulnerability assessment su tutte le API di pagamento e sulle applicazioni mobile entro il ciclo di rilascio di ogni major version. I test devono coprire autenticazione, autorizzazione, validazione input, crittografia in transito e protezione da attacchi DDoS. I risultati devono essere documentati e le vulnerabilità critiche devono essere risolte prima del deployment in produzione. Includi anche fuzzing e test di carico per simulare scenari di traffico anomalo.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Testing di sicurezza delle API di pagamento e delle applicazioni mobile</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Tutte le API esposte (API di autorizzazione, bonifici, consultazione saldi) devono essere sottoposte a penetration test annuale e a security scanning automatico dopo ogni rilascio in produzione. Le applicazioni mobile bancarie e di pagamento devono superare test di sicurezza che verifichino protezione dei dati sensibili, implementazione di certificato pinning e assenza di vulnerabilità OWASP Top 10. I risultati dei test devono essere documentati e conservati per le ispezioni dell'ACN.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Protezione dei Dati Clienti Allineata a NIS2, GDPR e PSD2</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">I dati personali e finanziari dei clienti devono essere protetti secondo i criteri congiunti di NIS2, GDPR e PSD2. Implementa crittografia end-to-end per transazioni sensibili, segregazione logica dei dati per tipologia di servizio e accesso basato su principio del minimo privilegio. Mantieni registri di audit immutabili per tutti gli accessi ai dati critici. Effettua backup crittografati e test di disaster recovery almeno semestralmente con documentazione formale.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Protezione dei dati dei clienti allineata a NIS2, PSD2 e GDPR</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">La crittografia dei dati in transito (TLS 1.2 minimo) e a riposo (AES-256) è obbligatoria per tutte le informazioni di clienti finanziari. Ogni fintech deve dimostrare separazione logica dei dati per istituto/cliente e implementare Data Loss Prevention (DLP) per prevenire trasferimenti non autorizzati verso cloud provider non autorizzati. Accesso ai dati personali deve essere tracciato e limitato a personale autorizzato con autenticazione multi-fattore.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Incident Response con Reporting Specifico per NIS2 e Disruption dei Pagamenti</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare una procedura di incident response che distinse tra incidenti NIS2 (attacchi, compromissioni di confidenzialità/integrità/disponibilità) e incidenti GDPR. Un incident notificabile NIS2 include qualsiasi disruption della capacità di processare pagamenti per più di 30 minuti. Documenta ogni incidente con timeline, impatto tecnico/aziendale e azioni correttive. Notifica l'ACN entro 72 ore dal riconoscimento dell'incidente critico; mantieni registri per 3 anni.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Incident reporting entro 24-72 ore all'ACN</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Qualsiasi incidente che comporti interruzione del servizio di pagamento, esposizione di dati clienti o compromissione dell'integrità di transazioni finanziarie deve essere segnalato all'ACN entro 24 ore dalla scoperta. La notifica deve contenere: descrizione tecnica dell'incidente, impatto su utenti/transazioni, misure di contenimento adottate e data/ora stimata del ripristino completo. Documentazione dettagliata deve essere conservata per ispezioni successive.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Requisiti di Sicurezza Formalizzati per Fornitori di Servizi Cloud e Infrastrutture</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Tutti i contratti con fornitori di infrastruttura cloud (AWS, Azure, Google Cloud, etc.) e di servizi critici (identity provider, payment gateway esterno) devono contenere clausole NIS2-specifiche: diritto di audit, SLA di disponibilità con penali, obblighi di notifica incidenti entro 24 ore, limitazioni geografiche di residenza dati. Valuta i fornitori con risk assessment annuale e mantieni un registro aggiornato dei subappaltatori. Includi verifiche di conformità NIS2 nei procurement.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Requisiti di sicurezza documentati per fornitori cloud e servizi terzi</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni contratto con provider cloud (hosting, API, servizi di autenticazione) deve includere clausole obbligatorie di conformità NIS2: audit di sicurezza annuali, diritto di accesso ai log di sicurezza, obbligo di notifica incidenti entro 24 ore e selezione di data center ubicati in UE. I provider critici (quelli che ospitano dati di pagamento) devono superare certificazione ISO 27001 e valutazione di conformità NIS2 prima della sottoscrizione.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>API di pagamento e integrazioni di terzi non sottoposte a test di sicurezza formali dopo ogni release: molti fintech applicano test di sviluppo ma non penetration test indipendenti prima di deployment. Implementa una pipeline di security testing obbligatoria e documentata per ogni cambio di API.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Le API di pagamento non sono sottoposte a security assessment formale dopo ogni release, creando vulnerabilità non rilevate in ambienti di produzione e violando l'obbligo di testing periodico.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di requisiti scritti di sicurezza nei contratti con provider cloud e payment processor: molte neobank non hanno ancora formalizzato clausole NIS2 nei SLA. Includi subito allegati tecnici sui test di penetrazione, reporting di incidenti, e diritti di audit nei nuovi contratti.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Non esiste documentazione scritta dei requisiti di sicurezza per fornitori cloud e SaaS, lasciando gap nelle catene di fornitura e mancanza di tracciabilità per audit ACN.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Procedure di incident response che coprono GDPR ma non distinzione tra soglie di notifica NIS2 e gravità di disruption: confusione sul timing di reporting a ACN vs Garante Privacy. Documenta chiaramente criteri NIS2-specifici: disruption >30 min, perdita integrità dati, compromissione di confidenzialità su scala materiale.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>L'incident response plan copre obblighi GDPR (notifica entro 72 ore) ma non distingue le soglie NIS2 di reporting (24 ore per pagamenti interrotti), creando ritardi nella comunicazione all'ACN.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza di registri immutabili di accesso ai dati critici clienti e transazioni: molte piattaforme logging a livello applicativo senza protezione contro modifica retroattiva. Implementa audit trail centralizzato con timestamp NTP sincronizzato e firma digitale su log critici.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>La gestione degli accessi ai sistemi critici di pagamento manca di tracciamento granulare e autenticazione multi-fattore, rendendo impossibile dimostrare controllo degli accessi in caso di indagine.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quando esattamente devo notificare l'ACN di un incident NIS2 come fintech?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quando deve avvenire la registrazione presso l'ACN e quale documentazione è necessaria?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Devi notificare l'ACN entro 72 ore dal momento in cui rilevi un incidente che impatti disponibilità (disruption >30 minuti), confidenzialità o integrità di dati critici clienti. Se il tuo sistema di pagamento è down anche per 45 minuti, è notificabile. Usa il modulo ufficiale ACN e includi timeline dell'evento, numero di utenti/transazioni impattate, e azioni correttive in corso. Non aspettare di aver risolto tutto: notifica il prima possibile con dati preliminari e aggiorna entro 5 giorni.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Ogni fintech classificata come entità importante deve registrarsi sul portale ACN tra il 1 gennaio e il 28 febbraio di ciascun anno (prima registrazione entro il 28 febbraio 2025). La registrazione richiede: denominazione dell'organizzazione, servizio critico fornito (pagamenti, prestiti, autenticazione), numero di clienti/transazioni, ubicazione dei data center e contatti del responsabile ICT/compliance. La mancata registrazione espone a sanzioni fino a €7 milioni o 1,4% del fatturato.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">La mia neobank usa solo infrastruttura cloud. Quali controlli su AWS/Azure devo formalizzare?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale è il differenziale tra le soglie di segnalazione di incidenti NIS2 (24 ore) e GDPR (72 ore)?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Il tuo contratto cloud deve includere: (1) SLA di disponibilità con penali contrattuali, (2) obbligo del provider di notificarti entro 24 ore da incidents che impattano la tua piattaforma, (3) diritto di audit e penetration test annuali da parte tua o di terzi certificati, (4) garanzie sulla residenza geografica dei dati e sulle cifrature applicate. Mantieni un risk register dei servizi cloud critici e rivaluta il provider ogni 12 mesi. Chiedi esplicitamente al provider se accetta di essere notificato all'ACN in caso di data breach.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Un incidente NIS2 deve essere notificato all'ACN entro 24 ore se comporta interruzione di servizio di pagamento, perdita di integrità di transazioni o unavailability prolungata dell'infrastruttura critica. La notifica GDPR (72 ore) riguarda l'esposizione di dati personali e segue timeline diverse. Un incidente può rientrare in entrambe le categorie: in questo caso il fintech deve notificare all'ACN entro 24 ore e ai clienti/Garante entro 72 ore, mantenendo registri separati.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale scadenza devo rispettare per essere completamente conforme? C'è rischio di sanzioni?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni per mancata conformità NIS2 e quali elementi le determinano?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La deadline ufficiale è il 31 dicembre 2025 per avere tutti i controlli NIS2 operativi e documentati. Dal gennaio 2026, l'ACN può verificare e irrogare sanzioni fino a 10 milioni di euro o il 3% del fatturato annuale per mancanze critiche (assenza risk management, no incident reporting, API non testate). Inizia adesso con assessment interno e usa i prossimi mesi per colmare i gap critici elencati in questa guida.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Per entità importanti (fintech, payment processor), le sanzioni vanno fino a €7 milioni o 1,4% del fatturato annuale globale, a seconda di quale sia più elevato. L'importo varia in base a: gravità della violazione (mancata gestione del rischio ICT vale più di documentazione incompleta), numero di clienti/transazioni colpite, recidività e cooperazione con l'ACN durante l'indagine. Una violazione critica (incidente di pagamento non segnalato in 24 ore) porta generalmente a sanzioni nel range superiore.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Settori correlati" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Settori correlati</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="food.html">NIS2 Decreto Legislativo 138/2024 Agroalimentare Italia 2026</a></li><li style="margin:0"><a href="hospitals.html">NIS2 per Ospedali e Cliniche in Italia</a></li><li style="margin:0"><a href="hr-payroll.html">NIS2 per fornitori software HR e payroll in Italia 2026</a></li><li style="margin:0"><a href="index.html">Settori soggetti a NIS2 in Italia 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2 Assicurazioni Italia 2026 - Guida Conformità D.Lgs. 138/2024</a></li><li style="margin:0"><a href="it-outsourcing.html">NIS2 per aziende IT outsourcing in Italia</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -283,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

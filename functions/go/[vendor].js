@@ -96,10 +96,19 @@ export async function onRequestGet(context) {
   if (entry && entry.url) dest = withSubId(entry.url, entry.subid_param || "subid", SITE);
   else if (entry && entry.direct) dest = entry.direct;
   else dest = url.origin;
-  if (GA && GA.mid && GA.secret && typeof context.waitUntil === "function") {
+  // Redirect EVERYONE (bots included), but only log plausible humans — the GA4
+  // Measurement Protocol bypasses GA4's built-in bot exclusion, so without this
+  // filter every crawler/link-unfurler/prefetch inflates go_click into noise.
+  const ua = request.headers.get("user-agent") || "";
+  if (GA && GA.mid && GA.secret && typeof context.waitUntil === "function" && !isBot(ua)) {
     context.waitUntil(logClick(request, vendor, !!(entry && entry.url)));
   }
   return Response.redirect(dest, 302);
+}
+
+function isBot(ua) {
+  if (!ua) return true; // no User-Agent header => script/crawler, never a real browser
+  return /bot|crawl|spider|slurp|mediapartners|apis-google|feedfetcher|bingpreview|facebookexternalhit|facebot|ia_archiver|embedly|redditbot|quora|pinterest|slackbot|slack-imgproxy|telegrambot|whatsapp|viber|skypeuripreview|discordbot|twitterbot|linkedinbot|petalbot|semrush|ahrefs|mj12|dotbot|dataforseo|yandex|baidu|sogou|duckduck|applebot|headless|phantomjs|puppeteer|playwright|curl|wget|python-requests|python-httpx|go-http-client|okhttp|libwww|lighthouse|gtmetrix|pingdom|uptimerobot|statuscake|monitor|preview|scrapy|node-fetch|axios/i.test(ua);
 }
 
 function logClick(request, vendor, monetized) {

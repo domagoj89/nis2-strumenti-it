@@ -24,7 +24,7 @@ const CONFIG = {
       "links": [
         {
           "text": "Porównanie narzędzi NIS2",
-          "url": "https://nis2-narzedzia.pl/porownanie"
+          "url": "https://nis2-strumenti.it/confronto"
         },
         {
           "text": "Kalkulator kosztów NIS2",

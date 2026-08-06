@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 per Cloud Service Provider in Italia — Guida Annex I 2026</title>
-  <meta name="description" content="Obblighi NIS2 per provider IaaS, PaaS, SaaS in Italia. Baseline di sicurezza, notifica incidenti 24h, SOC 2, ISO 27001. Scadenza 2026.">
+  <title>NIS2 Cloud Service Provider Italia 2026 | Guida ACN Compliance</title>
+  <meta name="description" content="Guida NIS2 provider cloud IaaS/PaaS/SaaS in Italia. Obblighi essenziali, scadenze registrazione ACN, notifica incidenti 24h, penalità fino a €10M.">
   <link rel="canonical" href="https://nis2-strumenti.it/sektory/cloud-providers.html">
-  <meta property="og:title" content="NIS2 per Cloud Service Provider in Italia — Guida Annex I 2026">
-  <meta property="og:description" content="Obblighi NIS2 per provider IaaS, PaaS, SaaS in Italia. Baseline di sicurezza, notifica incidenti 24h, SOC 2, ISO 27001. Scadenza 2026.">
+  <meta property="og:title" content="NIS2 Cloud Service Provider Italia 2026 | Guida ACN Compliance">
+  <meta property="og:description" content="Guida NIS2 provider cloud IaaS/PaaS/SaaS in Italia. Obblighi essenziali, scadenze registrazione ACN, notifica incidenti 24h, penalità fino a €10M.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-strumenti.it/sektory/cloud-providers.html">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="NIS2-Strumenti.it">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 per Cloud Service Provider in Italia — Guida Annex I 2026">
-  <meta name="twitter:description" content="Obblighi NIS2 per provider IaaS, PaaS, SaaS in Italia. Baseline di sicurezza, notifica incidenti 24h, SOC 2, ISO 27001. Scadenza 2026.">
+  <meta name="twitter:title" content="NIS2 Cloud Service Provider Italia 2026 | Guida ACN Compliance">
+  <meta name="twitter:description" content="Guida NIS2 provider cloud IaaS/PaaS/SaaS in Italia. Obblighi essenziali, scadenze registrazione ACN, notifica incidenti 24h, penalità fino a €10M.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 per Cloud Service Provider in Italia — Requisiti Annex I e Compliance 2026",
+      "name": "NIS2 per i Provider Cloud in Italia — Requisiti di Conformità 2024-2026",
       "item": "https://nis2-strumenti.it/sektory/cloud-providers.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Come devo classificare un incidente multi-tenant che non ha interessato nessun cliente, ma ha compromesso un servizio di supporto interno?",
+      "name": "Qual è la deadline per registrarsi sulla piattaforma ACN e come avviene il processo di identificazione come entità essenziale?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Se il servizio di supporto è parte infrastrutturale critica per erogazione servizi al cliente (es. ticketing per security incidents), devi comunque notificare ACN entro 24 ore perché l'incidente affetta indirettamente disponibilità servizio. Implementa classificazione basata su 'impatto potenziale cliente' non solo 'impatto clienti effettivamente colpiti'."
+        "text": "La registrazione sulla piattaforma ACN avviene annualmente tra il 1° gennaio e il 28 febbraio; se siete identificati come provider cloud essenziale, l'ACN vi comunicherà l'obbligo di registrazione tramite notifica ufficiale. Non potete auto-dichiararvi essenziali: l'ACN valuta la vostra essenzialità in base a criteri pubblici (numero clienti critici, settori serviti, impatto di indisponibilità) e vi assegna lo status. Assicurate che il vostro ufficio legale e compliance monitora le comunicazioni ACN almeno dal 1° novembre dell'anno precedente."
       }
     },
     {
       "@type": "Question",
-      "name": "Quale è il perimetro esatto di SOC 2 Type II richiesto per NIS2 multi-tenant?",
+      "name": "Come organizziamo il processo di notifica incidenti per rispettare i termini 24h/72h verso ACN e clienti simultaneamente?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "SOC 2 deve coprire Trust Service Categories C (disponibilità) e S (sicurezza), con audit di 6+ mesi su produzione live. Deve includere controlli isolamento tenant, gestione accesso, crittografia, logging e change management. Se usi subprocessor (CDN, DDoS mitigation), includili nel report SOC 2 con carve-out o inclusione esplicita."
+        "text": "Create un centro di risposta agli incidenti (IR team) con escalation automatico verso l'ACN per incidenti classificati come NIS2-rilevanti (confidenzialità, disponibilità, integrità compromesse e impatto su servizi essenziali). Entro 24 ore dalla scoperta inviate una notifica preliminare all'ACN e ai clienti interessati con descrizione dell'incidente, impatto stimato e misure immediate; entro 72 ore una relazione completa con analisi della causa principale. Utilizzate un tool di ticketing integrato (quale quelli citati) per tracciare il rispetto dei tempi e generare automaticamente comunicazioni timestamped."
       }
     },
     {
       "@type": "Question",
-      "name": "Quali sono le sanzioni per mancata notifica incidente entro 24 ore in Italia?",
+      "name": "Quali sono le sanzioni specifiche se non rispettiamo le scadenze NIS2 e come si calcolano?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ACN può comminare sanzioni amministrative fino a €10 milioni o 2% fatturato annuale globale per violazioni critiche (Art. 32 D.Lgs. 138/2024). La mancata notifica incidente è considérata violazione grave. Inoltre, i clienti possono avviare azioni risarcitorie separate per inadempienza contrattuale su SLA."
+        "text": "Per le entità essenziali come voi, il D.Lgs. 138/2024 prevede sanzioni amministrative fino a €10 milioni o al 2% del fatturato annuale globale (qualunque importo risulti maggiore) in caso di violazione grave di obblighi NIS2, inclusa notifica tardiva di incidenti. Violazioni meno gravi (ad esempio mancata documentazione completa) comportano sanzioni fino a €5 milioni o 1% del fatturato. L'ACN applica sanzioni graduali: verifiche di compliance precedono solitamente penalità amministrative, ma il mancato rispetto dei termini di notifica 24h/72h è considerato violazione grave senza margine di gradualità."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Pagina principale</a><span>›</span>
     <a href="index.html">Settori</a><span>›</span>
-    NIS2 per Cloud Service Provider in Italia — Requisiti Annex I e Compliance 2026
+    NIS2 per i Provider Cloud in Italia — Requisiti di Conformità 2024-2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato I — Ente essenziale</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Cloud Service Provider in Italia — Requisiti Annex I e Compliance 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è destinata a provider di servizi cloud (IaaS, PaaS, SaaS) con significativa base clienti UE che operano in Italia. Scoprirai come implementare baseline di sicurezza multi-tenant, gestire la notifica incidenti entro 24 ore e documentare correttamente il modello di responsabilità condivisa secondo il D.Lgs. 138/2024.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato I — Entità Essenziale</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per i Provider Cloud in Italia — Requisiti di Conformità 2024-2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è destinata ai provider cloud (IaaS, PaaS, SaaS) con clientela aziendale significativa in UE classificati come entità essenziali secondo l'Allegato I del D.Lgs. 138/2024. Scoprirete gli obblighi specifici di sicurezza, i termini di notifica incidenti e le strategie di compliance per evitare sanzioni fino a €10 milioni.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano nell'ambito NIS2 i provider di servizi cloud (IaaS, PaaS, SaaS) che forniscono servizi a clienti UE e superano soglie di criticità definite dall'ACN, in particolare quelli con infrastruttura multi-tenant che supportano servizi online di terzi. L'ACN italiano applica criteri di numero di utenti finali, volume di dati gestiti e dipendenza da servizi critici dell'economia digitale europea.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Qualificano come entità essenziali nel settore cloud i provider che forniscono servizi infrastrutturali (IaaS), piattaforma (PaaS) o software (SaaS) a clienti europei significativi, con particolare attenzione a quanti operano in settori critici quali sanità, energia, finanza e amministrazione pubblica. L'ACN valuta l'essenzialità in base al numero di utenti finali dipendenti, alla criticità geografica e al potenziale impatto di indisponibilità del servizio. La registrazione presso la piattaforma ACN è obbligatoria tra il 1° gennaio e il 28 febbraio di ogni anno per i soggetti identificati.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Baseline di sicurezza per infrastrutture multi-tenant</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare controlli di isolamento dei dati tra tenant, crittografia end-to-end, segmentazione di rete e gestione identità avanzata (MFA obbligatoria per accesso amministrativo). La baseline deve coprire tutti i layer infrastrutturali (hypervisor, storage, rete) e essere sottoposta a audit annuale da verificatore indipendente. Documentazione OWASP Cloud Top 10 e NIST CSF è consigliata per dimostrare conformità.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Baseline di sicurezza per infrastruttura multi-tenant</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dovete implementare controlli di isolamento logico e fisico tra i dati e le risorse computazionali di clienti diversi, garantendo che una compromissione in un tenant non esponga altre istanze. Questa misura deve essere documentata in una policy formale di compartimentazione e testata periodicamente attraverso penetration test indipendenti. Includete nel vostro modello di responsabilità condivisa (shared responsibility model) una chiara definizione di quali controlli appartengono al provider e quali rimangono in carico al cliente.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,17 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Notifica incidenti entro 24 ore e classificazione NIS2 dedicata</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Entro 24 ore dal rilevamento di un incidente che interessi la disponibilità, integrità o confidenzialità dei servizi, devi notificare l'ACN italiano e i clienti enterprise interessati. Devi implementare un processo separato di classificazione incidenti specifico NIS2 (non generico), con criteri chiari per distinguere incidenti che richiedono notifica entro 24h da quelli con notifica 72h per dettagli completi.</p>
-      </div>
-    </div>
-    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
-      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Documentazione del modello di responsabilità condivisa per clienti enterprise</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Fornisci a ogni cliente enterprise un documento vincolante che definisca chiaramente quali controlli di sicurezza sono tua responsabilità (infrastruttura, patch management hypervisor, backup) e quali sono del cliente (configurazione applicativa, gestione credenziali utente, logging applicativo). Includi matrice responsabilità per ogni servizio (IaaS, PaaS, SaaS) e aggiornala almeno semestralmente.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Notifica incidenti di sicurezza entro 24 ore e 72 ore all'ACN</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dovete notificare all'ACN gli incidenti di sicurezza che impattano la disponibilità o l'integrità dei vostri servizi cloud entro 24 ore dalla scoperta; una relazione dettagliata deve seguire entro 72 ore. Create un canale di comunicazione formale con l'ACN (helpdesk.nis2@acn.gov.it o equivalente) e designate un responsabile di incident response disponibile 24/7. Assicurate che i vostri clienti aziendali ricevano notifica entro il medesimo termine di 24 ore, indipendentemente dal vostro rapporto con l'ACN.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,7 +154,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Certificazione SOC 2 Type II e ISO 27001 come baseline minima</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi ottenere e mantenere certificazione SOC 2 Type II (audit di 6+ mesi) con focus su disponibilità, sicurezza e riservatezza, e certificazione ISO 27001 valida. Questi documenti devono essere messi a disposizione dell'ACN su richiesta e comunicati ai clienti enterprise come prova di compliance. Rinnova certificazioni annualmente e mantieni audit trail completo di risultati e remediation.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">La vostra infrastruttura e i processi operativi devono essere sottoposti a audit annuale SOC 2 Type II (per i controlli di sicurezza, disponibilità e confidenzialità) e certificazione ISO 27001. Questi standard rappresentano il livello minimo richiesto dalle linee guida dell'ACN per provider cloud essenziali; valutatene l'ottenimento entro il 2025 se non già in possesso. Condividete gli esiti degli audit con i vostri clienti aziendali e includete i report nella documentazione contrattuale di compliance.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +162,17 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Controlli di residenza dati e localizzazione per clienti UE</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Implementa meccanismi tecnici che garantiscano ai clienti il controllo su dove i loro dati risiedono fisicamente all'interno dell'UE, con opzione di residenza in Italia se richiesto. Documentazione deve specificare locazioni datacenter, politiche di replicazione, backup geografici e procedure di accesso da parte di personale. Audit semestrale di conformità residenza dati è obbligatoria.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Localizzazione dei dati e controllo sulla residenza geografica per clienti UE</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dovete offrire ai clienti europei opzioni di residenza dati geograficamente vincolate all'UE, con garanzie contrattuali che i dati rimangono fisicamente nel territorio UE o in Paesi con adeguate protezioni. Implementate sistemi di crittografia end-to-end dove il cliente detiene le chiavi, in modo che anche voi non possiate accedere ai dati senza autorizzazione esplicita. Documentate la posizione fisica dei vostri data center e comunicate eventuali spostamenti ai clienti almeno 30 giorni in anticipo.</p>
+      </div>
+    </div>
+    <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
+      <div style="flex-shrink:0;width:24px;height:24px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:2px;">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <strong style="color:var(--navy);font-size:.95rem;">Documentazione del modello di responsabilità condivisa per clienti aziendali</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Predisponete un documento formale che descrive quali aspetti della sicurezza (autenticazione, crittografia, backup, patch management) rimangono a carico vostro e quali sono responsabilità del cliente. Questo documento deve essere revisitato annualmente insieme ai vostri clienti e allegate alle condizioni di servizio (SLA) ogni contratto nuovo o rinnovato. Assicurate che clienti enterprise ricevano training specifico sui loro obblighi di compliance nel contesto NIS2.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza di processo formale di classificazione incidenti specifico per NIS2: molti provider usano unica tassonomia sicurezza senza distinguere fra incidenti NIS2 riportabili (24h) e violazioni generiche, causando ritardi di notifica.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza di una classificazione formale di incidenti NIS2 separata dalla gestione generale degli incident; molti provider non dispongono di una trigger list per identificare automaticamente quali incidenti richiedono notifica all'ACN entro 24 ore.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SLA di notifica clienti non allineate a requisiti NIS2: contratti indicano notifica entro 7-30 giorni, non 24 ore; aggiorna immediati terms of service e implementa workflow automatico con ACN e clienti.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SLA di notifica ai clienti non allineati con i termini NIS2 di 24/72 ore; spesso i provider comunicano incidenti solo quando la causa è completamente determinata, ritardando illegittimamente la notifica obbligatoria.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Documentazione modello responsabilità insufficiente o generica: molti provider offrono solo tabelle RACI incomplete; richiede matrice dettagliata per ogni servizio, scenario di incidente, e gestione delle patch di terze parti.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di controlli formali sulla supply chain dei fornitori hardware e operatori data center; l'ACN richiede visibilità sugli audit di sicurezza dei vostri subappaltatori critici, soprattutto per la gestione fisica dell'infrastruttura.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Valutazione supply chain limitata per operatori datacentre e hardware: non mappi rischi di fornitori di infrastruttura fisica, power, HVAC; devi estendere NIS2 assessment a supply chain critica con SLA di security e incident notification.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Piani di disaster recovery e business continuity non testati regolarmente con scenari NIS2-specifici; la documentazione di continuità operativa deve dimostrare RTO e RPO compatibili con la natura critica del servizio e il numero di clienti dipendenti.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Come devo classificare un incidente multi-tenant che non ha interessato nessun cliente, ma ha compromesso un servizio di supporto interno?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Qual è la deadline per registrarsi sulla piattaforma ACN e come avviene il processo di identificazione come entità essenziale?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Se il servizio di supporto è parte infrastrutturale critica per erogazione servizi al cliente (es. ticketing per security incidents), devi comunque notificare ACN entro 24 ore perché l'incidente affetta indirettamente disponibilità servizio. Implementa classificazione basata su 'impatto potenziale cliente' non solo 'impatto clienti effettivamente colpiti'.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La registrazione sulla piattaforma ACN avviene annualmente tra il 1° gennaio e il 28 febbraio; se siete identificati come provider cloud essenziale, l'ACN vi comunicherà l'obbligo di registrazione tramite notifica ufficiale. Non potete auto-dichiararvi essenziali: l'ACN valuta la vostra essenzialità in base a criteri pubblici (numero clienti critici, settori serviti, impatto di indisponibilità) e vi assegna lo status. Assicurate che il vostro ufficio legale e compliance monitora le comunicazioni ACN almeno dal 1° novembre dell'anno precedente.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale è il perimetro esatto di SOC 2 Type II richiesto per NIS2 multi-tenant?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Come organizziamo il processo di notifica incidenti per rispettare i termini 24h/72h verso ACN e clienti simultaneamente?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">SOC 2 deve coprire Trust Service Categories C (disponibilità) e S (sicurezza), con audit di 6+ mesi su produzione live. Deve includere controlli isolamento tenant, gestione accesso, crittografia, logging e change management. Se usi subprocessor (CDN, DDoS mitigation), includili nel report SOC 2 con carve-out o inclusione esplicita.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Create un centro di risposta agli incidenti (IR team) con escalation automatico verso l'ACN per incidenti classificati come NIS2-rilevanti (confidenzialità, disponibilità, integrità compromesse e impatto su servizi essenziali). Entro 24 ore dalla scoperta inviate una notifica preliminare all'ACN e ai clienti interessati con descrizione dell'incidente, impatto stimato e misure immediate; entro 72 ore una relazione completa con analisi della causa principale. Utilizzate un tool di ticketing integrato (quale quelli citati) per tracciare il rispetto dei tempi e generare automaticamente comunicazioni timestamped.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni per mancata notifica incidente entro 24 ore in Italia?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni specifiche se non rispettiamo le scadenze NIS2 e come si calcolano?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">ACN può comminare sanzioni amministrative fino a €10 milioni o 2% fatturato annuale globale per violazioni critiche (Art. 32 D.Lgs. 138/2024). La mancata notifica incidente è considérata violazione grave. Inoltre, i clienti possono avviare azioni risarcitorie separate per inadempienza contrattuale su SLA.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Per le entità essenziali come voi, il D.Lgs. 138/2024 prevede sanzioni amministrative fino a €10 milioni o al 2% del fatturato annuale globale (qualunque importo risulti maggiore) in caso di violazione grave di obblighi NIS2, inclusa notifica tardiva di incidenti. Violazioni meno gravi (ad esempio mancata documentazione completa) comportano sanzioni fino a €5 milioni o 1% del fatturato. L'ACN applica sanzioni graduali: verifiche di compliance precedono solitamente penalità amministrative, ma il mancato rispetto dei termini di notifica 24h/72h è considerato violazione grave senza margine di gradualità.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Settori correlati" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Settori correlati</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="construction.html">NIS2 Imprese Costruzioni Italia 2026</a></li><li style="margin:0"><a href="cybersecurity-firms.html">NIS2 Fornitori Cybersecurity Italia 2026</a></li><li style="margin:0"><a href="dental-clinics.html">NIS2 cliniche dentali e mediche Italia 2026</a></li><li style="margin:0"><a href="education.html">NIS2 Università Italia 2026</a></li><li style="margin:0"><a href="energy.html">NIS2 per Gestori Energetici in Italia</a></li><li style="margin:0"><a href="fintech.html">NIS2 per Fintech Italia 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -283,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 // No HTML edits needed: the script matches by vendor domain pattern.
 
 const AFFILIATE_MAP = [
-  { match: "reglyze.com",  affiliate: "" },  // 
+  { match: "reglyze.com",  affiliate: "https://reglyze.com/" },  // 
   { match: "secfix.com",  affiliate: "" },  // 
   { match: "isms.online",  affiliate: "" },  // 
   { match: "sprinto.com",  affiliate: "" },  // 

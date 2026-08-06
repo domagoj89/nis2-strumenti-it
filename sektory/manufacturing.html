@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 Produttori Industriali Italia 2026 — Conformità OT/ICS</title>
-  <meta name="description" content="Guida NIS2 per produttori industriali italiani con linee di produzione connesse. Obblighi di sicurezza OT/ICS, segmentazione di rete e segnalazione incidenti entro 2026.">
+  <title>NIS2 Produttori Industriali: Conformità D.Lgs. 138/2024 Italia 2026</title>
+  <meta name="description" content="Guida NIS2 per produttori industriali con linee di produzione connesse. Obblighi OT/ICS, segmentazione rete, gestione incidenti. Scadenza registrazione ACN 28 febbraio.">
   <link rel="canonical" href="https://nis2-strumenti.it/sektory/manufacturing.html">
-  <meta property="og:title" content="NIS2 Produttori Industriali Italia 2026 — Conformità OT/ICS">
-  <meta property="og:description" content="Guida NIS2 per produttori industriali italiani con linee di produzione connesse. Obblighi di sicurezza OT/ICS, segmentazione di rete e segnalazione incidenti entro 2026.">
+  <meta property="og:title" content="NIS2 Produttori Industriali: Conformità D.Lgs. 138/2024 Italia 2026">
+  <meta property="og:description" content="Guida NIS2 per produttori industriali con linee di produzione connesse. Obblighi OT/ICS, segmentazione rete, gestione incidenti. Scadenza registrazione ACN 28 febbraio.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-strumenti.it/sektory/manufacturing.html">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="NIS2-Strumenti.it">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 Produttori Industriali Italia 2026 — Conformità OT/ICS">
-  <meta name="twitter:description" content="Guida NIS2 per produttori industriali italiani con linee di produzione connesse. Obblighi di sicurezza OT/ICS, segmentazione di rete e segnalazione incidenti entro 2026.">
+  <meta name="twitter:title" content="NIS2 Produttori Industriali: Conformità D.Lgs. 138/2024 Italia 2026">
+  <meta name="twitter:description" content="Guida NIS2 per produttori industriali con linee di produzione connesse. Obblighi OT/ICS, segmentazione rete, gestione incidenti. Scadenza registrazione ACN 28 febbraio.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 per i Produttori Industriali in Italia — Conformità Entità Importante 2026",
+      "name": "NIS2 per Produttori Industriali in Italia — Conformità D.Lgs. 138/2024 e Linee di Produzione Connesse",
       "item": "https://nis2-strumenti.it/sektory/manufacturing.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Quali dispositivi rientrano nella definizione di 'sistema di controllo industriale' soggetto a NIS2?",
+      "name": "Quali sistemi devono essere considerati 'sistemi OT critici' soggetti agli obblighi di sicurezza NIS2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Rientrano i PLC (Programmable Logic Controller), i sistemi SCADA, gli HMI (Human Machine Interface), gli azionamenti variabili (VFD), i gateway di comunicazione, i sensori IoT integrati in linea di produzione, e qualsiasi dispositivo che riceve comandi di controllo o trasmette dati di processo critico. Sono inclusi anche i sistemi di manutenzione remota e i laptop di diagnostica usati dai tecnici per accedere a questi dispositivi."
+        "text": "Rientrano i PLC e controller SCADA che governano linee di produzione core, sistemi di automazione warehouse, controllori di energia/utilities in stabilimento, e qualsiasi ICS connesso a rete aziendale o cloud. Se il malfunzionamento comporta fermo produttivo superiore a 2-4 ore o perdita economica significativa, devi applicare la protezione NIS2. Esegui una valutazione del rischio per ogni asset connesso."
       }
     },
     {
       "@type": "Question",
-      "name": "Qual è la differenza tra il segmentamento IT/OT obbligatorio e una semplice firewall?",
+      "name": "Entro quando devo registrare la mia azienda manifatturiera presso la piattaforma ACN?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Una firewall tradizionale blocca solo il traffico sulla base di indirizzi IP e porte, ma non comprende i protocolli industriali (Modbus, Profibus, OPC UA) e consente comunque il passaggio di malware che usa porte autorizzate. Il segmentamento NIS2 richiede invece una separazione logica con controllo esplicito di ogni comunicazione cross-segment, whitelist dei protocolli, monitoraggio comportamentale dei dispositivi OT, e blocco di qualsiasi anomalia—come una richiesta non autorizzata di cambio parametri da un indirizzo IT non previsto."
+        "text": "La registrazione deve avvenire tra il 1° gennaio e il 28 febbraio di ogni anno presso la piattaforma ACN. Poiché il D.Lgs. 138/2024 è in vigore dal 16 ottobre 2024, la prima finestra di registrazione è stata 1 gennaio - 28 febbraio 2025. Se non ancora registrato, completa la procedura entro la prossima scadenza annuale e notifica eventuali correzioni tempestivamente."
       }
     },
     {
       "@type": "Question",
-      "name": "Quali sono le sanzioni per mancata conformità a NIS2 entro le scadenze previste?",
+      "name": "Quali sono le sanzioni in caso di mancata conformità agli obblighi NIS2 per produttori importanti?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Il D.Lgs. 138/2024 prevede sanzioni amministrative fino a 10.000.000 euro o al 2% del fatturato annuale globale per violazioni gravi degli obblighi di sicurezza e segnalazione incidenti. Inoltre, la mancata segnalazione entro 72 ore di un incidente con impatto produttivo significativo espone a sanzioni specifiche e responsabilità penale dei dirigenti. L'ACN conduce audit e ispezioni sulle entità importanti a partire dal 2026; la non conformità documentata durante un'ispezione può portare al blocco della partecipazione a gare pubbliche o appalti."
+        "text": "Per entità di importanza nazionale (Allegato II), le sanzioni amministrative per violazioni essenziali raggiungono fino a €7 milioni o il 1,4% del fatturato annuale, qualunque sia il maggiore. Per violazioni non essenziali sono previste sanzioni minori. Il mancato rispetto degli obblighi di incident reporting o la falsa dichiarazione nella registrazione ACN comportano irrogazione di multa entro 90 giorni dalla constatazione della violazione."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Pagina principale</a><span>›</span>
     <a href="index.html">Settori</a><span>›</span>
-    NIS2 per i Produttori Industriali in Italia — Conformità Entità Importante 2026
+    NIS2 per Produttori Industriali in Italia — Conformità D.Lgs. 138/2024 e Linee di Produzione Connesse
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato II — Entità Importante</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per i Produttori Industriali in Italia — Conformità Entità Importante 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è destinata ai produttori industriali con infrastrutture Industry 4.0, linee di produzione connesse e sistemi PLC. Scoprirai gli obblighi specifici di sicurezza OT/ICS, la gestione della catena di fornitura e i requisiti di segnalazione degli incidenti secondo il D.Lgs. 138/2024.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato II — Entità di importanza nazionale</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Produttori Industriali in Italia — Conformità D.Lgs. 138/2024 e Linee di Produzione Connesse</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa pagina è destinata a responsabili IT/OT, direttori di stabilimento e responsabili della sicurezza in aziende manifatturiere con infrastrutture Industry 4.0 connesse. Scoprirai gli obblighi specifici per PLC, controller industriali e sistemi OT, le scadenze di registrazione presso l'ACN, e come colmare i gap di sicurezza più comuni nelle linee di produzione.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano nelle disposizioni NIS2 i produttori industriali italiani con linee di produzione automatizzate connesse in rete, sistemi di controllo industriale (PLC, SCADA, HMI) e infrastrutture IoT integrative, indipendentemente dalla dimensione aziendale se classificati come entità importante secondo i criteri dell'Autorità Competente Nazionale (ACN). Sono inclusi anche i fornitori di componenti industriali, firmware e servizi di manutenzione remota che forniscono a questi produttori.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano nell'ambito del D.Lgs. 138/2024 i produttori industriali che operano linee di produzione connesse, sistemi SCADA, PLC e controller ICS integrati con reti aziendali o cloud, indipendentemente dalla dimensione aziendale se critici per la continuità operativa nazionale. In particolare, gli operatori di infrastrutture critiche e le entità di importanza nazionale nel settore manifatturiero devono registrarsi presso la piattaforma ACN entro il 28 febbraio di ogni anno.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza OT/ICS e Protezione dei Sistemi di Controllo</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare misure tecniche e organizzative specifiche per proteggere i PLC, gli azionamenti, i sensori e i sistemi SCADA dalle minacce cyber. Ciò include l'hardening dei dispositivi OT, il controllo degli accessi ai sistemi di controllo, la crittografia delle comunicazioni critiche tra i componenti della linea di produzione, e il monitoraggio continuo per rilevare comportamenti anomali. Le misure devono prevenire interruzioni non autorizzate dei processi produttivi che potrebbero causare danni significativi.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza dei Sistemi di Controllo Industriale (OT/ICS)</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare misure tecniche e organizzative per proteggere PLC, SCADA e controller da accessi non autorizzati, modifiche non intenzionali e compromissioni di firmware. Ciò include: inventario completo degli asset OT connessi, hardening dei dispositivi, disabilitazione di porte e servizi non necessari, e autenticazione multi-fattore per accessi amministrativi. La segmentazione di rete tra linee di produzione e infrastrutture IT aziendali è obbligatoria.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Segmentazione di Rete IT/OT e Monitoraggio</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi garantire una separazione logica e fisica tra la rete IT aziendale (con accesso a internet) e la rete OT dei sistemi di produzione, mediante firewall industriali, DMZ dedicate e controlli di flusso dei dati. Implementa il monitoraggio costante del traffico tra i due ambienti e applica una whitelist delle comunicazioni autorizzate, in modo da rilevare immediatamente tentativi di lateralità da parte di utenti non autorizzati.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Gestione delle Patch e della Vulnerabilità in Ambienti OT</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi stabilire un processo formale di patch management per sistemi operativi, firmware e software di controllo industriale, con tempi definiti per il testing in laboratorio e il rollout in produzione. Poiché i sistemi OT non possono spesso essere fermati per aggiornamenti, devi documentare i rischi residui, implementare monitoraggio comportamentale per rilevare exploit di vulnerabilità note, e mantenere un registro di tutte le eccezioni approvate.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Gestione della Catena di Fornitura per Componenti e Firmware Industriali</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi sottoporre a valutazione della sicurezza i fornitori di componenti industriali, PLC, sensori, software di controllo e servizi di manutenzione remota prima dell'integrazione in linea di produzione. Richiedi ai fornitori dichiarazioni sulla non alterazione del firmware, la disponibilità di patch di sicurezza, e il supporto per il fine vita dei prodotti. Mantieni un inventario aggiornato di tutti i componenti OT e delle relative versioni di firmware con tracciamento delle vulnerabilità pubblicate.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza della Catena di Fornitura (Supply Chain OT/ICS)</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi valutare e monitorare i fornitori di componenti industriali, sistemi SCADA, firmware di controller e servizi di manutenzione remota secondo criteri di cybersecurity. Includi nei contratti clausole che richiedono: divulgazione di vulnerabilità trovate, disponibilità di patch in tempi certi, notifica di incidenti di sicurezza che impattano i tuoi sistemi, e diritto di audit sulla sicurezza dei prodotti forniti.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Gestione delle Patch e degli Aggiornamenti per Sistemi OT</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi sviluppare e attuare un processo formale di patch management per i sistemi di controllo industriale, inclusi PLC, azionamenti, HMI e gateway. Questo processo deve prevedere test in ambiente non-produttivo prima di ciascun aggiornamento, pianificazione delle finestre di manutenzione, rollback procedures, e documentazione di ogni modifica. In assenza di patch dal produttore, implementa misure compensative come il monitoraggio intensificato o il controllo di accesso ristretto al dispositivo.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Accesso Remoto Sicuro e Gestione dei Manutentori</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Tutti gli accessi remoti a sistemi di controllo industriale (sia da tecnici in manutenzione che da fornitori) devono avvenire tramite VPN crittografata, con autenticazione forte, registrazione di ogni sessione, e timeout automatico. Devi implementare jump server/bastion host dedicati, limitare gli account di servizio permanenti, e richiedere multi-fattore per accessi sensibili. Audita regolarmente chi ha accesso e per quanto tempo.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Segnalazione degli Incidenti con Impatto Produttivo Significativo</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi segnalare all'ACN gli incidenti di sicurezza che causano interruzioni sostanziali della linea di produzione, perdite economiche significative, danni ai macchinari, o compromissione dell'integrità dei dati di controllo. La segnalazione deve avvenire senza ingiustificato ritardo (massimo 72 ore dal rilevamento), includendo la descrizione tecnica dell'attacco, l'impatto stimato, e le azioni di mitigazione intraprese. Mantieni un registro interno di tutti gli incidenti, anche minori, per analisi e miglioramenti continui.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Rilevamento, Risposta e Segnalazione degli Incidenti in Ambiente OT</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi notificare all'ACN entro 24 ore qualsiasi incidente che compromette la confidenzialità, integrità o disponibilità di sistemi di controllo di produzione, anche se non c'è perdita immediata di dati. Se l'incidente causa disruption di produzione con impatto economico significativo, il resoconto ampliato deve pervenire entro 72 ore. Implementa strumenti SIEM per monitorare anomalie in tempo reale e definisci procedure di isolamento rapido delle linee colpite.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>I PLC e i controller industriali sono collegati direttamente alla rete aziendale condivisa senza firewall intermedio, consentendo a malware da email aziendali di raggiungere i sistemi di produzione e interromperla.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>PLC e controller industriali connessi direttamente alla rete aziendale senza firewall intermedio o segmentazione: richiede implementazione urgente di microsegmentazione OT e network access control.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di un processo di patch management formale per i sistemi OT: gli aggiornamenti di sicurezza del produttore non vengono testati né applicati, lasciando vulnerabilità note sfruttabili per mesi o anni.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di processo formale di patch management per sistemi di controllo: documenta vulnerabilità note nei tuoi ambienti OT e crea roadmap di patching con test in ambiente di staging dedicato.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>L'accesso di manutenzione remota avviene tramite protocolli non criptati (RDP, Telnet, accesso diretto VPN aziendale) senza autenticazione multi-fattore, permettendo l'intercettazione delle credenziali dei tecnici.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Accesso remoto via protocolli insicuri (SSH senza chiave, Telnet, accesso diretto a PLC): migra a VPN con autenticazione certificato + OTP e inserisci jump server in DMZ.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nessun inventario centralizzato dei dispositivi IoT e OT in linea di produzione: l'azienda non sa quali versioni di firmware sono installate, quali fornitori li hanno prodotti, e quali vulnerabilità pubblicate potrebbero affliggere la sua infrastruttura.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nessun inventario centralizzato e aggiornato di asset OT/ICS connessi: esegui asset discovery con strumenti specializzati per ICS, classifica per criticità, e integra nel tuo CMDB.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali dispositivi rientrano nella definizione di 'sistema di controllo industriale' soggetto a NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sistemi devono essere considerati 'sistemi OT critici' soggetti agli obblighi di sicurezza NIS2?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Rientrano i PLC (Programmable Logic Controller), i sistemi SCADA, gli HMI (Human Machine Interface), gli azionamenti variabili (VFD), i gateway di comunicazione, i sensori IoT integrati in linea di produzione, e qualsiasi dispositivo che riceve comandi di controllo o trasmette dati di processo critico. Sono inclusi anche i sistemi di manutenzione remota e i laptop di diagnostica usati dai tecnici per accedere a questi dispositivi.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Rientrano i PLC e controller SCADA che governano linee di produzione core, sistemi di automazione warehouse, controllori di energia/utilities in stabilimento, e qualsiasi ICS connesso a rete aziendale o cloud. Se il malfunzionamento comporta fermo produttivo superiore a 2-4 ore o perdita economica significativa, devi applicare la protezione NIS2. Esegui una valutazione del rischio per ogni asset connesso.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Qual è la differenza tra il segmentamento IT/OT obbligatorio e una semplice firewall?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Entro quando devo registrare la mia azienda manifatturiera presso la piattaforma ACN?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Una firewall tradizionale blocca solo il traffico sulla base di indirizzi IP e porte, ma non comprende i protocolli industriali (Modbus, Profibus, OPC UA) e consente comunque il passaggio di malware che usa porte autorizzate. Il segmentamento NIS2 richiede invece una separazione logica con controllo esplicito di ogni comunicazione cross-segment, whitelist dei protocolli, monitoraggio comportamentale dei dispositivi OT, e blocco di qualsiasi anomalia—come una richiesta non autorizzata di cambio parametri da un indirizzo IT non previsto.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La registrazione deve avvenire tra il 1° gennaio e il 28 febbraio di ogni anno presso la piattaforma ACN. Poiché il D.Lgs. 138/2024 è in vigore dal 16 ottobre 2024, la prima finestra di registrazione è stata 1 gennaio - 28 febbraio 2025. Se non ancora registrato, completa la procedura entro la prossima scadenza annuale e notifica eventuali correzioni tempestivamente.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni per mancata conformità a NIS2 entro le scadenze previste?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni in caso di mancata conformità agli obblighi NIS2 per produttori importanti?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Il D.Lgs. 138/2024 prevede sanzioni amministrative fino a 10.000.000 euro o al 2% del fatturato annuale globale per violazioni gravi degli obblighi di sicurezza e segnalazione incidenti. Inoltre, la mancata segnalazione entro 72 ore di un incidente con impatto produttivo significativo espone a sanzioni specifiche e responsabilità penale dei dirigenti. L'ACN conduce audit e ispezioni sulle entità importanti a partire dal 2026; la non conformità documentata durante un'ispezione può portare al blocco della partecipazione a gare pubbliche o appalti.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Per entità di importanza nazionale (Allegato II), le sanzioni amministrative per violazioni essenziali raggiungono fino a €7 milioni o il 1,4% del fatturato annuale, qualunque sia il maggiore. Per violazioni non essenziali sono previste sanzioni minori. Il mancato rispetto degli obblighi di incident reporting o la falsa dichiarazione nella registrazione ACN comportano irrogazione di multa entro 90 giorni dalla constatazione della violazione.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Settori correlati" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Settori correlati</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="medical-devices.html">NIS2 Produttori Dispositivi Medici Italia 2026</a></li><li style="margin:0"><a href="pharmacies.html">NIS2 per Farmacie e Distributori Farmaceutici in Italia 2026</a></li><li style="margin:0"><a href="public-administration.html">NIS2 Enti Pubblici Italia 2026</a></li><li style="margin:0"><a href="real-estate.html">NIS2 Agenzie Immobiliari Italia 2026</a></li><li style="margin:0"><a href="retail.html">NIS2 per Grande Distribuzione e E-commerce in Italia 2026</a></li><li style="margin:0"><a href="sme-general.html">NIS2 per PMI in settori regolamentati Italia 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -283,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

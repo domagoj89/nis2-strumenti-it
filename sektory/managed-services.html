@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 per MSP e MSSP in Italia 2026 — Guida Conformità</title>
-  <meta name="description" content="Obblighi NIS2 per fornitori di servizi gestiti e sicurezza. Accesso remoto, incident reporting, zero-trust. Scadenza 2026.">
+  <title>NIS2 per MSP e MSSP in Italia 2026 — D.Lgs. 138/2024</title>
+  <meta name="description" content="Guida NIS2 per provider gestiti in Italia. Obblighi di sicurezza, autenticazione zero-trust, segnalazione incidenti e scadenze di conformità 2026.">
   <link rel="canonical" href="https://nis2-strumenti.it/sektory/managed-services.html">
-  <meta property="og:title" content="NIS2 per MSP e MSSP in Italia 2026 — Guida Conformità">
-  <meta property="og:description" content="Obblighi NIS2 per fornitori di servizi gestiti e sicurezza. Accesso remoto, incident reporting, zero-trust. Scadenza 2026.">
+  <meta property="og:title" content="NIS2 per MSP e MSSP in Italia 2026 — D.Lgs. 138/2024">
+  <meta property="og:description" content="Guida NIS2 per provider gestiti in Italia. Obblighi di sicurezza, autenticazione zero-trust, segnalazione incidenti e scadenze di conformità 2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-strumenti.it/sektory/managed-services.html">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="NIS2-Strumenti.it">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 per MSP e MSSP in Italia 2026 — Guida Conformità">
-  <meta name="twitter:description" content="Obblighi NIS2 per fornitori di servizi gestiti e sicurezza. Accesso remoto, incident reporting, zero-trust. Scadenza 2026.">
+  <meta name="twitter:title" content="NIS2 per MSP e MSSP in Italia 2026 — D.Lgs. 138/2024">
+  <meta name="twitter:description" content="Guida NIS2 per provider gestiti in Italia. Obblighi di sicurezza, autenticazione zero-trust, segnalazione incidenti e scadenze di conformità 2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 per Managed Service Provider e MSSP in Italia — Conformità 2026",
+      "name": "NIS2 per i Provider di Servizi Gestiti (MSP e MSSP) in Italia — Obblighi 2026",
       "item": "https://nis2-strumenti.it/sektory/managed-services.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Come devo gestire le credenziali amministrative RMM se ho 500 client?",
+      "name": "Se un cliente subisce un ransomware a causa di una vulnerabilità nella vostra piattaforma RMM, siete responsabili della segnalazione all'ACN entro 72 ore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Implementa un modello zero-trust con account unico per cliente, ogni account limitato ai soli sistemi di quel cliente. Utilizza un vault di credenziali centralizzato (es. integrato in NordLayer) con MFA obbligatoria, session recording e rotazione automatica delle password ogni 90 giorni. Nessuna credenziale condivisa è consentita."
+        "text": "Sì. Anche se il danno primario è nel sistema del cliente, se la root cause è una falla nella vostra infrastruttura MSP, il breach ricade sotto i vostri obblighi di segnalazione D.Lgs. 138/2024. Dovete notificare entro 72 ore all'ACN indicando: natura del compromesso, numero di clienti interessati, misure di contenimento adottate, e piano di remediation della vulnerabilità."
       }
     },
     {
       "@type": "Question",
-      "name": "Se un cliente subisce un ransomware e io ho fornito il servizio RMM, sono responsabile della segnalazione all'ACN?",
+      "name": "Quali sono le scadenze di registrazione e conformità presso l'ACN per MSP e MSSP?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sì, se la compromissione è avvenuta tramite un'insufficienza di sicurezza nella tua infrastruttura MSP. Devi segnalare all'ACN entro 72 ore dalla scoperta se il danno supera la soglia di danno sostanziale. Se la causa è una cattiva pratica del client (es. password debole), la segnalazione rimane comunque obbligatoria ma evidenzia il fattore esterno."
+        "text": "La registrazione presso l'ACN avviene annualmente tra il 1° gennaio e il 28 febbraio di ogni anno. Il primo anno di obbligo (2024–2025) richiede registrazione entro il 28 febbraio 2025. La conformità a obblighi tecnici e organizzativi (MFA, zero-trust, penetration testing) deve essere già operativa entro la registrazione; non sono concessi periodi di grace dopo l'iscrizione."
       }
     },
     {
       "@type": "Question",
-      "name": "Quali sono le sanzioni se non completo la conformità NIS2 entro fine 2026?",
+      "name": "Quali sono le sanzioni specifiche per MSP e MSSP che non rispettano NIS2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Per soggetti critici come gli MSP, le sanzioni amministrative variano da 5 milioni di euro a 15 milioni di euro (o 2-4% del fatturato globale annuo, se superiore). La mancanza di MFA su RMM, l'assenza di penetration testing documentato o il mancato incident reporting sono violazioni critiche con sanzioni nel massimo della forbice."
+        "text": "Per soggetti essenziali come voi, le sanzioni amministrative raggiungo fino a €10 milioni o il 2% del fatturato annuale globale (a seconda di quale sia maggiore) in caso di violazioni gravi (mancanza di MFA, segnalazione tardiva di incidenti, assenza di penetration testing). Violazioni minori (documentazione incompleta, gap di audit) possono comportare sanzioni da €100.000 a €1 milione. L'ACN opera ispezioni a campione e follow-up annuale."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Pagina principale</a><span>›</span>
     <a href="index.html">Settori</a><span>›</span>
-    NIS2 per Managed Service Provider e MSSP in Italia — Conformità 2026
+    NIS2 per i Provider di Servizi Gestiti (MSP e MSSP) in Italia — Obblighi 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato I — Entità Essenziale</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Managed Service Provider e MSSP in Italia — Conformità 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è rivolta a provider di servizi gestiti e sicurezza che operano come soggetti critici secondo l'Allegato I del D.Lgs. 138/2024. Scoprirai gli obblighi specifici sulla sicurezza dell'accesso remoto, la segnalazione incidenti e i requisiti contrattuali verso client e subfornitori.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato I — Soggetto essenziale</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per i Provider di Servizi Gestiti (MSP e MSSP) in Italia — Obblighi 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Se fornite servizi di accesso remoto, monitoraggio infrastrutturale o sicurezza gestita a clienti business, siete soggetti essenziali secondo il D.Lgs. 138/2024. Scopri gli obblighi concreti di cybersecurity, gestione degli accessi e segnalazione incidenti entro la scadenza di conformità.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano nell'ambito NIS2 gli MSP e MSSP che forniscono servizi di gestione infrastrutturale, monitoraggio sicurezza o supporto remoto a clienti business con un fatturato annuo superiore a 10 milioni di euro o che operano come fornitori critici di servizi digitali. La qualificazione dipende dal numero e dalla criticità dei clienti serviti e dal tipo di infrastruttura gestita.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientra in questa categoria qualsiasi MSP o MSSP che fornisca almeno uno dei seguenti servizi a clienti business: accesso remoto gestito (RMM), monitoraggio 24/7 di infrastrutture, servizi di sicurezza gestita (SOC, SIEM), backup gestito, patch management o identity management. Non esistono soglie di fatturato esplicite nel D.Lgs. 138/2024, ma la classificazione dipende dalla criticità dei servizi forniti ai clienti finali e dalla natura dei dati trattati.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza degli strumenti di accesso remoto (RMM e remote support)</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare un modello zero-trust per tutti gli strumenti RMM, VPN e piattaforme di supporto remoto. Ciò include l'autenticazione multi-fattore obbligatoria, la crittografia end-to-end delle sessioni, la segregazione delle credenziali per cliente (mai credenziali condivise) e il logging completo di ogni accesso amministrativo. Ogni sessione remota deve essere tracciabile e revocabile in tempo reale.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Autenticazione multi-fattore (MFA) su tutti gli strumenti di accesso remoto</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni piattaforma RMM, remote support e pannello di amministrazione utilizzato dai vostri tecnici per accedere ai sistemi cliente deve implementare MFA obbligatorio. Ciò include strumenti come TeamViewer, AnyDesk, piattaforme proprietarie e console di monitoraggio. Non è consentito l'uso di credenziali condivise o statiche; ogni accesso deve essere tracciato e collegato a un operatore identificato.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Segnalazione incidenti quando la violazione MSP colpisce sistemi client</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Se un incidente di sicurezza nella tua infrastruttura MSP/MSSP compromette i dati o la disponibilità dei sistemi client, sei obbligato a segnalare l'evento all'Autorità per la Cybersecurity Nazionale (ACN) entro 72 ore dal rilevamento. Devi inoltre notificare immediatamente ciascun cliente interessato e fornire una valutazione dell'impatto secondo le soglie NIS2 (danno sostanziale).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Modello di accesso zero-trust per l'infrastruttura MSP</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Implementate un modello zero-trust che preveda: micro-segmentazione della rete MSP, verifica dell'identità e del device per ogni accesso, cifratura end-to-end dei canali di amministrazione remota, e limitazione dei privilegi per ruolo e per cliente. Ogni sessione tecnico-cliente deve essere verificata indipendentemente, indipendentemente dall'accesso precedente.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Requisiti di sicurezza contrattuali verso client e subfornitori</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni contratto di servizio deve contenere clausole esplicite su standard di sicurezza minimi, backup, encryption, incident reporting timeline e diritti di audit. Per i subfornitori di software (es. vendor di RMM), devi eseguire valutazioni formali di sicurezza tramite questionari standardizzati e richiedere certificazioni ISO 27001 o SOC 2 Type II. Tali requisiti devono essere cascata obbligatoria nei contratti.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Trasmissione di obblighi di sicurezza nei contratti con clienti e subfornitori</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni contratto di servizio deve includere clausole esplicite sulla sicurezza informatica: obblighi di notifica incidenti, conformità a standard di crittografia, backup e disaster recovery, audit annuali. I vostri clienti devono a loro volta trasferire questi obblighi ai propri subfornitori (p.es. hosting provider, CDN). Verificate che i clienti rispettino i vostri requisiti attraverso audit contrattuali periodici.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Penetration testing regolare dell'infrastruttura MSP</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi condurre test di penetrazione almeno annuali su tutti i componenti critici dell'infrastruttura MSP (sistemi di accesso remoto, piattaforme di gestione, API di integrazione, ambienti di hosting). I test devono essere eseguiti da terzi indipendenti e i risultati documentati con remediation plan verificato. Le vulnerabilità critiche devono essere risolte entro 30 giorni.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Segnalazione incidenti che interessano sistemi cliente entro 24/72 ore</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Se una vulnerabilità nella vostra infrastruttura MSP, un compromesso di credenziali RMM, oppure un incidente di sicurezza nella piattaforma di gestione interessa uno o più sistemi cliente, dovete notificarlo all'ACN entro 24 ore (per incidenti critici) o 72 ore (per altri incidenti significativi). Comunicate contemporaneamente ai clienti interessati e documentate l'intera catena di notifica sulla piattaforma ACN.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Gestione della continuità e disaster recovery per servizi critici</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Per i servizi forniti a client essenziali, devi mantenere un piano di continuità operativa con RTO (Recovery Time Objective) massimo di 4 ore e RPO (Recovery Point Objective) di 1 ora per dati critici. Devi testare il disaster recovery almeno semestralmente e documentare i risultati. La selezione e la ridondanza geografica dei data center devono essere specificate contrattualmente.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Penetration testing annuale dell'infrastruttura MSP e dei canali remoti</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Eseguite test di penetrazione annuali (minimum cadenza obbligatoria) su piattaforme RMM, pannelli di controllo, API di integrazione e infrastruttura di supporto remoto. I test devono includere simulazione di attacchi alla catena di fornitura e validazione dell'isolamento dati cliente. Documentate i risultati e le remediation in un rapporto sottoposto all'ACN se richiesto.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Utilizzo di credenziali RMM amministratore condivise tra più client: devi implementare account unici per cliente con privilegi segregati e MFA obbligatoria su ogni connessione.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Utilizzo di credenziali RMM condivise e statiche per accedere a più ambienti cliente: ogni tecnico deve disporre di credenziali univoche, registrate in un'identità aziendale federata (AD/Azure), senza password hardcoded o salvate su drive locali.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di autenticazione multi-fattore su piattaforme di supporto remoto e VPN: introduci MFA per tutti gli accessi, inclusi quelli di emergenza, con backup basato su token fisico.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza di autenticazione multi-fattore sulle piattaforme di supporto remoto e monitoraggio: abilitare MFA (TOTP, U2F, smartcard) per tutte le console di accesso remoto, non solo per email aziendali.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancata classificazione degli incidenti client secondo le soglie NIS2: definisci un processo formale per valutare il danno sostanziale e segnalare tempestivamente all'ACN anche incidenti che colpiscono solo parzialmente l'infrastruttura client.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Incidenti di sicurezza presso clienti non classificati come breach MSP: se una vulnerabilità nel vostro stack (plugin, API, integrazione) causa un incidente nel sistema cliente, è un incidente MSP e deve essere segnalato entro 72 h all'ACN, indipendentemente dalla gravità nel contesto del cliente.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di questionari formali di sicurezza per vendor di software RMM e piattaforme cloud: istituisci un processo di due diligence standardizzato che includa richieste di SOC 2 Type II, certificazioni ISO 27001 e risultati di penetration test recenti.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di questionario formale sulla sicurezza per vendor di software: prima di integrare una soluzione di terze parti (p.es. software di backup, agente di monitoraggio), raccogliete certificazioni di sicurezza, SBOM (Software Bill of Materials), politiche di patch management e conformità a standard (ISO 27001, SOC 2).
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">nordlayer.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Come devo gestire le credenziali amministrative RMM se ho 500 client?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Se un cliente subisce un ransomware a causa di una vulnerabilità nella vostra piattaforma RMM, siete responsabili della segnalazione all'ACN entro 72 ore?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Implementa un modello zero-trust con account unico per cliente, ogni account limitato ai soli sistemi di quel cliente. Utilizza un vault di credenziali centralizzato (es. integrato in NordLayer) con MFA obbligatoria, session recording e rotazione automatica delle password ogni 90 giorni. Nessuna credenziale condivisa è consentita.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Sì. Anche se il danno primario è nel sistema del cliente, se la root cause è una falla nella vostra infrastruttura MSP, il breach ricade sotto i vostri obblighi di segnalazione D.Lgs. 138/2024. Dovete notificare entro 72 ore all'ACN indicando: natura del compromesso, numero di clienti interessati, misure di contenimento adottate, e piano di remediation della vulnerabilità.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Se un cliente subisce un ransomware e io ho fornito il servizio RMM, sono responsabile della segnalazione all'ACN?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le scadenze di registrazione e conformità presso l'ACN per MSP e MSSP?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Sì, se la compromissione è avvenuta tramite un'insufficienza di sicurezza nella tua infrastruttura MSP. Devi segnalare all'ACN entro 72 ore dalla scoperta se il danno supera la soglia di danno sostanziale. Se la causa è una cattiva pratica del client (es. password debole), la segnalazione rimane comunque obbligatoria ma evidenzia il fattore esterno.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La registrazione presso l'ACN avviene annualmente tra il 1° gennaio e il 28 febbraio di ogni anno. Il primo anno di obbligo (2024–2025) richiede registrazione entro il 28 febbraio 2025. La conformità a obblighi tecnici e organizzativi (MFA, zero-trust, penetration testing) deve essere già operativa entro la registrazione; non sono concessi periodi di grace dopo l'iscrizione.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni se non completo la conformità NIS2 entro fine 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni specifiche per MSP e MSSP che non rispettano NIS2?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Per soggetti critici come gli MSP, le sanzioni amministrative variano da 5 milioni di euro a 15 milioni di euro (o 2-4% del fatturato globale annuo, se superiore). La mancanza di MFA su RMM, l'assenza di penetration testing documentato o il mancato incident reporting sono violazioni critiche con sanzioni nel massimo della forbice.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Per soggetti essenziali come voi, le sanzioni amministrative raggiungo fino a €10 milioni o il 2% del fatturato annuale globale (a seconda di quale sia maggiore) in caso di violazioni gravi (mancanza di MFA, segnalazione tardiva di incidenti, assenza di penetration testing). Violazioni minori (documentazione incompleta, gap di audit) possono comportare sanzioni da €100.000 a €1 milione. L'ACN opera ispezioni a campione e follow-up annuale.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Settori correlati" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Settori correlati</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="manufacturing.html">NIS2 Produttori Industriali Italia 2026</a></li><li style="margin:0"><a href="medical-devices.html">NIS2 Produttori Dispositivi Medici Italia 2026</a></li><li style="margin:0"><a href="pharmacies.html">NIS2 per Farmacie e Distributori Farmaceutici in Italia 2026</a></li><li style="margin:0"><a href="public-administration.html">NIS2 Enti Pubblici Italia 2026</a></li><li style="margin:0"><a href="real-estate.html">NIS2 Agenzie Immobiliari Italia 2026</a></li><li style="margin:0"><a href="retail.html">NIS2 per Grande Distribuzione e E-commerce in Italia 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -283,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

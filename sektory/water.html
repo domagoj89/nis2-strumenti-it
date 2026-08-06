@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 per gestori acqua potabile e reti idriche in Italia 2026</title>
-  <meta name="description" content="Guida NIS2/D.Lgs. 138/2024 per gestori acqua: obblighi SCADA, protezione dosaggio chimico, segnalazione incidenti. Scadenza 2026.">
+  <title>NIS2 Gestori Acqua Potabile Italia | Conformità D.Lgs. 138/2024</title>
+  <meta name="description" content="Requisiti NIS2 per gestori acqua potabile, operatori depurazione e reti distribuzione in Italia. Scadenze conformità 2024-2026, obblighi cybersecurity SCADA.">
   <link rel="canonical" href="https://nis2-strumenti.it/sektory/water.html">
-  <meta property="og:title" content="NIS2 per gestori acqua potabile e reti idriche in Italia 2026">
-  <meta property="og:description" content="Guida NIS2/D.Lgs. 138/2024 per gestori acqua: obblighi SCADA, protezione dosaggio chimico, segnalazione incidenti. Scadenza 2026.">
+  <meta property="og:title" content="NIS2 Gestori Acqua Potabile Italia | Conformità D.Lgs. 138/2024">
+  <meta property="og:description" content="Requisiti NIS2 per gestori acqua potabile, operatori depurazione e reti distribuzione in Italia. Scadenze conformità 2024-2026, obblighi cybersecurity SCADA.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-strumenti.it/sektory/water.html">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="NIS2-Strumenti.it">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 per gestori acqua potabile e reti idriche in Italia 2026">
-  <meta name="twitter:description" content="Guida NIS2/D.Lgs. 138/2024 per gestori acqua: obblighi SCADA, protezione dosaggio chimico, segnalazione incidenti. Scadenza 2026.">
+  <meta name="twitter:title" content="NIS2 Gestori Acqua Potabile Italia | Conformità D.Lgs. 138/2024">
+  <meta name="twitter:description" content="Requisiti NIS2 per gestori acqua potabile, operatori depurazione e reti distribuzione in Italia. Scadenze conformità 2024-2026, obblighi cybersecurity SCADA.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 per gestori di acqua potabile e operatori di depurazione in Italia — Obblighi 2026",
+      "name": "NIS2 per Fornitori Acqua Potabile e Operatori Reti Idriche in Italia — Requisiti e Conformità 2024-2026",
       "item": "https://nis2-strumenti.it/sektory/water.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Quale è il significato di 'popolazione significativa' nel contesto della segnalazione incidenti idrici?",
+      "name": "Quale livello di segmentazione di rete è richiesto per un impianto di depurazione con 50 operatori e SCADA legacy?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "La soglia è generalmente fissata a 10.000 abitanti serviti dalla rete interessata dall'incidente. Se un attacco cyber interrompe la fornitura per più di 1 ora a una popolazione superiore a questa soglia, hai l'obbligo di segnalare entro 72 ore all'ACN compilando il modulo di notifica incidente previsto dalla Direttiva NIS2."
+        "text": "La segmentazione minima richiede isolamento completo della rete SCADA/ICS dalla rete corporate mediante firewall dedicato con regole whitelist (solo traffico autorizzato verso specifici controller). Per sistemi legacy, installate un industrial data diode o gateway bidirezionale con ispezione profonda che traduca solo i comandi MODBUS o Profinet legittimi, bloccando tutto il resto. Ogni pompa, dosatore e serbatoio deve essere su subnet separate da quella di ufficio, gestione dati e e-mail aziendali."
       }
     },
     {
       "@type": "Question",
-      "name": "Posso mantenere un SCADA in sede on-premise senza cloud se implemento una VPN per l'accesso remoto dei tecnici?",
+      "name": "Cosa succede se un incidente provoca il blocco della distribuzione di acqua a 100.000 cittadini per 4 ore?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sì, è ammesso. Tuttavia la VPN deve utilizzare certificati con almeno 2048-bit RSA, autenticazione multi-fattore (OTP o smartcard), e ogni sessione remota deve essere loggata e monitorata. Assicurati che il firewall blocchi il traffico SCADA da internet anche in caso di compromissione delle credenziali VPN."
+        "text": "Dovete notificare l'ACN entro 72 ore con una relazione completa contenente la cronologia dell'incidente, la causa (es. iniezione SQL su server SCADA), l'impatto quantificato sulla popolazione e sulla continuità operativa, e le azioni di mitigazione adottate (es. isolamento dei sistemi compromessi, ripristino da backup). La mancata notifica entro il termine espone a sanzioni fino a €10 milioni o il 2% del fatturato. Se ritenete che il danno sia stato intenzionale (attacco cyber), includete evidenze forensiche e rapporto tecnico."
       }
     },
     {
       "@type": "Question",
-      "name": "Quali sono le sanzioni in caso di non conformità al D.Lgs. 138/2024 per gestori idrici?",
+      "name": "Entro quando devo completare la registrazione sulla piattaforma ACN e quali sono le conseguenze del ritardo?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Le sanzioni amministrative vanno da €5.000 a €100.000 per violazioni degli obblighi di sicurezza, fino a €1.000.000 per mancata segnalazione di incidenti rilevanti. Per reati più gravi (danno alla salute pubblica) sono previste pene detentive fino a 2 anni. La scadenza per raggiungere la compliance piena è il 17 ottobre 2026."
+        "text": "La registrazione o l'aggiornamento del profilo sulla piattaforma ACN deve avvenire entro il 28 febbraio di ogni anno (prossima scadenza: 28 febbraio 2025). Indicare i dati di identificazione, le infrastrutture critiche presidiate, i responsabili della cybersecurity e qualsiasi incidente segnalato nell'anno precedente. Il ritardo nella registrazione è sanzionabile fino a €7 milioni per entità importanti e €10 milioni per entità essenziali; inoltre esclude dal beneficio dei termini di remediation e sottopone a controlli ACN immediati."
       }
     }
   ]
@@ -105,7 +105,7 @@
   <div class="breadcrumb">
     <a href="../index.html">Pagina principale</a><span>›</span>
     <a href="index.html">Settori</a><span>›</span>
-    NIS2 per gestori di acqua potabile e operatori di depurazione in Italia — Obblighi 2026
+    NIS2 per Fornitori Acqua Potabile e Operatori Reti Idriche in Italia — Requisiti e Conformità 2024-2026
   </div>
 </div>
 
@@ -113,15 +113,15 @@
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
     <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato I — Entità essenziale</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per gestori di acqua potabile e operatori di depurazione in Italia — Obblighi 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è destinata a gestori di reti idriche, operatori di impianti di depurazione e responsabili di sicurezza informatica nel settore idrico italiano. Scoprirai gli obblighi specifici per proteggere infrastrutture critiche, sistemi di controllo SCADA e dosaggio chimico secondo il D.Lgs. 138/2024.</p>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Fornitori Acqua Potabile e Operatori Reti Idriche in Italia — Requisiti e Conformità 2024-2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida riguarda i gestori di acquedotti, operatori di depurazione e gestori di reti di distribuzione idrica classificati come soggetti essenziali secondo il D.Lgs. 138/2024. Scoprirete gli obblighi specifici di cybersicurezza per i sistemi SCADA, le modalità di notifica degli incidenti entro 24/72 ore e come integrare la protezione fisica e digitale delle infrastrutture critiche.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Sono soggetti obbligati i gestori di reti di distribuzione di acqua potabile, gli operatori di impianti di trattamento acque reflue e le reti di raccolta idrica che forniscono servizi a popolazioni significative (generalmente superiori a 30.000 abitanti). Include anche i gestori di sistemi di pompaggio interconnessi e impianti di trattamento chimico della potabilizzazione.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Sono soggetti essenziali NIS2 tutti i fornitori di acqua potabile e gli operatori di reti di distribuzione idrica e di trattamento delle acque reflue che forniscono servizi essenziali a popolazioni significative. La classificazione riguarda le aziende pubbliche e private che gestiscono acquedotti principale, impianti di depurazione, e sistemi di pompaggio interconnessi a livello regionale o superiore, indipendentemente dalle dimensioni del fatturato.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Protezione dei sistemi SCADA e ICS per il controllo della distribuzione idrica</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare segmentazione di rete tra sistemi operativi (SCADA, PLC, HMI) e reti aziendali con firewalls dedicati. I sistemi di supervisione del pompaggio, trattamento e distribuzione dell'acqua devono essere isolati da connessioni internet dirette e protetti da autenticazione multi-fattore. Configura accessi remoti solo tramite VPN dedicate con logging di tutti gli accessi.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Protezione dei Sistemi SCADA e ICS da Accessi Non Autorizzati</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">È obbligatorio implementare firewall e segmentazione di rete per isolare completamente i sistemi di controllo dell'automazione idrica (SCADA/ICS) dalla rete aziendale e da internet. Ogni sistema di dosaggio chimico, pompa, serbatoio controllato in remoto e stazione di trattamento deve essere protetto mediante autenticazione multi-fattore e accessi basati su ruolo. La mancanza di segmentazione tra rete corporativa e rete operativa espone a rischi critici di compromissione dell'integrità dell'acqua distribuita.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza dei sistemi di dosaggio chimico e protezione dal sabotaggio</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">I controllori di dosaggio chimico (cloro, coagulanti, disinfettanti) devono avere credenziali non predefinite e accesso amministrativo limitato a personale autorizzato. Implementa controlli di integrità sui setpoint di dosaggio con alerting in tempo reale per anomalie. Monitora i tentativi di modifica non autorizzata tramite SIEM dedicato.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Segnalazione Incidenti di Cybersecurity entro 24 e 72 Ore</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Qualsiasi incidente che comprometta la disponibilità, confidenzialità o integrità dei dati o servizi idrici deve essere notificato all'ACN (Agenzia per la Cybersicurezza Nazionale) entro 24 ore dal rilevamento. Se l'incidente causa una disruption significativa nella fornitura di acqua potabile a una popolazione rilevante, è obbligatoria la notifica entro 72 ore con dettagli sulla causa, l'impatto sulla distribuzione, e le misure di mitigazione intraprese. Documentate ogni tentativo di accesso sospetto ai controller di dosaggio e alle valvole di controllo.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Segnalazione incidenti per interruzioni di fornitura idrica a popolazioni significative</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi segnalare all'ACN (Agenzia per la Cybersicurezza Nazionale) entro 72 ore qualsiasi incidente di cybersecurity che causi interruzione del servizio idrico per più di 1 ora a oltre 10.000 abitanti. Mantieni un registro degli incidenti con timestamp, impatto sulla fornitura, misure di contenimento adottate e tempo di ripristino.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Gestione delle Credenziali e Eliminazione delle Password di Default</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Tutti i dispositivi SCADA, i controller PLC dei sistemi di trattamento e i gateway di comunicazione devono avere credenziali personalizzate univoche; le password di default fornite dal costruttore devono essere immediatamente modificate. È vietato l'utilizzo di credenziali condivise; ogni operatore deve disporre di un account nominale con tracciamento completo delle azioni eseguite. I controller di dosaggio chimico, in particolare, richiedono un livello di accesso fisico e digitale integrato per prevenire manomissioni intenzionali.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Integrazione della sicurezza fisica-cyber per stazioni di pompaggio e centrali</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Le stazioni di pompaggio, serbatoi e centrali di trattamento devono avere sorveglianza fisica integrata con controlli logici di accesso cyber. Implementa video sorveglianza con storage cifrato, sensori di apertura porte per edifici tecnici e sincronizzazione tra sistemi fisici e log di accesso cyber. Documenta tutte le visite tecniche e gli interventi con registri tracciati.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Integrazione della Sicurezza Fisica e Digitale per Stazioni di Pompaggio</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Le stazioni di pompaggio e i nodi critici della rete devono essere protetti tanto fisicamente quanto digitalmente mediante monitoraggio video, sistemi di controllo accesso biometrico o badge, e compensazione con sensori digitali di movimento e temperatura. Il tamper detection sui pannelli di controllo deve essere integrato con alert automatici al sistema di cybersecurity centrale. La separazione geografica di backup power supply e comunicazione ridondante garantisce resilienza anche in caso di attacco fisico combinato.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Gestione dei rischi di cybersecurity per fornitori e servizi di manutenzione</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Valuta i rischi di cybersecurity dei fornitori critici (manutenzione SCADA, software industriale, fornitori chimici) e includi clausole di sicurezza nei contratti. Richiedi certificazioni di sicurezza, penetration testing annuale dei sistemi interfacciati e accesso remoto solo mediante sessioni temporizzate e monitorate.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Registrazione sulla Piattaforma ACN e Mantenimento della Conformità</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Entro il 28 febbraio di ogni anno, i gestori idrici devono registrare o aggiornare il proprio profilo sulla piattaforma ACN, indicando operatività, infrastrutture critiche presidiate e eventuali incidenti dell'anno precedente. La conformità deve essere costantemente mantenuta tramite audit annuali interni, test di penetrazione su sistemi SCADA, e piani di continuità operativa con RTO/RPO definiti. Il mancato rispetto espone a sanzioni fino a €10 milioni o il 2% del fatturato globale annuo.</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi SCADA collegati a internet senza firewall dedicato: separa immediatamente le reti operative mediante air-gap o segmentazione con DMZ monitorate.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi SCADA connessi a internet senza firewall dedicato e segmentazione di rete, creando accesso diretto da remoto a controller critici senza autenticazione adeguata.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Controller di dosaggio chimico con password predefinite dal costruttore: cambia tutte le credenziali amministrative e disabilita account generici entro 30 giorni.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Controller di dosaggio chimico e pompe configurati con password di default fornite dal produttore, permettendo attacchi automatizzati su larga scala.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nessuna segmentazione tra rete aziendale e rete operativa: implementa VLAN dedicate e firewall stateful che blocchino il traffico non autorizzato tra segmenti.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza completa di segmentazione tra la rete aziendale (e-mail, ERP) e la rete operativa (SCADA, automazione), facilitando la propagazione laterale di malware verso i sistemi idraulici.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di monitoraggio e logging dei comandi SCADA: attiva syslog centralizzato su server dedicato con retenzione minima 12 mesi per tracciabilità di modifiche critiche.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di monitoraggio real-time e logging delle modifiche ai parametri di trattamento, impedendo il rilevamento tempestivo di manomissioni ai dosaggi chimici o portate di pompaggio.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale è il significato di 'popolazione significativa' nel contesto della segnalazione incidenti idrici?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale livello di segmentazione di rete è richiesto per un impianto di depurazione con 50 operatori e SCADA legacy?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La soglia è generalmente fissata a 10.000 abitanti serviti dalla rete interessata dall'incidente. Se un attacco cyber interrompe la fornitura per più di 1 ora a una popolazione superiore a questa soglia, hai l'obbligo di segnalare entro 72 ore all'ACN compilando il modulo di notifica incidente previsto dalla Direttiva NIS2.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La segmentazione minima richiede isolamento completo della rete SCADA/ICS dalla rete corporate mediante firewall dedicato con regole whitelist (solo traffico autorizzato verso specifici controller). Per sistemi legacy, installate un industrial data diode o gateway bidirezionale con ispezione profonda che traduca solo i comandi MODBUS o Profinet legittimi, bloccando tutto il resto. Ogni pompa, dosatore e serbatoio deve essere su subnet separate da quella di ufficio, gestione dati e e-mail aziendali.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Posso mantenere un SCADA in sede on-premise senza cloud se implemento una VPN per l'accesso remoto dei tecnici?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Cosa succede se un incidente provoca il blocco della distribuzione di acqua a 100.000 cittadini per 4 ore?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Sì, è ammesso. Tuttavia la VPN deve utilizzare certificati con almeno 2048-bit RSA, autenticazione multi-fattore (OTP o smartcard), e ogni sessione remota deve essere loggata e monitorata. Assicurati che il firewall blocchi il traffico SCADA da internet anche in caso di compromissione delle credenziali VPN.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Dovete notificare l'ACN entro 72 ore con una relazione completa contenente la cronologia dell'incidente, la causa (es. iniezione SQL su server SCADA), l'impatto quantificato sulla popolazione e sulla continuità operativa, e le azioni di mitigazione adottate (es. isolamento dei sistemi compromessi, ripristino da backup). La mancata notifica entro il termine espone a sanzioni fino a €10 milioni o il 2% del fatturato. Se ritenete che il danno sia stato intenzionale (attacco cyber), includete evidenze forensiche e rapporto tecnico.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni in caso di non conformità al D.Lgs. 138/2024 per gestori idrici?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Entro quando devo completare la registrazione sulla piattaforma ACN e quali sono le conseguenze del ritardo?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Le sanzioni amministrative vanno da €5.000 a €100.000 per violazioni degli obblighi di sicurezza, fino a €1.000.000 per mancata segnalazione di incidenti rilevanti. Per reati più gravi (danno alla salute pubblica) sono previste pene detentive fino a 2 anni. La scadenza per raggiungere la compliance piena è il 17 ottobre 2026.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La registrazione o l'aggiornamento del profilo sulla piattaforma ACN deve avvenire entro il 28 febbraio di ogni anno (prossima scadenza: 28 febbraio 2025). Indicare i dati di identificazione, le infrastrutture critiche presidiate, i responsabili della cybersecurity e qualsiasi incidente segnalato nell'anno precedente. Il ritardo nella registrazione è sanzionabile fino a €7 milioni per entità importanti e €10 milioni per entità essenziali; inoltre esclude dal beneficio dei termini di remediation e sottopone a controlli ACN immediati.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Settori correlati" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Settori correlati</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="accountants.html">NIS2 per studi di contabilità, dottori commercialisti e revisori</a></li><li style="margin:0"><a href="banks.html">NIS2 per banche in Italia</a></li><li style="margin:0"><a href="cloud-providers.html">NIS2 per Cloud Service Provider in Italia</a></li><li style="margin:0"><a href="construction.html">NIS2 Imprese Costruzioni Italia 2026</a></li><li style="margin:0"><a href="cybersecurity-firms.html">NIS2 Fornitori Cybersecurity Italia 2026</a></li><li style="margin:0"><a href="dental-clinics.html">NIS2 cliniche dentali e mediche Italia 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -283,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

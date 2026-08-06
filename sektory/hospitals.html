@@ -11,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 per Ospedali e Cliniche in Italia — Guida Compliance 2026</title>
-  <meta name="description" content="Guida completa agli obblighi NIS2/D.Lgs. 138/2024 per ospedali e centri specialistici italiani. Segnalazione incidenti, segmentazione reti, formazione staff e scadenze 2026.">
+  <title>NIS2 per Ospedali e Cliniche in Italia — Guida Completa 2026</title>
+  <meta name="description" content="NIS2 D.Lgs. 138/2024: obblighi di cybersicurezza per ospedali e cliniche con 50+ dipendenti. Scadenze, segnalazione incidenti, sanzioni fino a €10 milioni.">
   <link rel="canonical" href="https://nis2-strumenti.it/sektory/hospitals.html">
-  <meta property="og:title" content="NIS2 per Ospedali e Cliniche in Italia — Guida Compliance 2026">
-  <meta property="og:description" content="Guida completa agli obblighi NIS2/D.Lgs. 138/2024 per ospedali e centri specialistici italiani. Segnalazione incidenti, segmentazione reti, formazione staff e scadenze 2026.">
+  <meta property="og:title" content="NIS2 per Ospedali e Cliniche in Italia — Guida Completa 2026">
+  <meta property="og:description" content="NIS2 D.Lgs. 138/2024: obblighi di cybersicurezza per ospedali e cliniche con 50+ dipendenti. Scadenze, segnalazione incidenti, sanzioni fino a €10 milioni.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-strumenti.it/sektory/hospitals.html">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="NIS2-Strumenti.it">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 per Ospedali e Cliniche in Italia — Guida Compliance 2026">
-  <meta name="twitter:description" content="Guida completa agli obblighi NIS2/D.Lgs. 138/2024 per ospedali e centri specialistici italiani. Segnalazione incidenti, segmentazione reti, formazione staff e scadenze 2026.">
+  <meta name="twitter:title" content="NIS2 per Ospedali e Cliniche in Italia — Guida Completa 2026">
+  <meta name="twitter:description" content="NIS2 D.Lgs. 138/2024: obblighi di cybersicurezza per ospedali e cliniche con 50+ dipendenti. Scadenze, segnalazione incidenti, sanzioni fino a €10 milioni.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -46,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 per Ospedali e Reti Ospedaliere in Italia — Obblighi delle Entità Critiche 2026",
+      "name": "NIS2 per Ospedali, Reti Ospedaliere e Centri di Cura Specialistica in Italia — Requisiti e Conformità 2026",
       "item": "https://nis2-strumenti.it/sektory/hospitals.html"
     }
   ]
@@ -59,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Se un dispositivo medico connesso (monitor paziente) viene colpito da ransomware, devo segnalarlo al CSIRT entro 24 ore anche se contigo con segmentazione di rete?",
+      "name": "Qual è la scadenza per la prima registrazione sulla piattaforma ACN e quali dati devo fornire?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sì, qualsiasi incidente che comprometta un sistema life-critical deve essere segnalato al CSIRT entro 24 ore in forma di early warning, indipendentemente dalla segmentazione. La segmentazione mitiga il danno ma non elimina l'obbligo di notifica. Il rapporto completo (72 ore) deve descrivere misure di isolamento adottate e pazienti potenzialmente esposti."
+        "text": "La registrazione sulla piattaforma dell'Agenzia per la Cybersicurezza Nazionale è obbligatoria tra il 1° gennaio e il 28 febbraio di ogni anno. È necessario fornire i dettagli della struttura, i referenti per la sicurezza informatica, l'elenco dei sistemi critici, i contatti per la segnalazione di incidenti e una dichiarazione di conformità preliminare agli obblighi NIS2."
       }
     },
     {
       "@type": "Question",
-      "name": "Quali patching frequency è richiesta per Windows su aparecchi di imaging (TC, RM) che non possono essere riavviati durante le ore di servizio?",
+      "name": "Se subisco un attacco ransomware su una rete clinica, qual è la procedura esatta e i tempi di segnalazione?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "I patch critici di sicurezza devono essere applicati entro 30 giorni dal rilascio; patch di routine entro 90 giorni. Per device che non tollera downtime operativo, negoziare con il vendor una finestra mensile di manutenzione (e.g., domenica notte) oppure implementare un'architettura hot-standby. Documentare esclusioni in un registro di esenzioni approvato dal responsabile IT e revisionate trimestralmente."
+        "text": "Devi notificare il CSIRT nazionale dell'ACN entro 24 ore dalla rilevazione dell'incidente (notifica precoce con informazioni essenziali). Entro 72 ore, devi trasmettere un rapporto completo includendo timeline dell'attacco, sistemi interessati, dati potenzialmente compromessi e misure di contenimento adottate. Parallela mente, isola i segmenti di rete colpiti, avvia il ripristino da backup e comunica con il tuo referente NIS2 interno."
       }
     },
     {
       "@type": "Question",
-      "name": "Quali sono le sanzioni per mancata segnalazione di incidenti al CSIRT entro i termini?",
+      "name": "Quali sono le sanzioni amministrative se non raggiungo la conformità NIS2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Il D.Lgs. 138/2024 prevede sanzioni amministrative pecuniarie da 5.000 a 1.000.000 di euro per entità critiche (ospedali). Oltre alle sanzioni, la mancata segnalazione può esporre la struttura a responsabilità civile verso pazienti, danno reputazionale e perdita di acreditamento regionale. L'Autorità (ACN) può inoltre ordinare interventi di bonifica d'urgenza."
+        "text": "Per soggetti essenziali come ospedali, le sanzioni amministrative possono raggiungere fino a €10 milioni o il 2% del fatturato annuale complessivo (applicato il maggiore). Per violazioni di obblighi specifici (es. mancata segnalazione di incidente entro 72 ore), la sanzione può arrivare fino a €7 milioni o 1,4% del fatturato. L'ACN applica sanzioni graduali a seconda della gravità, della durata della violazione e della dimensione della struttura."
       }
     }
   ]
@@ -105,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Pagina principale</a><span>›</span>
     <a href="index.html">Settori</a><span>›</span>
-    NIS2 per Ospedali e Reti Ospedaliere in Italia — Obblighi delle Entità Critiche 2026
+    NIS2 per Ospedali, Reti Ospedaliere e Centri di Cura Specialistica in Italia — Requisiti e Conformità 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato I — Entità Essenziale</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Ospedali e Reti Ospedaliere in Italia — Obblighi delle Entità Critiche 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa pagina guida responsabili IT, compliance officer e direttori sanitari italiani negli obblighi specifici del D.Lgs. 138/2024. Scoprirai come implementare segmentazione di rete medica, gestione della continuità operativa per sistemi life-critical, e segnalazione incidenti entro 24-72 ore al CSIRT nazionale.</p>
+    <span style="display:inline-block;background:#1a3a5c;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato I — Soggetto essenziale</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Ospedali, Reti Ospedaliere e Centri di Cura Specialistica in Italia — Requisiti e Conformità 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è rivolta a responsabili IT, direttori sanitari e governance cliniche di strutture sanitarie con almeno 50 dipendenti o che servono popolazioni regionali. Scoprirai gli obblighi specifici del D.Lgs. 138/2024, le scadenze critiche, le lacune di conformità più comuni e come implementare un programma di cybersicurezza efficace per proteggere i dati dei pazienti e la continuità operativa.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano nell'obbligo tutte le strutture ospedaliere pubbliche e private, le reti ospedaliere regionali e i centri di assistenza specialistica che impiegano almeno 50 dipendenti oppure servono una popolazione regionale definita. Le cliniche private e i laboratori specializzati di medie dimensioni rientrano automaticamente nella classificazione di entità essenziale se forniscono servizi critici su base territoriale.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano nell'obbligo di conformità NIS2 tutti gli ospedali pubblici e privati, le reti ospedaliere, i centri di cure specialistiche e le cliniche con almeno 50 dipendenti, oppure che forniscono servizi sanitari critici a livello regionale. Sono incluse le strutture di degenza, gli ambulatori specialistici, i centri diagnostici con servizi di imaging avanzato e le unità di terapia intensiva che utilizzano sistemi informatici per la gestione clinica e amministrativa.</p>
   </div>
 </div>
 
@@ -135,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Segnalazione Incidenti Entro 24-72 Ore al CSIRT</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni incidente di sicurezza cibernetica che comprometta sistemi medici (cartelle cliniche elettroniche, monitor paziente, imaging) deve essere notificato al CSIRT italiano entro 24 ore in forma preliminare, seguito da rapporto completo entro 72 ore. La segnalazione deve indicare natura, portata, sistemi colpiti e misure di contenimento adottate. Ritardi o omissioni comportano sanzioni amministrative fino a 1 milione di euro.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Segnalazione degli incidenti di cybersicurezza all'ACN</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni struttura sanitaria deve segnalare gli incidenti di sicurezza informatica al CSIRT nazionale entro 24 ore (notifica precoce) e entro 72 ore dalla rilevazione (rapporto completo). Gli incidenti critici includono compromissioni di sistemi di imaging diagnostici, interruzioni di accesso ai dati dei pazienti, infezioni da ransomware su reti cliniche e accessi non autorizzati a cartelle cliniche elettroniche. La registrazione sulla piattaforma ACN è obbligatoria tra il 1° gennaio e il 28 febbraio di ogni anno.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -144,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Segmentazione Reti Mediche e OT/SCADA da Reti Amministrative</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Le reti dei dispositivi medici e dei sistemi SCADA (ventilatori, pompe infusionali, monitor) devono essere fisicamente o logicamente separate dalla rete amministrativa e dal Wi-Fi aziendale. Questa segmentazione impedisce che compromissioni della rete office contagino sistemi life-critical e deve essere documentata in topologie di rete validate annualmente da audit interni.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Segmentazione delle reti medicali e isolamento dei sistemi critici</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">È obbligatorio implementare una netta separazione tra le reti cliniche (contenenti dispositivi medici, monitor pazienti, ventilatori) e le reti amministrative (posta, gestionale, Wi-Fi aziendale). I sistemi SCADA, i ventilatori ICU e gli infusori devono operare su segmenti di rete dedicati con firewall e controlli di accesso ristretti. Questa segmentazione impedisce che malware diffuso tramite la rete amministrativa contamini i dispositivi di supporto vitale.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -153,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Gestione della Sicurezza della Supply Chain per Software e Dispositivi Medici</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Tutte le integrazioni di software medico e gli aggiornamenti dei dispositivi devono provenire da fornitori certificati con SLA di sicurezza scritti. I contratti devono obbligare i vendor a notificare vulnerabilità entro 72 ore, a mantener credenziali di accesso segregate e a fornire backup regolari dei dati clinici. Audit annuali sui fornitori critici sono obbligatori.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Gestione della sicurezza della catena di fornitura per software e dispositivi medici</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Occorre formalizzare contratti di sicurezza con tutti i fornitori di software clinico, sistemi EHR, software di imaging e produttori di dispositivi medici connessi. Verificare che i fornitori applichino patching regolare, implementino crittografia in transito e a riposo, e forniscano notifiche di vulnerabilità critiche entro SLA definiti. Eseguire audit annuali della conformità dei fornitori e mantenere un registro degli accessi remoti dei vendor ai sistemi clinici.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -162,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Business Continuity e Disaster Recovery per Sistemi Life-Critical</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sistemi critici come le cartelle cliniche, i monitor pazienti intensivi e i sistemi radiologici richiedono RTO (Recovery Time Objective) non superiore a 4 ore e RPO (Recovery Point Objective) massimo 1 ora. Piani di disaster recovery devono essere testati semestralmente con report documentati, e hot backup in siti geograficamente distinti sono obbligatori per le strutture ospedaliere regionali.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Continuità operativa e disaster recovery per sistemi critici per la vita</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni struttura deve disporre di un piano di continuità documentato che garantisca il ripristino entro 4 ore di sistemi critici quali cartelle cliniche elettroniche, sistemi di monitoraggio intensivo, infusomeria automatizzata e sistemi PACS di imaging. Deve essere testato almeno semestralmente con esercitazioni simulate. I backup dei dati clinici devono essere conservati off-site, crittografati e verificati per l'integrità almeno mensilmente.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -171,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Formazione Cibernetica Obbligatoria per Personale Clinico e Amministrativo</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Tutto il personale (medici, infermieri, staff amministrativo, tecnici) deve ricevere formazione annuale sulla sicurezza cibernetica, riconoscimento di phishing e uso sicuro dei sistemi aziendali. La formazione deve documentare completamento e certificare competenze specifiche per ruoli; medici devono comprendere rischi di ransomware su device medici, tecnici devono conoscere patching e isolamento di rete.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Formazione obbligatoria in cybersicurezza per staff clinico e amministrativo</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Tutto il personale ospedaliero (medici, infermieri, tecnici, amministrativi) deve ricevere almeno 8 ore annuali di formazione in cybersicurezza, inclusa consapevolezza su phishing, uso di password sicure, igiene digitale e segnalazione di comportamenti sospetti. Le strutture devono documentare la frequenza e tenere registro dei partecipanti. La formazione deve includere scenari specifici del settore sanitario (e.g. attacchi mirati a ospedali durante emergenze).</p>
       </div>
     </div>
   </div>
@@ -184,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi Windows sugli apparecchi di imaging (TC, RM) e monitor paziente non ricevono patch regolari perché i vendor blocca gli aggiornamenti; soluzione: negoziare con fornitori finestre di patching sicure e distribuire patch critiche di sicurezza entro 30 giorni.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi Windows non aggiornati su apparecchiature di imaging (tomografi, risonanze) e monitor paziente eseguono versioni di Windows obsolete senza patch di sicurezza critiche, creando vettori di accesso per ransomware.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di segmentazione: Wi-Fi aziendale, rete ospedaliera amministrativa e reti dei ventilatori/pompe infusionali sono sulla stessa LAN non gestita; soluzione: implementare VLAN dedicate con firewall di segmentazione e implementare Zero Trust per accesso a device medici.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di segmentazione di rete: dispositivi medici su Wi-Fi aziendale aperta e reti amministrative senza firewall intermedio permettono la propagazione laterale di malware da una postazione compromessa a dispositivi di supporto vitale.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Accesso di vendor non tracciato: tecnici di manutenzione dei device medici accedono con credenziali condivise senza log; soluzione: richiedere PAM (Privileged Access Management) con MFA, registrare tutti gli accessi e revocare credenziali dopo interventi.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Accesso remoto di fornitori non controllato: i vendor di imaging, software EHR e manutentori hardware accedono direttamente ai sistemi clinici senza audit, VPN forzata, MFA o limitazioni temporali, creando porte posteriori permanenti.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nessuna procedura di risposta agli incidenti documentata: non esiste playbook per phishing, ransomware o spegnimento di system; soluzione: sviluppare incident response plan (IRP) con ruoli, escalation, comunicazione e testarlo ogni 6 mesi con esercitazioni tabletop.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nessun piano di risposta agli incidenti documentato o testato: le strutture non dispongono di procedure scritte per l'isolamento di sistemi compromessi, la comunicazione con l'ACN entro 24 ore, o il ripristino da backup durante un attacco ransomware.
     </li>
   </ul>
 </div>
@@ -209,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -217,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">isms.online</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/isms-online.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -225,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -236,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Se un dispositivo medico connesso (monitor paziente) viene colpito da ransomware, devo segnalarlo al CSIRT entro 24 ore anche se contigo con segmentazione di rete?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Qual è la scadenza per la prima registrazione sulla piattaforma ACN e quali dati devo fornire?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Sì, qualsiasi incidente che comprometta un sistema life-critical deve essere segnalato al CSIRT entro 24 ore in forma di early warning, indipendentemente dalla segmentazione. La segmentazione mitiga il danno ma non elimina l'obbligo di notifica. Il rapporto completo (72 ore) deve descrivere misure di isolamento adottate e pazienti potenzialmente esposti.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La registrazione sulla piattaforma dell'Agenzia per la Cybersicurezza Nazionale è obbligatoria tra il 1° gennaio e il 28 febbraio di ogni anno. È necessario fornire i dettagli della struttura, i referenti per la sicurezza informatica, l'elenco dei sistemi critici, i contatti per la segnalazione di incidenti e una dichiarazione di conformità preliminare agli obblighi NIS2.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali patching frequency è richiesta per Windows su aparecchi di imaging (TC, RM) che non possono essere riavviati durante le ore di servizio?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Se subisco un attacco ransomware su una rete clinica, qual è la procedura esatta e i tempi di segnalazione?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">I patch critici di sicurezza devono essere applicati entro 30 giorni dal rilascio; patch di routine entro 90 giorni. Per device che non tollera downtime operativo, negoziare con il vendor una finestra mensile di manutenzione (e.g., domenica notte) oppure implementare un'architettura hot-standby. Documentare esclusioni in un registro di esenzioni approvato dal responsabile IT e revisionate trimestralmente.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Devi notificare il CSIRT nazionale dell'ACN entro 24 ore dalla rilevazione dell'incidente (notifica precoce con informazioni essenziali). Entro 72 ore, devi trasmettere un rapporto completo includendo timeline dell'attacco, sistemi interessati, dati potenzialmente compromessi e misure di contenimento adottate. Parallela mente, isola i segmenti di rete colpiti, avvia il ripristino da backup e comunica con il tuo referente NIS2 interno.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni per mancata segnalazione di incidenti al CSIRT entro i termini?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni amministrative se non raggiungo la conformità NIS2?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Il D.Lgs. 138/2024 prevede sanzioni amministrative pecuniarie da 5.000 a 1.000.000 di euro per entità critiche (ospedali). Oltre alle sanzioni, la mancata segnalazione può esporre la struttura a responsabilità civile verso pazienti, danno reputazionale e perdita di acreditamento regionale. L'Autorità (ACN) può inoltre ordinare interventi di bonifica d'urgenza.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Per soggetti essenziali come ospedali, le sanzioni amministrative possono raggiungere fino a €10 milioni o il 2% del fatturato annuale complessivo (applicato il maggiore). Per violazioni di obblighi specifici (es. mancata segnalazione di incidente entro 72 ore), la sanzione può arrivare fino a €7 milioni o 1,4% del fatturato. L'ACN applica sanzioni graduali a seconda della gravità, della durata della violazione e della dimensione della struttura.</p>
     </div>
   </div>
   </div>
@@ -269,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Settori correlati" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Settori correlati</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="hr-payroll.html">NIS2 per fornitori software HR e payroll in Italia 2026</a></li><li style="margin:0"><a href="index.html">Settori soggetti a NIS2 in Italia 2026</a></li><li style="margin:0"><a href="insurance.html">NIS2 Assicurazioni Italia 2026 - Guida Conformità D.Lgs. 138/2024</a></li><li style="margin:0"><a href="it-outsourcing.html">NIS2 per aziende IT outsourcing in Italia</a></li><li style="margin:0"><a href="law-firms.html">NIS2 per studi legali in Italia</a></li><li style="margin:0"><a href="logistics.html">NIS2 Operatori Logistica Italia 2026 - D.Lgs. 138/2024</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -283,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>
