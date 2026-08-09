@@ -10,7 +10,7 @@ const AFFILIATE_MAP = [
   { match: "vanta.com",  affiliate: "" },  // 
   { match: "complycloud.eu",  affiliate: "" },  // 
   { match: "drata.com",  affiliate: "" },  // 
-  { match: "nordlayer.com",  affiliate: "" },  // 
+  { match: "nordlayer.com",  affiliate: "https://go.nordlayer.net/aff_c?offer_id=969&aff_id=150757" },  // 
   { match: "1password.com",  affiliate: "" },  // 
   { match: "bitwarden.com",  affiliate: "" },  // 
   { match: "bitdefender.com",  affiliate: "" },  // 
