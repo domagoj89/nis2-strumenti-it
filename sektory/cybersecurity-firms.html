@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME940XQ5N"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 Fornitori Cybersecurity Italia 2026 | Guida Compliance ACN</title>
-  <meta name="description" content="Obblighi NIS2 per MSSP, SOC e penetration tester in Italia. Conformità Annex II entità importante, scadenza 2026. Guida ACN completa.">
+  <title>NIS2 Vendor Cybersecurity Italia 2026 — Requisiti ACN per MSSP</title>
+  <meta name="description" content="Guida NIS2 per vendor cybersecurity, MSSP e penetration testing in Italia. Obblighi, scadenze registrazione ACN e compliance D.Lgs. 138/2024.">
   <link rel="canonical" href="https://nis2-strumenti.it/sektory/cybersecurity-firms.html">
-  <meta property="og:title" content="NIS2 Fornitori Cybersecurity Italia 2026 | Guida Compliance ACN">
-  <meta property="og:description" content="Obblighi NIS2 per MSSP, SOC e penetration tester in Italia. Conformità Annex II entità importante, scadenza 2026. Guida ACN completa.">
+  <meta property="og:title" content="NIS2 Vendor Cybersecurity Italia 2026 — Requisiti ACN per MSSP">
+  <meta property="og:description" content="Guida NIS2 per vendor cybersecurity, MSSP e penetration testing in Italia. Obblighi, scadenze registrazione ACN e compliance D.Lgs. 138/2024.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-strumenti.it/sektory/cybersecurity-firms.html">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="NIS2-Strumenti.it">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 Fornitori Cybersecurity Italia 2026 | Guida Compliance ACN">
-  <meta name="twitter:description" content="Obblighi NIS2 per MSSP, SOC e penetration tester in Italia. Conformità Annex II entità importante, scadenza 2026. Guida ACN completa.">
+  <meta name="twitter:title" content="NIS2 Vendor Cybersecurity Italia 2026 — Requisiti ACN per MSSP">
+  <meta name="twitter:description" content="Guida NIS2 per vendor cybersecurity, MSSP e penetration testing in Italia. Obblighi, scadenze registrazione ACN e compliance D.Lgs. 138/2024.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 per Fornitori di Cybersecurity in Italia — Requisiti 2026",
+      "name": "NIS2 per Vendor Cybersecurity e MSSP in Italia — Guida Compliance 2026",
       "item": "https://nis2-strumenti.it/sektory/cybersecurity-firms.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Come distinguo una compromissione diretta MSSP da una supply chain compromise per segnalarla correttamente all'ACN?",
+      "name": "Come vendor di penetration testing, sono qualificato come entità rilevante secondo il D.Lgs. 138/2024?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Compromissione diretta: attacco ai tuoi sistemi SOC/MSSP che compromette dati o servizi clienti. Supply chain compromise: compromissione di un vendor terzo (es. orchestration tool, cloud provider) che accede alla tua infrastruttura. Entrambe vanno segnalate all'ACN, ma con asset impact assessment diversi. Documenta la catena di attacco e il perimetro di esposizione clienti per ogni categoria."
+        "text": "Sì, se operi come fornitore strutturato di servizi di sicurezza digitale (penetration test sistematici, assessment, audit) e aderendo ai criteri dimensionali (dimensione organizzativa, fatturato, rilevanza strategica) sei classificato come entità rilevante nell'Allegato II. La registrazione presso l'ACN entro il 28 febbraio è obbligatoria. Verifica con l'Agenzia se rientri nei soglie applicabili."
       }
     },
     {
       "@type": "Question",
-      "name": "Quale retention period devo applicare ai dati di monitoraggio SOC secondo NIS2?",
+      "name": "Quale è la differenza tra segnalazione di incidenti entro 24 ore e 72 ore all'ACN?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "NIS2 non fissa un periodo unico; devi stabilire una policy basata su esigenze operative, requisiti contrattuali clienti e normative (GDPR, settoriali). Tipicamente 90-365 giorni. La retention deve essere documentata nel contratto di servizio e nel data processing agreement, con cancellazione sicura (wipe crittografica) al termine. Audit la retention per conformità periodica."
+        "text": "Gli incidenti gravi (elevato impatto su servizi critici, numeri significativi di clienti colpiti, compromissione di dati sensibili) devono essere segnalati entro 24 ore. Gli incidenti significativi ma meno critici entro 72 ore. La classificazione dipende dal contesto: una compromissione del tuo SOC che accede a decine di client è 24 ore; una vulnerabilità ristretta a un cliente è 72 ore. Documentare sempre la base della classificazione."
       }
     },
     {
       "@type": "Question",
-      "name": "Se come penetration tester trovo una vulnerabilità critica nel codice di un vendor nazionale, sono obbligato a segnalarla all'ACN o al vendor prima?",
+      "name": "Quali sanzioni si applicano se non mi registro presso l'ACN o non segnalo un incidente entro i termini?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Contatta prima il vendor con processo di responsible disclosure (70-90 giorni), documentando tutte le comunicazioni. Se il vendor non risponde entro 30 giorni, puoi segnalare all'ACN. Non divulgare pubblicamente fino a patch disponibile. NIS2 art. 20 richiede coordinamento; l'ACN apprezzerà la notifica, ma il vendor ha priorità nel rimediare. Mantieni evidenza scritta della comunicazione."
+        "text": "Le sanzioni amministrative per entità rilevanti (Allegato II) raggiungono fino a 7 milioni di euro o il 1,4% del fatturato annuale globale. Il mancato rispetto della registrazione annuale, della segnalazione incidenti e della protezione dei dati dei clienti sono violazioni gravi. Le sanzioni possono accumularsi se sono presenti vulnerabilità multiple di compliance nel tuo programma NIS2."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Pagina principale</a><span>›</span>
     <a href="index.html">Settori</a><span>›</span>
-    NIS2 per Fornitori di Cybersecurity in Italia — Requisiti 2026
+    NIS2 per Vendor Cybersecurity e MSSP in Italia — Guida Compliance 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato II — Entità importante</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Fornitori di Cybersecurity in Italia — Requisiti 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è destinata a vendor cybersecurity, provider MSSP/SOC e società di penetration testing che operano in Italia e devono adeguarsi al D.Lgs. 138/2024. Scoprirai gli obblighi specifici per la protezione dell'infrastruttura SOC, la gestione dati clienti e la segnalazione incidenti di sicurezza.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato II — Entità Rilevante</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Vendor Cybersecurity e MSSP in Italia — Guida Compliance 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa pagina è destinata a fornitori di servizi di sicurezza gestiti (MSSP), operatori SOC e società di penetration testing che operano in Italia come entità rilevanti secondo il D.Lgs. 138/2024. Scoprirai gli obblighi specifici, le scadenze di registrazione presso l'ACN e come implementare un programma di compliance efficace.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientra in questa categoria ogni fornitore di servizi gestiti di sicurezza (MSSP), gestore di Security Operations Center (SOC) o società di penetration testing che fornisca servizi critici di sicurezza informatica a clienti pubblici o privati italiani. L'applicazione è mandatoria indipendentemente dalle dimensioni aziendali se si eroga servizio in Italia, secondo l'Autorità per la Cybersicurezza Nazionale (ACN).</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">I fornitori di servizi di cybersecurity qualificati come entità rilevanti includono MSSP che gestiscono infrastrutture critiche di sicurezza per clienti, provider SOC con accesso ai dati operativi altrui, e società di penetration testing che forniscono servizi di sicurezza digitale strutturati. La qualificazione avviene per dimensioni (dipendenti, fatturato) e rilevanza strategica nel panorama nazionale della sicurezza cibernetica.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Protezione e segregazione dati clienti nella piattaforma SOC</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Come MSSP/SOC provider, devi garantire segregazione logica dei dati di monitoraggio per ciascun cliente, con crittografia in transito e a riposo. Implementa controlli di accesso basati su ruoli (RBAC) rigorosi e audit trail immutabili di tutte le operazioni su dati sensibili. I dati ingesti devono avere policy di retention ben definite e documentate, con cancellazione sicura oltre il periodo autorizzato.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Registrazione presso la Piattaforma ACN</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni entità rilevante deve registrarsi sulla piattaforma dell'Agenzia per la Cybersicurezza Nazionale entro il 28 febbraio di ogni anno. La registrazione deve includere dati identificativi, struttura organizzativa e descrizione dei servizi critici forniti. Il mancato rispetto di questa scadenza espone a sanzioni amministrative significative.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Segnalazione incidenti quando la compromissione MSSP/SOC colpisce clienti</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Se l'infrastruttura SOC o i sistemi del vendor subiscono un incidente che compromette la sicurezza dei clienti, devi segnalarlo all'ACN entro 72 ore dal rilevamento. Parallelamente, notifica ogni cliente colpito con dettagli tecnici sull'impatto e le misure di remediation. Documentare l'incidente con evidenza forense per soddisfare i requisiti NIS2 di investigazione.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Gestione della Sicurezza dei Servizi Critici e dei Dati dei Clienti</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Come MSSP o operatore SOC, è obbligatorio implementare misure di sicurezza robuste per proteggere l'infrastruttura di monitoraggio e i dati dei clienti ingeriti nei sistemi SIEM. Deve essere definita una politica esplicita di conservazione dei dati, crittografia end-to-end, controlli di accesso basati su ruolo e isolamento dei dati per cliente. La compromissione della tua infrastruttura ha impatto diretto sulla sicurezza dei tuoi clienti.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Gestione sicura di report penetration test e artefatti di sicurezza</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">I report di penetration test e gli artefatti tecnici (dump, configurazioni, credenziali) devono essere memorizzati con crittografia end-to-end e accesso limitato. Implementa un Data Loss Prevention (DLP) per prevenire esfiltrazione di report dai sistemi aziendali. Stabilisci una policy esplicita di retention e distruzione sicura, con certificato di cancellazione.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Segnalazione Incidenti di Sicurezza Entro 24-72 Ore</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Qualsiasi incidente che comprometta la disponibilità o integrità dei tuoi servizi critici deve essere segnalato all'ACN entro 24 ore (incidenti gravi) o 72 ore (incidenti significativi). La segnalazione deve descrivere la natura dell'incidente, l'impatto sui clienti, le misure di contenimento adottate e il piano di remediation. I ritardi nella segnalazione aggravano le sanzioni.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Responsible disclosure e coordinamento con sviluppatori per vulnerabilità</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Come penetration tester, devi stabilire un processo formale di responsible disclosure (es. CVE coordination, contatto vendor). Non divulgare vulnerabilità pubblicamente fino a che il vendor non abbia rilasciato una patch; documentare ogni comunicazione e timeline. Se scopri vulnerabilità nelle tue stesse piattaforme MSSP/SOC, segnalale immediatamente all'ACN e ai clienti interessati.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Disclosure Responsabile e Risposta Coordinata alle Vulnerabilità</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Quando scopri una vulnerabilità nei tuoi servizi o nella catena di fornitura, devi notificarla ai clienti interessati in modo tempestivo e coordinato. È obbligatorio stabilire un processo formale di disclosure che includa un periodo di remediazione ragionevole prima della divulgazione pubblica, documentazione della timeline di comunicazione e coordinamento con l'ACN se l'impatto è significativo.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Incident classification e supply chain compromise reporting</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Implementa uno schema di classificazione incidenti che distingua tra compromissione diretta dell'infrastruttura MSSP e supply chain compromise (es. compromissione di vendor di terzi che accedono al tuo SOC). Per entrambe le categorie, devi notificare l'ACN entro 72 ore e fornire una root cause analysis documentata, con piano di remediation e timeline di implementazione.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Continuità Operativa e Gestione della Supply Chain</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare piani di continuità operativa e disaster recovery che garantiscano la disponibilità dei servizi critici in caso di incidente o crisi. È obbligatorio identificare e gestire i rischi della catena di fornitura (subfornitori, fornitori di software, provider di hosting) attraverso valutazioni di sicurezza periodiche, audit e clausole contrattuali di conformità NIS2.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>SOC SIEM contenente dati clienti sensibili senza policy di retention esplicita o procedure di cancellazione sicura, creando esposizione prolungata e violazione potenziale di NIS2 art. 20.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Conservazione illimitata dei dati dei clienti nei SIEM senza policy di retention formale e senza controlli granulari di accesso per cliente, rendendo impossibile dimostrare conformità alle disposizioni di protezione dei dati.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Report penetration test e artefatti di sicurezza archiviati in condivisioni network non crittografate, accessibili a personale non autorizzato e vulnerabili a data breach interni.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Relazioni di penetration test e documenti di assessment tecnici archiviati in formato non crittografato su server accessibili a personale non autorizzato, violando l'obbligo di proteggere dati sensibili dei clienti.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di schema formale di incident classification che differenzi compromissione diretta MSSP da supply chain compromise, impedendo segnalazione ACN corretta entro 72 ore.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza di classificazione formale degli incidenti di compromissione della supply chain (ad esempio, vulnerabilità in software utilizzato dal SOC), causando ritardi nella segnalazione all'ACN e nella notifica ai clienti.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza di processo di responsible disclosure documentato per vulnerabilità scoperte in prodotti vendor o nelle stesse piattaforme MSSP, espone a rischi legali e reputazionali.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di processi documentati di disclosure responsabile e timeline formalizzate, specialmente quando la vulnerabilità riguarda i tuoi stessi servizi critici che metti a disposizione dei clienti.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">vanta.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/vanta.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Come distinguo una compromissione diretta MSSP da una supply chain compromise per segnalarla correttamente all'ACN?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Come vendor di penetration testing, sono qualificato come entità rilevante secondo il D.Lgs. 138/2024?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Compromissione diretta: attacco ai tuoi sistemi SOC/MSSP che compromette dati o servizi clienti. Supply chain compromise: compromissione di un vendor terzo (es. orchestration tool, cloud provider) che accede alla tua infrastruttura. Entrambe vanno segnalate all'ACN, ma con asset impact assessment diversi. Documenta la catena di attacco e il perimetro di esposizione clienti per ogni categoria.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Sì, se operi come fornitore strutturato di servizi di sicurezza digitale (penetration test sistematici, assessment, audit) e aderendo ai criteri dimensionali (dimensione organizzativa, fatturato, rilevanza strategica) sei classificato come entità rilevante nell'Allegato II. La registrazione presso l'ACN entro il 28 febbraio è obbligatoria. Verifica con l'Agenzia se rientri nei soglie applicabili.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale retention period devo applicare ai dati di monitoraggio SOC secondo NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale è la differenza tra segnalazione di incidenti entro 24 ore e 72 ore all'ACN?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">NIS2 non fissa un periodo unico; devi stabilire una policy basata su esigenze operative, requisiti contrattuali clienti e normative (GDPR, settoriali). Tipicamente 90-365 giorni. La retention deve essere documentata nel contratto di servizio e nel data processing agreement, con cancellazione sicura (wipe crittografica) al termine. Audit la retention per conformità periodica.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Gli incidenti gravi (elevato impatto su servizi critici, numeri significativi di clienti colpiti, compromissione di dati sensibili) devono essere segnalati entro 24 ore. Gli incidenti significativi ma meno critici entro 72 ore. La classificazione dipende dal contesto: una compromissione del tuo SOC che accede a decine di client è 24 ore; una vulnerabilità ristretta a un cliente è 72 ore. Documentare sempre la base della classificazione.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Se come penetration tester trovo una vulnerabilità critica nel codice di un vendor nazionale, sono obbligato a segnalarla all'ACN o al vendor prima?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sanzioni si applicano se non mi registro presso l'ACN o non segnalo un incidente entro i termini?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Contatta prima il vendor con processo di responsible disclosure (70-90 giorni), documentando tutte le comunicazioni. Se il vendor non risponde entro 30 giorni, puoi segnalare all'ACN. Non divulgare pubblicamente fino a patch disponibile. NIS2 art. 20 richiede coordinamento; l'ACN apprezzerà la notifica, ma il vendor ha priorità nel rimediare. Mantieni evidenza scritta della comunicazione.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Le sanzioni amministrative per entità rilevanti (Allegato II) raggiungono fino a 7 milioni di euro o il 1,4% del fatturato annuale globale. Il mancato rispetto della registrazione annuale, della segnalazione incidenti e della protezione dei dati dei clienti sono violazioni gravi. Le sanzioni possono accumularsi se sono presenti vulnerabilità multiple di compliance nel tuo programma NIS2.</p>
     </div>
   </div>
   </div>
@@ -270,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Settori correlati" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Settori correlati</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="dental-clinics.html">NIS2 cliniche dentali e mediche Italia 2026</a></li><li style="margin:0"><a href="education.html">NIS2 Università Italia 2026</a></li><li style="margin:0"><a href="energy.html">NIS2 per Gestori Energetici in Italia</a></li><li style="margin:0"><a href="fintech.html">NIS2 per Fintech Italia 2026</a></li><li style="margin:0"><a href="food.html">NIS2 Decreto Legislativo 138/2024 Agroalimentare Italia 2026</a></li><li style="margin:0"><a href="hospitals.html">NIS2 per Ospedali e Cliniche in Italia</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -284,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

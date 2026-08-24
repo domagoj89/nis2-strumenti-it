@@ -5,9 +5,9 @@
 const SITE = "nis2-strumenti-it";
 const MAP = {
   "nordlayer": {
-    "url": "",
+    "url": "https://go.nordlayer.net/aff_c?offer_id=969&aff_id=150757",
     "direct": "https://nordlayer.com/",
-    "subid_param": "subid"
+    "subid_param": "aff_sub"
   },
   "1password": {
     "url": "",

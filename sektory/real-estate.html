@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME940XQ5N"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 Agenzie Immobiliari Italia 2026 | D.Lgs. 138/2024</title>
-  <meta name="description" content="Guida NIS2 per agenzie immobiliari e gestori proprietà in Italia. Conformità entro 2026: protezione dati, controllo accessi, segnalazione incidenti.">
+  <title>NIS2 Agenzie Immobiliari Italia 2026 — Guida Compliance D.Lgs. 138/2024</title>
+  <meta name="description" content="Obblighi NIS2 per agenzie immobiliari e gestori proprietà in Italia. Scadenza registrazione ACN 28 febbraio 2025. Protezione dati inquilini e sistemi building management.">
   <link rel="canonical" href="https://nis2-strumenti.it/sektory/real-estate.html">
-  <meta property="og:title" content="NIS2 Agenzie Immobiliari Italia 2026 | D.Lgs. 138/2024">
-  <meta property="og:description" content="Guida NIS2 per agenzie immobiliari e gestori proprietà in Italia. Conformità entro 2026: protezione dati, controllo accessi, segnalazione incidenti.">
+  <meta property="og:title" content="NIS2 Agenzie Immobiliari Italia 2026 — Guida Compliance D.Lgs. 138/2024">
+  <meta property="og:description" content="Obblighi NIS2 per agenzie immobiliari e gestori proprietà in Italia. Scadenza registrazione ACN 28 febbraio 2025. Protezione dati inquilini e sistemi building management.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-strumenti.it/sektory/real-estate.html">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="NIS2-Strumenti.it">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 Agenzie Immobiliari Italia 2026 | D.Lgs. 138/2024">
-  <meta name="twitter:description" content="Guida NIS2 per agenzie immobiliari e gestori proprietà in Italia. Conformità entro 2026: protezione dati, controllo accessi, segnalazione incidenti.">
+  <meta name="twitter:title" content="NIS2 Agenzie Immobiliari Italia 2026 — Guida Compliance D.Lgs. 138/2024">
+  <meta name="twitter:description" content="Obblighi NIS2 per agenzie immobiliari e gestori proprietà in Italia. Scadenza registrazione ACN 28 febbraio 2025. Protezione dati inquilini e sistemi building management.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 per Agenzie Immobiliari e Gestori Proprietà in Italia — Conformità 2026",
+      "name": "NIS2 per Agenzie Immobiliari e Gestori Proprietà in Italia — Requisiti di Cybersicurezza 2026",
       "item": "https://nis2-strumenti.it/sektory/real-estate.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Quali dati dei locatari rientrano nella protezione NIS2?",
+      "name": "Quale è la scadenza per la registrazione sulla piattaforma ACN e quali rischi comporta il mancato rispetto?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "I dati personali dei locatari (nome, indirizzo, numero di telefono, coordinate bancarie, documenti di identità, storie di affitto) sono considerati dati sensibili e devono essere protetti con crittografia end-to-end. Anche i dati di accesso alle proprietà (codici PIN, badge digitali, scansioni biometriche) devono essere trattati come informazioni critiche."
+        "text": "La registrazione deve avvenire tra il 1° gennaio e il 28 febbraio di ogni anno presso l'ACN (Agenzia per la Cybersicurezza Nazionale). Il mancato rispetto espone le agenzie immobiliari a sanzioni fino a 7 milioni di euro o il 1,4% del fatturato annuale, oltre a sospensione delle operazioni fino alla regolarizzazione."
       }
     },
     {
       "@type": "Question",
-      "name": "Come devo segmentare la rete se la mia agenzia ha sistemi legacy di building management?",
+      "name": "Come dovremmo configurare i sistemi di controllo accessi intelligenti per conformarsi a NIS2?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Crea una VLAN separata per i sistemi di building management (ascensori, impianti HVAC, videosorveglianza) isolandola da quella aziendale tramite firewall con regole di accesso esplicite. Se il sistema legacy non supporta segmentazione nativa, utilizza gateway di sicurezza industriale (industrial firewalls) per mediare il traffico. Documenta ogni eccezione di rete e pianifica la migrazione a sistemi conformi entro 2026."
+        "text": "I sistemi di controllo accessi devono utilizzare autenticazione multi-fattore (oltre alla tessera, richiedere PIN o riconoscimento biometrico), essere isolati su vlan dedicate separate dalla rete aziendale, disporre di capacità di fallback meccanico (apertura manuale con chiave) in caso di interruzione della connettività, e mantenere registri di accesso non modificabili con timestamp per almeno 90 giorni."
       }
     },
     {
       "@type": "Question",
-      "name": "Quali sono le sanzioni se non mi conformo entro dicembre 2026?",
+      "name": "Quanto tempo abbiamo per segnalare un incidente di compromissione dati di inquilini all'ACN e quali informazioni devono essere incluse?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "L'ACN può irrogare sanzioni amministrative fino a €10 milioni o il 2% del fatturato annuale globale per violazioni gravi (mancanza di controlli di accesso, mancata segnalazione incidenti). Per violazioni meno gravi (audit di sicurezza incompleti), le sanzioni vanno fino a €5 milioni o l'1% del fatturato. La deadline vincolante per la conformità completa è il 18 dicembre 2026."
+        "text": "L'incidente deve essere segnalato all'ACN entro 72 ore dalla scoperta (24 ore se richiede intervento immediato per proteggere residenti). La segnalazione deve contenere descrizione tecnica dell'incidente, numero di inquilini interessati, categorie di dati compromessi, misure di contenimento adottate, contatto del responsabile della cybersicurezza aziendale e descrizione dell'impatto operativo sui servizi immobiliari."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Pagina principale</a><span>›</span>
     <a href="index.html">Settori</a><span>›</span>
-    NIS2 per Agenzie Immobiliari e Gestori Proprietà in Italia — Conformità 2026
+    NIS2 per Agenzie Immobiliari e Gestori Proprietà in Italia — Requisiti di Cybersicurezza 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato II — Entità importante</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Agenzie Immobiliari e Gestori Proprietà in Italia — Conformità 2026</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è destinata a responsabili della sicurezza informatica, gestori proprietà e amministratori di piattaforme immobiliari in Italia. Scoprirai come proteggere i sistemi di gestione dei beni, i dati dei locatari e le infrastrutture tecnologiche degli edifici secondo il D.Lgs. 138/2024.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato II — Entità Importante</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Agenzie Immobiliari e Gestori Proprietà in Italia — Requisiti di Cybersicurezza 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è destinata a gestori proprietà, agenzie immobiliari e piattaforme proptech classificate come entità importante secondo l'Allegato II del D.Lgs. 138/2024. Scoprirai gli obblighi concreti di cybersicurezza, le scadenze normative e come implementare un programma di conformità efficace entro il 2026.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Le agenzie immobiliari, i gestori proprietà e le piattaforme immobiliari (proptech) che gestiscono dati di almeno 50 proprietà o che forniscono servizi di gestione a edifici intelligenti devono conformarsi alla NIS2. Rientrano in questa categoria anche i gestori di sistemi di controllo degli accessi e di building management che operano sul territorio italiano e raggiungono soglie di criticità definite dall'ACN.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Sono soggette al D.Lgs. 138/2024 le agenzie immobiliari, i gestori proprietà e le piattaforme immobiliari che gestiscono dati di inquilini e proprietari su scala significativa, oppure operano infrastrutture critiche di building automation e controllo accessi. La classificazione come entità importante dipende dal numero di utenti e dalla criticità dei servizi forniti; l'ACN effettua la valutazione durante la registrazione obbligatoria tra il 1° gennaio e il 28 febbraio di ogni anno.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza dei Sistemi di Gestione Proprietà e Dati Locatari</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Devi implementare controlli di accesso basati su ruoli (RBAC) per i sistemi che archiviano dati di proprietà, contratti di locazione e informazioni personali dei locatari. Tutti i dati sensibili devono essere crittografati sia in transito che a riposo, utilizzando standard come AES-256. Esegui audit periodici trimestrali per verificare che solo il personale autorizzato acceda ai dati, documentando ogni accesso in log immutabili.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Protezione dei dati inquilini e proprietari</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dovete implementare cifratura end-to-end per tutti i dati sensibili di inquilini e proprietari (anagrafi, documenti di identità, informazioni finanziarie). I sistemi di gestione proprietà non devono più utilizzare fogli di calcolo non crittografati o database accessibili con credenziali deboli. Questo include chat, email, documenti condivisi e cartelle cliniche relative a requisiti di accessibilità.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Controllo degli Accessi per Sistemi di Building Management e Edifici Intelligenti</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">I sistemi di controllo accessi fisico, videocitofoni intelligenti, lettori biometrici e gestione delle chiavi digitali devono operare su reti segmentate, separate dalla rete aziendale generale. Implementa autenticazione multi-fattore (MFA) per l'amministrazione remota di questi sistemi e monitora i tentativi di accesso non autorizzati. Verifica che i fornitori di dispositivi smart building rispettino standard di sicurezza riconosciuti (ISO 27001 o equivalente) prima dell'integrazione.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Controllo degli accessi nei sistemi di building management</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">I sistemi di controllo accessi, videocitofoni intelligenti, serrature elettroniche e impianti di automazione devono essere protetti da autenticazione multi-fattore e isolati su reti dedicate non connesse direttamente a Internet. Dovete implementare registri di accesso dettagliati, limitare i privilegi amministrativi e sottoporre i vendor di dispositivi intelligenti a valutazione della sicurezza prima dell'integrazione.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Segnalazione di Incidenti che Interessano Infrastrutture Critiche degli Edifici</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Se si verifica un incidente di sicurezza che compromette sistemi di ascensori, riscaldamento, ventilazione, impianti idrici o evacuazione di emergenza gestiti digitalmente, devi segnalarlo all'ACN entro 72 ore dalla scoperta. La notifica deve indicare la natura dell'incidente, i sistemi interessati, il numero di proprietà colpite e le misure di contenimento adottate. Mantieni registri dettagliati di tutti gli incidenti per almeno 2 anni.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Segnalazione degli incidenti di sicurezza all'ACN</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Qualsiasi violazione che comprometta l'integrità dei dati inquilini o interrompa infrastrutture critiche di building (ascensori, riscaldamento, accessi) deve essere segnalata all'ACN entro 24 ore se richiede intervento immediato, altrimenti entro 72 ore. La segnalazione deve includere natura dell'incidente, dati interessati, misure di mitigazione adottate e contatti responsabile della cybersicurezza.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Gestione della Sicurezza della Supply Chain per Fornitori di Proptech</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Prima di integrare qualsiasi software o servizio esterno (gestionale immobiliare cloud, piattaforma di prenotazione visitatori, app di pagamento affitti), devi condurre una valutazione dei rischi del fornitore. Includi nel contratto clausole che richiedono audit di sicurezza annuali, comunicazione immediata di vulnerabilità e diritto di accesso ai log di sicurezza. Monitora i fornitori critici almeno semestralmente per verificare la conformità agli SLA di sicurezza.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Sicurezza della supply chain per vendor proptech</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Se utilizzate piattaforme SaaS di gestione immobiliare, CRM, portali tenant o API di terze parti, dovete verificare che i vendor rispettino standard NIS2 equivalenti. Inserite clausole contrattuali che impongono audit di sicurezza annuali, notifica immediata di breaches, e diritto di ispezione dei sistemi. Documentate tutte le dipendenze tecnologiche e i rischi associati.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Gestione della Continuità Aziendale e Ripristino da Disastri</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Sviluppa un piano di continuità aziendale che copra la perdita di accesso ai sistemi di gestione proprietà per almeno 7 giorni. Effettua backup giornalieri dei dati in una sede diversa, testando il ripristino almeno una volta ogni trimestre. Documenta i tempi di recupero obiettivi (RTO) di 4 ore e gli obiettivi del punto di recupero (RPO) di 1 ora per i dati critici dei locatari.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Gestione della continuità operativa e disaster recovery</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Dovete mantenere piani di continuità operativa documentati che prevedano backup giornalieri dei dati critici (contratti, pagamenti, dati inquilini) conservati in ubicazioni geograficamente separate. I sistemi di controllo accessi devono avere modalità di fallback meccanico se la connettività si interrompe. Conducete esercitazioni di recovery almeno semestrali e documentate i risultati.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi di controllo accessi fisico (citofoni, lettori magnetici) collegati a reti aziendali non segmentate, esponendo l'infrastruttura dell'edificio ad attacchi informatici da dipendenti compromessi.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Sistemi di controllo accessi e videocitofoni connessi a reti WiFi aziendali non segmentate, esposti a compromissione del perimetro aziendale e accesso non autorizzato ai dati di residenti.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Dati dei locatari (contratti, coordinate bancarie, documenti di identità) archiviati in fogli di calcolo Excel non crittografati sui computer locali o su unità di rete senza controllo di accesso granulare.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Database di inquilini, contratti e dati finanziari archiviati in file Excel o Google Drive non crittografati, con accesso tramite password condivise e recuperabili da backup cloud non protetti.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Nessun processo di verifica della sicurezza dei fornitori di dispositivi smart building; installazione di telecamere intelligenti, smart lock e sensori ambientali da venditori senza certificazioni di sicurezza documentate.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di procedure formali di onboarding della sicurezza per vendor di piattaforme di prenotazione, portali tenant e sistemi di pagamento, creando dipendenze da componenti di terze parti non verificate.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza di segmentazione di rete tra il sistema di gestione building (BMS) e la rete Wi-Fi pubblica per visitatori e inquilini, permettendo movimento laterale di malware.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza di registri di accesso e audit trail per modifiche ai dati inquilini, contratti e impostazioni di controllo accessi, impedendo tracciamento di incidenti e indagini forensi.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">reglyze.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/reglyze.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">1password.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/1password.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/1password.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">nordlayer.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/nordlayer.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali dati dei locatari rientrano nella protezione NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quale è la scadenza per la registrazione sulla piattaforma ACN e quali rischi comporta il mancato rispetto?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">I dati personali dei locatari (nome, indirizzo, numero di telefono, coordinate bancarie, documenti di identità, storie di affitto) sono considerati dati sensibili e devono essere protetti con crittografia end-to-end. Anche i dati di accesso alle proprietà (codici PIN, badge digitali, scansioni biometriche) devono essere trattati come informazioni critiche.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La registrazione deve avvenire tra il 1° gennaio e il 28 febbraio di ogni anno presso l'ACN (Agenzia per la Cybersicurezza Nazionale). Il mancato rispetto espone le agenzie immobiliari a sanzioni fino a 7 milioni di euro o il 1,4% del fatturato annuale, oltre a sospensione delle operazioni fino alla regolarizzazione.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Come devo segmentare la rete se la mia agenzia ha sistemi legacy di building management?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Come dovremmo configurare i sistemi di controllo accessi intelligenti per conformarsi a NIS2?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Crea una VLAN separata per i sistemi di building management (ascensori, impianti HVAC, videosorveglianza) isolandola da quella aziendale tramite firewall con regole di accesso esplicite. Se il sistema legacy non supporta segmentazione nativa, utilizza gateway di sicurezza industriale (industrial firewalls) per mediare il traffico. Documenta ogni eccezione di rete e pianifica la migrazione a sistemi conformi entro 2026.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">I sistemi di controllo accessi devono utilizzare autenticazione multi-fattore (oltre alla tessera, richiedere PIN o riconoscimento biometrico), essere isolati su vlan dedicate separate dalla rete aziendale, disporre di capacità di fallback meccanico (apertura manuale con chiave) in caso di interruzione della connettività, e mantenere registri di accesso non modificabili con timestamp per almeno 90 giorni.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni se non mi conformo entro dicembre 2026?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quanto tempo abbiamo per segnalare un incidente di compromissione dati di inquilini all'ACN e quali informazioni devono essere incluse?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">L'ACN può irrogare sanzioni amministrative fino a €10 milioni o il 2% del fatturato annuale globale per violazioni gravi (mancanza di controlli di accesso, mancata segnalazione incidenti). Per violazioni meno gravi (audit di sicurezza incompleti), le sanzioni vanno fino a €5 milioni o l'1% del fatturato. La deadline vincolante per la conformità completa è il 18 dicembre 2026.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">L'incidente deve essere segnalato all'ACN entro 72 ore dalla scoperta (24 ore se richiede intervento immediato per proteggere residenti). La segnalazione deve contenere descrizione tecnica dell'incidente, numero di inquilini interessati, categorie di dati compromessi, misure di contenimento adottate, contatto del responsabile della cybersicurezza aziendale e descrizione dell'impatto operativo sui servizi immobiliari.</p>
     </div>
   </div>
   </div>
@@ -270,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Settori correlati" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Settori correlati</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="retail.html">NIS2 per Grande Distribuzione e E-commerce in Italia 2026</a></li><li style="margin:0"><a href="sme-general.html">NIS2 per PMI in settori regolamentati Italia 2026</a></li><li style="margin:0"><a href="software-saas.html">NIS2 per SaaS B2B in Italia</a></li><li style="margin:0"><a href="telecoms.html">NIS2 Operatori Telecom Italia 2026</a></li><li style="margin:0"><a href="telemedicine.html">NIS2 Piattaforme Telehealth Italia 2026</a></li><li style="margin:0"><a href="transport.html">NIS2 Trasporti Italia 2026</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -284,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>

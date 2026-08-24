@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta name="robots" content="noindex,nofollow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GME940XQ5N"></script>
   <script>
@@ -12,18 +11,18 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIS2 Piattaforme Telehealth Italia 2026 — Guida Conformità ACN</title>
-  <meta name="description" content="Conformità NIS2 per telehealth e app sanitarie: protezione dati pazienti, cifratura end-to-end, incident reporting entro 2026.">
+  <title>NIS2 Piattaforme Telehealth Italia 2026 | Guida Compliance D.Lgs. 138/2024</title>
+  <meta name="description" content="Conformità NIS2 per telemedicina e app sanitarie in Italia: obblighi di sicurezza dati, reporting incidenti, scadenze registrazione ACN 2025-2026.">
   <link rel="canonical" href="https://nis2-strumenti.it/sektory/telemedicine.html">
-  <meta property="og:title" content="NIS2 Piattaforme Telehealth Italia 2026 — Guida Conformità ACN">
-  <meta property="og:description" content="Conformità NIS2 per telehealth e app sanitarie: protezione dati pazienti, cifratura end-to-end, incident reporting entro 2026.">
+  <meta property="og:title" content="NIS2 Piattaforme Telehealth Italia 2026 | Guida Compliance D.Lgs. 138/2024">
+  <meta property="og:description" content="Conformità NIS2 per telemedicina e app sanitarie in Italia: obblighi di sicurezza dati, reporting incidenti, scadenze registrazione ACN 2025-2026.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nis2-strumenti.it/sektory/telemedicine.html">
   <meta property="og:locale" content="it_IT">
   <meta property="og:site_name" content="NIS2-Strumenti.it">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NIS2 Piattaforme Telehealth Italia 2026 — Guida Conformità ACN">
-  <meta name="twitter:description" content="Conformità NIS2 per telehealth e app sanitarie: protezione dati pazienti, cifratura end-to-end, incident reporting entro 2026.">
+  <meta name="twitter:title" content="NIS2 Piattaforme Telehealth Italia 2026 | Guida Compliance D.Lgs. 138/2024">
+  <meta name="twitter:description" content="Conformità NIS2 per telemedicina e app sanitarie in Italia: obblighi di sicurezza dati, reporting incidenti, scadenze registrazione ACN 2025-2026.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -47,7 +46,7 @@
     {
       "@type": "ListItem",
       "position": 3,
-      "name": "NIS2 per Piattaforme Telehealth in Italia — Requisiti 2026 e Scadenze ACN",
+      "name": "NIS2 per Piattaforme Telehealth e Monitoraggio Remoto in Italia — Obblighi 2026",
       "item": "https://nis2-strumenti.it/sektory/telemedicine.html"
     }
   ]
@@ -60,26 +59,26 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Quali dimensioni minime di piattaforma telehealth rientrano nell'obbligo NIS2?",
+      "name": "Entro quando devo registrarmi presso l'ACN come piattaforma di telehealth e quando è la prossima scadenza?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "La classificazione come entità importante non dipende da una soglia numerica rigida, ma dalle funzioni critiche per il sistema sanitario nazionale. In pratica, qualsiasi operatore che gestisca servizi di continuità assistenziale per strutture del SSN, o che processi dati di oltre 50.000 pazienti attivi, è presumibilmente classificato come importante. Consultare l'ACN per una valutazione specifica se la vostra piattaforma si trova in una fascia grigia (10.000-50.000 utenti)."
+        "text": "La registrazione presso il portale ACN per le entità importanti avviene annualmente tra il 1° gennaio e il 28 febbraio. La prossima scadenza è il 28 febbraio 2025 per l'anno 2025 e il 28 febbraio 2026 per l'anno 2026. È obbligatorio registrarsi ogni anno fornendo informazioni sulla tua piattaforma, sulla struttura organizzativa di sicurezza, e confermando le misure tecniche implementate."
       }
     },
     {
       "@type": "Question",
-      "name": "Entro quando devo implementare la cifratura end-to-end sulle mie piattaforme di videoconsultazione?",
+      "name": "Se la mia app di telemedicina integra un EHR ospedaliero e avviene un breach, chi è responsabile della notifica all'ACN?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "La scadenza per l'implementazione completa dei controlli NIS2 è il 17 ottobre 2025, con periodo di compliance esteso al 17 aprile 2026 per alcune misure (da verificare con ACN). La cifratura end-to-end è considerata una misura prioritaria e deve essere in produzione entro la prima scadenza. Se non è già implementata, iniziate la pianificazione tecnica e l'allocazione dei budget immediatamente."
+        "text": "La responsabilità dipende da chi controlla il trattamento. Se la tua app è un processore per conto dell'ospedale, l'ospedale (responsabile) deve notificare all'ACN; tu devi comunque informare l'ospedale immediatamente dell'incidente per permettergli di segnalare entro i termini. Se sei responsabile indipendente (cioè l'app raccoglie dati per conto proprio), allora sei tu a dovere notificare all'ACN entro 24-72 ore a seconda della gravità."
       }
     },
     {
       "@type": "Question",
-      "name": "Quali sono le sanzioni per non conformità NIS2 nel settore telehealth?",
+      "name": "Quali sono le sanzioni se non notifico un incidente di sicurezza in tempo o non implemento la crittografia end-to-end?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Le sanzioni amministrative per mancata conformità NIS2 possono raggiungere 10 milioni di euro o il 2% del fatturato annuale mondiale (a seconda di quale sia maggiore) per violazioni gravi. Nel settore sanitario, inoltre, la non conformità può determinare la sospensione della capacità operativa della piattaforma, con interruzione immediata dei servizi. L'ACN effettua verifiche ispettive a campione a partire dal 2025."
+        "text": "Il D.Lgs. 138/2024 prevede sanzioni fino a €7 milioni o l'1,4% del fatturato annuale per le entità importanti (come le piattaforme telemediche). La mancata notifica di un incidente grave entro 24 ore, la carenza di crittografia end-to-end, o l'assenza di penetration testing regolari sono violazioni gravi. L'ACN inoltre può ordinare misure correttive immediate e sospendere autorizzazioni se gli obblighi non sono rispettati."
       }
     }
   ]
@@ -106,23 +105,23 @@
   <div class="breadcrumb">
     <a href="../index.html">Pagina principale</a><span>›</span>
     <a href="index.html">Settori</a><span>›</span>
-    NIS2 per Piattaforme Telehealth in Italia — Requisiti 2026 e Scadenze ACN
+    NIS2 per Piattaforme Telehealth e Monitoraggio Remoto in Italia — Obblighi 2026
   </div>
 </div>
 
 <!-- HERO -->
 <div style="background:var(--gray-50);padding:2.5rem 0 3rem;border-bottom:1px solid var(--gray-200);">
   <div class="container--narrow">
-    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Allegato II — Entità Importante</span>
-    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Piattaforme Telehealth in Italia — Requisiti 2026 e Scadenze ACN</h1>
-    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida riguarda gli operatori di piattaforme di telemedicina, servizi di monitoraggio remoto del paziente e app sanitarie digitali classificati come entità importante. Scopri gli obblighi specifici di sicurezza dei dati, la conformità GDPR+NIS2 e le scadenze di implementazione secondo il D.Lgs. 138/2024.</p>
+    <span style="display:inline-block;background:#16a34a;color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.3rem .85rem;border-radius:4px;margin-bottom:1rem;">Annesso II — Entità Importante</span>
+    <h1 style="font-size:clamp(1.4rem,3.5vw,2.1rem);color:var(--navy);margin:.25rem 0 1rem;line-height:1.25;">NIS2 per Piattaforme Telehealth e Monitoraggio Remoto in Italia — Obblighi 2026</h1>
+    <p style="font-size:1.05rem;color:var(--gray-500);line-height:1.65;margin:0;">Questa guida è rivolta agli operatori di piattaforme telemediche, servizi di monitoraggio remoto e sviluppatori di app sanitarie classificati come entità importante secondo il D.Lgs. 138/2024. Scoprirai gli obblighi concreti di cybersecurity, le scadenze di registrazione presso l'ACN e come allineare GDPR e NIS2 nella protezione dei dati dei pazienti.</p>
   </div>
 </div>
 
 <!-- WHO QUALIFIES -->
 <div class="container--narrow" style="padding:2.5rem 1.25rem 0;">
   <div style="background:var(--gray-50);border-left:4px solid var(--navy);border-radius:0 8px 8px 0;padding:1.25rem 1.5rem;">
-    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Rientrano nella classificazione NIS2 gli operatori di piattaforme di telemedicina che gestiscono trasmissioni video e messaggistica sanitaria per oltre 50.000 utenti attivi mensili, i gestori di sistemi di monitoraggio remoto del paziente integrati con strutture ospedaliere, e gli sviluppatori di app sanitarie che processano dati personali sensibili di pazienti su territorio italiano. Sono incluse anche le organizzazioni che forniscono servizi di continuità assistenziale digitale critica per il Servizio Sanitario Nazionale.</p>
+    <p style="font-size:.95rem;color:var(--navy-dark);line-height:1.65;margin:0;">Sono soggetti agli obblighi NIS2 gli operatori di piattaforme telemediche, servizi di monitoraggio remoto (RPM) e sviluppatori di app sanitarie digitali che forniscono servizi a strutture sanitarie pubbliche o private italiane, indipendentemente dalla sede legale, se gestiscono dati di pazienti e la loro interruzione comporta rischi significativi per la sanità pubblica. Rientrano in questa categoria anche i fornitori di soluzioni integrate con sistemi EHR ospedalieri e i gestori di consultazioni video tra professionisti sanitari e pazienti.</p>
   </div>
 </div>
 
@@ -136,8 +135,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Cifratura End-to-End delle Comunicazioni Pazienti</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">È obbligatorio implementare cifratura end-to-end su tutte le piattaforme di teleconsultazione video e messaggistica sanitaria. La comunicazione tra paziente e professionista sanitario deve essere protetta con algoritmi di crittografia riconosciuti internazionalmente (almeno AES-256). Verificare che nessun dato sensibile rimanga in chiaro nei server intermedi, includendo metadati di comunicazione.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Crittografia end-to-end per consultazioni video e messaggistica sanitaria</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni piattaforma di telehealth deve implementare crittografia end-to-end per tutte le comunicazioni medico-paziente, incluse videochiamate, messaggi e trasmissione di immagini cliniche. La crittografia deve proteggere i dati sia in transito sia a riposo, garantendo che né la piattaforma né terzi possano accedere ai contenuti. Verifica regolarmente con penetration test che non vi siano backdoor o debolezze nella implementazione crittografica.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -145,8 +144,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Accordi di Trattamento Dati con Tutti i Sub-processor</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni fornitore cloud, piattaforma di hosting, o terzo che accede ai dati sanitari deve essere vincolato da contratto di trattamento conforme all'articolo 28 GDPR integrato con i requisiti NIS2. È necessario mantenere un registro aggiornato di tutti i sub-processor e i servizi utilizzati (inclusi servizi di backup, analytics, e integrazioni EHR ospedaliere). La mancanza anche di un singolo accordo costituisce violazione formale.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Gestione della catena di fornitura (supply chain security) per integrazioni EHR</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Se la tua piattaforma si integra con sistemi informatici ospedalieri (EHR/HIS), devi identificare, valutare e monitorare i rischi di sicurezza di tutti i fornitori e sub-fornitori coinvolti. Redigi e sottoscrivi Data Processing Agreements (DPA) con ogni processore di dati, inclusi fornitori di cloud, servizi di backup e piattaforme di autenticazione, documentando le loro misure di sicurezza e il diritto di audit.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -154,8 +153,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Penetration Testing Annuale e Vulnerability Assessment</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Tutte le app sanitarie e le piattaforme di telemedicina devono sottoporsi a penetration testing indipendente almeno una volta all'anno, documentando i risultati e gli interventi correttivi. I test devono coprire specificamente i vettori di attacco comuni (injection, broken authentication, esposizione di dati sensibili). La documentazione deve essere conservata a disposizione dell'Autorità competente per la nazionale per la cibersicurezza (ACN).</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Test di sicurezza e penetration testing regolari</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Conduci test di penetrazione almeno annualmente e dopo ogni aggiornamento significativo della piattaforma. I test devono coprire frontend, backend, API, mobile app, integrazioni con sistemi terzi e gestione delle credenziali. Documenta tutti i test, le vulnerabilità rilevate, le azioni correttive e la loro validazione, mantenendo questi registri disponibili per l'ACN e gli audit esterni.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -163,8 +162,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Notifica Incidenti Entro 24 Ore per Interruzioni di Continuità Assistenziale</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Qualsiasi incidente che determini l'interruzione della piattaforma per più di 30 minuti, la perdita di dati pazienti, o l'accesso non autorizzato deve essere segnalato all'ACN entro 24 ore dal rilevamento. La notifica deve includere natura dell'incidente, numero di pazienti coinvolti, misure di contenimento attuate e impatto sulla continuità assistenziale. Il mancato rispetto della scadenza comporta sanzioni amministrative significative.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Reporting di incidenti di sicurezza entro 24-72 ore</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni incidente che comprometta la riservatezza, integrità o disponibilità dei dati di pazienti (inclusi attacchi ransomware, accessi non autorizzati, disservizi che interrompono la continuità assistenziale) deve essere notificato all'ACN entro 24 ore. Se l'incidente interessa meno di 100 persone, il termine è 72 ore. Comunica anche agli interessati e, se necessario, all'autorità privacy. Mantieni un registro strutturato di tutti gli incidenti e delle azioni di remediazione.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -172,8 +171,8 @@
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div>
-        <strong style="color:var(--navy);font-size:.95rem;">Integrazione Sicura con Sistemi EHR Ospedalieri</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Le integrazioni API tra piattaforme telehealth e cartelle cliniche elettroniche ospedaliere devono implementare autenticazione multi-fattore lato server, firme digitali per i dati trasmessi, e logging dettagliato di tutti gli accessi. Ogni organizzazione integrata deve certificare che l'API gateway risponde ai requisiti OWASP API Top 10 e che i dati in transito rimangono sempre cifrati. La supply chain di questi integratori deve essere sottoposta a valutazione periodica del rischio.</p>
+        <strong style="color:var(--navy);font-size:.95rem;">Allineamento GDPR e compliance privacy per dati sanitari</strong>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">I dati di pazienti sono dati sanitari sottoposti a protezione speciale GDPR (articolo 9). Assicurati che la base giuridica del trattamento sia chiara (consenso informato, obblighi contrattuali o pubblici), che sia designato un Data Protection Officer (DPO) e che sia redatto un DPIA (Data Protection Impact Assessment). Integra la documentazione GDPR con il Registro degli Incidenti NIS2, evitando duplicazioni ma mantenendo coerenza tra i due framework.</p>
       </div>
     </div>
   </div>
@@ -185,16 +184,16 @@
   <ul style="list-style:none;padding:0;margin:0;border-top:1px solid var(--gray-100);">
     
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>La piattaforma di videoconsultazione utilizza cifratura solo in transito ma non implementa end-to-end encryption, esponendo i dati a leggibilità da parte dei gestori dell'infrastruttura cloud.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Piattaforme di video consultazione prive di crittografia end-to-end: spesso il traffico è criptato solo in transito ma non garantisce che il provider non possa leggere i contenuti; audit esterni scoprono questa debolezza durante penetration test.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>L'app sanitaria mobile non è mai stata sottoposta a penetration testing formale, con conseguente carenza di documentazione richiesta da NIS2 per dimostrare l'adeguatezza delle misure di sicurezza.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>App sanitarie non coperte da penetration testing formale: molti sviluppatori conducono solo test interni o tool automatici, senza engagement di security professional esterno; ciò lascia vulnerabilità critiche (injection, insecure data storage) non rilevate.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Non esiste una procedura di inventario e aggiornamento degli accordi di trattamento dati con tutti i sub-processor (ad esempio fornitori di CDN, servizi di telemetria, partner di integrazione EHR), comportando violazione dell'obbligo GDPR+NIS2.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Mancanza di Data Processing Agreements con sub-processori: contratti stipulati solo con il provider cloud principale, ma nessun accordo con fornitori di backup, CDN, piattaforme di autenticazione terze, servizi di logging; espone la piattaforma a requisiti GDPR non soddisfatti.
     </li>
     <li style="padding:.5rem 0;color:var(--gray-600);font-size:.93rem;border-bottom:1px solid var(--gray-100);line-height:1.55;">
-      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Il processo di incident reporting interno non è formalizzato con tempi di escalation definiti, causando ritardi nella notifica agli organi di controllo quando si verifica un'interruzione della continuità assistenziale.
+      <span style="color:#dc2626;margin-right:.5rem;">✗</span>Assenza di procedura documentata per segnalazione incidenti: quando si verifica un disservizio o una anomalia, non esiste un workflow chiaro per classificare, investigare e notificare entro i termini NIS2; i dati del tempo di risposta non sono tracciati.
     </li>
   </ul>
 </div>
@@ -210,7 +209,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">sprinto.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/sprinto.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -218,7 +217,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">secfix.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/secfix.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:10px;padding:1.25rem 1.5rem;display:flex;flex-direction:column;gap:.5rem;">
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;">
@@ -226,7 +225,7 @@
         <span style="font-size:.78rem;color:var(--gray-400);background:var(--gray-50);border:1px solid var(--gray-200);border-radius:4px;padding:.2rem .6rem;">drata.com</span>
       </div>
       <p style="font-size:.88rem;color:var(--gray-600);line-height:1.55;margin:0;"></p>
-      <a href="../strumenti/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Verifica lo strumento →</a>
+      <a href="../strumenti/drata.html" style="font-size:.85rem;color:var(--green);font-weight:600;text-decoration:none;margin-top:.25rem;">Sprawdź narzędzie →</a>
     </div>
   </div>
 </div>
@@ -237,21 +236,21 @@
   <div style="border-top:1px solid var(--gray-100);">
     
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali dimensioni minime di piattaforma telehealth rientrano nell'obbligo NIS2?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Entro quando devo registrarmi presso l'ACN come piattaforma di telehealth e quando è la prossima scadenza?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La classificazione come entità importante non dipende da una soglia numerica rigida, ma dalle funzioni critiche per il sistema sanitario nazionale. In pratica, qualsiasi operatore che gestisca servizi di continuità assistenziale per strutture del SSN, o che processi dati di oltre 50.000 pazienti attivi, è presumibilmente classificato come importante. Consultare l'ACN per una valutazione specifica se la vostra piattaforma si trova in una fascia grigia (10.000-50.000 utenti).</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La registrazione presso il portale ACN per le entità importanti avviene annualmente tra il 1° gennaio e il 28 febbraio. La prossima scadenza è il 28 febbraio 2025 per l'anno 2025 e il 28 febbraio 2026 per l'anno 2026. È obbligatorio registrarsi ogni anno fornendo informazioni sulla tua piattaforma, sulla struttura organizzativa di sicurezza, e confermando le misure tecniche implementate.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Entro quando devo implementare la cifratura end-to-end sulle mie piattaforme di videoconsultazione?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Se la mia app di telemedicina integra un EHR ospedaliero e avviene un breach, chi è responsabile della notifica all'ACN?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La scadenza per l'implementazione completa dei controlli NIS2 è il 17 ottobre 2025, con periodo di compliance esteso al 17 aprile 2026 per alcune misure (da verificare con ACN). La cifratura end-to-end è considerata una misura prioritaria e deve essere in produzione entro la prima scadenza. Se non è già implementata, iniziate la pianificazione tecnica e l'allocazione dei budget immediatamente.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">La responsabilità dipende da chi controlla il trattamento. Se la tua app è un processore per conto dell'ospedale, l'ospedale (responsabile) deve notificare all'ACN; tu devi comunque informare l'ospedale immediatamente dell'incidente per permettergli di segnalare entro i termini. Se sei responsabile indipendente (cioè l'app raccoglie dati per conto proprio), allora sei tu a dovere notificare all'ACN entro 24-72 ore a seconda della gravità.</p>
     </div>
   </div>
   <div style="padding:1.25rem 0;border-bottom:1px solid var(--gray-100);" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni per non conformità NIS2 nel settore telehealth?</h3>
+    <h3 style="font-size:.97rem;color:var(--navy);margin:0 0 .5rem;" itemprop="name">Quali sono le sanzioni se non notifico un incidente di sicurezza in tempo o non implemento la crittografia end-to-end?</h3>
     <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Le sanzioni amministrative per mancata conformità NIS2 possono raggiungere 10 milioni di euro o il 2% del fatturato annuale mondiale (a seconda di quale sia maggiore) per violazioni gravi. Nel settore sanitario, inoltre, la non conformità può determinare la sospensione della capacità operativa della piattaforma, con interruzione immediata dei servizi. L'ACN effettua verifiche ispettive a campione a partire dal 2025.</p>
+      <p style="font-size:.9rem;color:var(--gray-600);line-height:1.6;margin:0;" itemprop="text">Il D.Lgs. 138/2024 prevede sanzioni fino a €7 milioni o l'1,4% del fatturato annuale per le entità importanti (come le piattaforme telemediche). La mancata notifica di un incidente grave entro 24 ore, la carenza di crittografia end-to-end, o l'assenza di penetration testing regolari sono violazioni gravi. L'ACN inoltre può ordinare misure correttive immediate e sospendere autorizzazioni se gli obblighi non sono rispettati.</p>
     </div>
   </div>
   </div>
@@ -270,8 +269,6 @@
   </div>
 </div>
 
-
-<nav class="related-sectors" aria-label="Settori correlati" style="max-width:1100px;margin:2rem auto;padding:1.5rem 1.25rem;border-top:1px solid #e5e7eb;"><h2 style="font-size:1.05rem;margin:0 0 .75rem;">Settori correlati</h2><ul style="list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 1rem;"><li style="margin:0"><a href="transport.html">NIS2 Trasporti Italia 2026</a></li><li style="margin:0"><a href="waste-management.html">NIS2 per gestori rifiuti comunali e operatori rifiuti pericolosi Italia 2026</a></li><li style="margin:0"><a href="water.html">NIS2 per gestori acqua potabile e reti idriche in Italia 2026</a></li><li style="margin:0"><a href="accountants.html">NIS2 per studi di contabilità, dottori commercialisti e revisori</a></li><li style="margin:0"><a href="banks.html">NIS2 per banche in Italia</a></li><li style="margin:0"><a href="cloud-providers.html">NIS2 per Cloud Service Provider in Italia</a></li></ul></nav>
 <footer style="background:var(--gray-50);border-top:1px solid var(--gray-200);padding:2rem 1.25rem;text-align:center;">
   <div class="container">
     <p style="color:var(--gray-400);font-size:.82rem;margin:0;">
@@ -284,6 +281,5 @@
   </div>
 </footer>
 
-  <script src="/js/tg-cta.js" defer></script>
 </body>
 </html>
