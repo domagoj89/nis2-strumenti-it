@@ -267,4 +267,9 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://nis2-strumenti.it/chi-siamo.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
