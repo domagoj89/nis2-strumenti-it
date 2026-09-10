@@ -103,7 +103,9 @@ export async function onRequestGet(context) {
   if (GA && GA.mid && GA.secret && typeof context.waitUntil === "function" && !isBot(ua)) {
     context.waitUntil(logClick(request, vendor, !!(entry && entry.url)));
   }
-  return Response.redirect(dest, 302);
+  // 302 + X-Robots-Tag noindex: /go/ URLs are tracking redirects, not pages. Without the
+  // header they surface in GSC coverage as "Page with redirect"/"Not found" noise.
+  return new Response(null, { status: 302, headers: { "Location": dest, "X-Robots-Tag": "noindex, nofollow", "Cache-Control": "no-store" } });
 }
 
 function isBot(ua) {
