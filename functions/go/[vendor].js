@@ -100,12 +100,27 @@ export async function onRequestGet(context) {
   // Measurement Protocol bypasses GA4's built-in bot exclusion, so without this
   // filter every crawler/link-unfurler/prefetch inflates go_click into noise.
   const ua = request.headers.get("user-agent") || "";
-  if (GA && GA.mid && GA.secret && typeof context.waitUntil === "function" && !isBot(ua)) {
+  if (GA && GA.mid && GA.secret && typeof context.waitUntil === "function" && !isBot(ua)
+      && isHumanClick(request, url)) {
     context.waitUntil(logClick(request, vendor, !!(entry && entry.url)));
   }
   // 302 + X-Robots-Tag noindex: /go/ URLs are tracking redirects, not pages. Without the
   // header they surface in GSC coverage as "Page with redirect"/"Not found" noise.
   return new Response(null, { status: 302, headers: { "Location": dest, "X-Robots-Tag": "noindex, nofollow", "Cache-Control": "no-store" } });
+}
+
+// A UA string is trivially faked (AI renderers and scrapers send Chrome's), so a
+// declared-bot list alone let crawlers inflate go_click ~20x over real pageviews.
+// Browsers set Sec-Fetch-User: ?1 only on navigations a person triggered (click,
+// middle-click, Enter); scripted fetches and crawlers essentially never send it.
+// Older browsers without Fetch Metadata are counted only when they arrive from a
+// page on this same site (Referer host match).
+function isHumanClick(request, url) {
+  const h = request.headers;
+  if (h.get("sec-fetch-user") === "?1") return true;
+  if (h.get("sec-fetch-site") || h.get("sec-fetch-mode")) return false; // modern client, not user-activated
+  const ref = h.get("referer") || "";
+  try { return !!ref && new URL(ref).host === url.host; } catch (e) { return false; }
 }
 
 function isBot(ua) {
