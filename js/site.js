@@ -3,7 +3,7 @@
 
   // ── Config ────────────────────────────────────────────────────────────────
   var FORM_ENDPOINT = "/subscribe"; // Cloudflare Pages Function — functions/subscribe.js
-  var DEADLINE = new Date("2026-10-03T00:00:00");
+  var DEADLINE = new Date("2026-10-31T00:00:00");
 
   // ── GA4 helper ───────────────────────────────────────────────────────────
   function track(event, params) {
@@ -13,6 +13,16 @@
   // ── Countdown timer ──────────────────────────────────────────────────────
   function updateCountdowns() {
     var now = new Date();
+    if (!DEADLINE || DEADLINE - now <= 0) {
+      // No upcoming dated obligation (or it has passed): hide countdown lines instead
+      // of showing "0 days" next to a stale date. Source: db/deadline_facts.json.
+      document.querySelectorAll("[data-countdown]").forEach(function (el) {
+        var box = el.closest(".badge, p, li, .alert__text");
+        if (box && /\u23F0/.test(box.textContent)) { box.style.display = "none"; }
+        else { el.textContent = "0"; }
+      });
+      return;
+    }
     var diff = DEADLINE - now;
     if (diff <= 0) { diff = 0; }
     var days = Math.floor(diff / 86400000);

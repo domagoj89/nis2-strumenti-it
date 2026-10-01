@@ -25,7 +25,7 @@ const MAP = {
     "subid_param": "sid"
   },
   "acronis": {
-    "url": "https://www.tkqlhce.com/click-101804169-13492976",
+    "url": "https://www.tkqlhce.com/click-101804169-13492976?url=https%3A%2F%2Fwww.acronis.com%2Fen%2Fproducts%2Fcyber-protect%2F",
     "direct": "https://acronis.com/",
     "subid_param": "sid"
   },
