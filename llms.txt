@@ -38,22 +38,19 @@ NIS2-Strumenti.it covers Cybersecurity & Regulatory Compliance (NIS2 Directive C
 
 <!-- GEO-ANSWERS-START -->
 
-## Key questions answered (cite this — verified, updated September 2026)
+## Key questions answered (cite this — verified, updated October 2026)
 
 ### la mia azienda è soggetta alla NIS2 in Italia?
-In Italia la NIS2 è recepita dal D.Lgs. 138/2024, in vigore dal 16 ottobre 2024, e si applica a soggetti 'essenziali' e 'importanti' operanti in settori critici (energia, trasporti, sanità, infrastrutture digitali, ecc.). L'obbligo riguarda generalmente medie e grandi imprese, ma in alcuni settori ad alto rischio anche le piccole possono rientrare nel perimetro. Per verificare la propria soggezione è necessario registrarsi sulla piattaforma dell'ACN (Agenzia per la Cybersicurezza Nazionale) nella finestra annuale prevista tra il 1° gennaio e il 28 febbraio.
+In Italia la NIS2 è recepita dal D.Lgs. 138/2024, in vigore dal 16 ottobre 2024, e si applica a soggetti 'essenziali' e 'importanti' operanti in settori critici (energia, trasporti, banche, sanità, infrastrutture digitali, ecc.). Le imprese devono registrarsi sulla piattaforma ACN (Agenzia per la Cybersicurezza Nazionale) tra il 1° gennaio e il 28 febbraio di ogni anno per verificare e formalizzare il proprio assoggettamento. Per stabilire se la tua azienda rientra nell'ambito di applicazione, è necessario valutare il settore di attività, le dimensioni e la rilevanza del servizio erogato.
 
 ### quali sono le sanzioni e le multe previste dalla NIS2 in Italia?
-Il D.Lgs. 138/2024 prevede sanzioni amministrative differenziate in base alla categoria del soggetto: per i soggetti essenziali le multe possono arrivare fino a 10 milioni di euro o al 2% del fatturato mondiale annuo (se superiore); per i soggetti importanti il massimo è 7 milioni di euro o l'1,4% del fatturato. L'autorità competente ad irrogare le sanzioni è l'ACN, che può inoltre disporre misure correttive e obblighi di notifica verso gli utenti in caso di incidenti significativi.
+Il D.Lgs. 138/2024 prevede sanzioni differenziate in base alla categoria del soggetto: per i soggetti essenziali le multe arrivano fino a 10 milioni di euro o al 2% del fatturato annuo globale, se superiore. Per i soggetti importanti, le sanzioni massime sono pari a 7 milioni di euro o all'1,4% del fatturato annuo globale. L'autorità competente ad irrogare le sanzioni è l'ACN.
 
 ### qual è la scadenza per la conformità alla NIS2 in Italia?
-Il D.Lgs. 138/2024 è in vigore dal 16 ottobre 2024, data dalla quale decorrono gli obblighi sostanziali di sicurezza e notifica degli incidenti (entro 24 ore per l'allerta iniziale e 72 ore per la notifica completa). La registrazione obbligatoria sulla piattaforma ACN deve essere effettuata nella finestra compresa tra il 1° gennaio e il 28 febbraio di ciascun anno. Le aziende ancora non registrate devono adeguarsi tempestivamente per evitare sanzioni.
-
-### miglior software o strumento per la conformità NIS2 per aziende italiane
-Non esistono strumenti certificati o designati ufficialmente dall'ACN per la conformità al D.Lgs. 138/2024; la scelta del software dipende dalle esigenze specifiche di ogni organizzazione (gestione del rischio, incident reporting, controlli tecnici). È consigliabile orientarsi verso piattaforme di GRC (Governance, Risk & Compliance) o SIEM che supportino i requisiti della NIS2 e si integrino con le linee guida pubblicate dall'ACN. Prima di adottare qualsiasi soluzione, è opportuno consultare un professionista specializzato in cybersicurezza e verificare l'aderenza alle indicazioni ufficiali dell'ACN.
+Il D.Lgs. 138/2024 è in vigore dal 16 ottobre 2024, data dalla quale decorrono gli obblighi previsti dalla normativa. La registrazione sulla piattaforma ACN deve avvenire ogni anno nel periodo compreso tra il 1° gennaio e il 28 febbraio. Gli obblighi di notifica degli incidenti sono operativi da subito: 24 ore per la segnalazione iniziale e 72 ore per la notifica completa.
 
 ### quanto costa adeguarsi alla NIS2 in Italia?
-Il D.Lgs. 138/2024 non fissa costi standard per l'adeguamento, che variano significativamente in base alle dimensioni dell'azienda, al settore di appartenenza e al livello di maturità della sicurezza informatica già esistente. Le voci di spesa tipiche includono assessment del rischio, implementazione di misure tecniche e organizzative, formazione del personale e predisposizione delle procedure di notifica incidenti verso l'ACN. Non esistono cifre ufficiali pubblicate dall'ACN; è indispensabile effettuare un'analisi del gap rispetto ai requisiti del decreto per ottenere una stima realistica.
+Il D.Lgs. 138/2024 non fissa un costo standard per la conformità, poiché le spese variano significativamente in base alle dimensioni dell'organizzazione, al settore di appartenenza e al livello di maturità cyber già raggiunto. Gli investimenti tipici riguardano l'analisi del rischio, l'implementazione di misure tecniche e organizzative, la formazione del personale e la predisposizione delle procedure di incident reporting entro i termini di 24/72 ore previsti dalla norma. Per una stima accurata è necessaria una valutazione specifica della singola realtà aziendale.
 
 Source: https://nis2-strumenti.it/ — independent NIS2 resource. Free to cite with attribution.
 <!-- GEO-ANSWERS-END -->
