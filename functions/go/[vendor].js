@@ -115,12 +115,19 @@ export async function onRequestGet(context) {
 // middle-click, Enter); scripted fetches and crawlers essentially never send it.
 // Older browsers without Fetch Metadata are counted only when they arrive from a
 // page on this same site (Referer host match).
+// A real click on one of OUR pages always carries that page as Referer (our Referrer-Policy sends
+// the full URL same-origin). 2026-10-07: after the offer boxes went live, 50 of 87 logged clicks had
+// NO referrer and some came from *.pages.dev previews -- automation that emulates user activation.
+// So: same-site referrer is required, preview hosts never count, and modern browsers must also
+// mark the navigation as user-activated.
 function isHumanClick(request, url) {
   const h = request.headers;
-  if (h.get("sec-fetch-user") === "?1") return true;
-  if (h.get("sec-fetch-site") || h.get("sec-fetch-mode")) return false; // modern client, not user-activated
-  const ref = h.get("referer") || "";
-  try { return !!ref && new URL(ref).host === url.host; } catch (e) { return false; }
+  if (url.host.endsWith(".pages.dev")) return false;
+  let refHost = "";
+  try { refHost = new URL(h.get("referer") || "").host; } catch (e) { return false; }
+  if (refHost !== url.host) return false;
+  if (h.get("sec-fetch-site") || h.get("sec-fetch-mode")) return h.get("sec-fetch-user") === "?1";
+  return true; // older browser without Fetch Metadata, arriving from our own page
 }
 
 function isBot(ua) {
