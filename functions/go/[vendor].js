@@ -101,7 +101,7 @@ export async function onRequestGet(context) {
   // filter every crawler/link-unfurler/prefetch inflates go_click into noise.
   const ua = request.headers.get("user-agent") || "";
   if (GA && GA.mid && GA.secret && typeof context.waitUntil === "function" && !isBot(ua)
-      && isHumanClick(request, url)) {
+      && isHumanClick(request, url) && plausibleOrigin(request)) {
     context.waitUntil(logClick(request, vendor, !!(entry && entry.url)));
   }
   // 302 + X-Robots-Tag noindex: /go/ URLs are tracking redirects, not pages. Without the
@@ -120,6 +120,21 @@ export async function onRequestGet(context) {
 // NO referrer and some came from *.pages.dev previews -- automation that emulates user activation.
 // So: same-site referrer is required, preview hosts never count, and modern browsers must also
 // mark the navigation as user-activated.
+// Full headless browsers send a Referer and simulate a click, so header checks can't catch them.
+// 2026-10-15: 38 of 49 "human" clicks in a week came from the CZ homepage at 05:00/23:00 while
+// that site had 5 engaged visits; GA showed the matching sessions from China/US data centres.
+// These sites serve EU compliance buyers in local languages: count a click only from Europe and
+// never from a cloud/hosting network (Cloudflare's request.cf country + AS organisation).
+const EUROPE = new Set(("AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE " +
+  "IS LI NO CH GB AL BA ME MK RS XK MD UA").split(" "));
+const DATACENTER = /amazon|aws|google|microsoft|azure|alibaba|tencent|huawei|oracle|digitalocean|linode|akamai|hetzner|ovh|contabo|scaleway|vultr|leaseweb|choopa|m247|datacamp|cdn77|hostinger|ionos|cloudflare/i;
+function plausibleOrigin(request) {
+  const cf = request.cf || {};
+  if (!cf.country) return true;                 // local preview / no geo data: don't block
+  if (!EUROPE.has(cf.country)) return false;
+  return !DATACENTER.test(cf.asOrganization || "");
+}
+
 function isHumanClick(request, url) {
   const h = request.headers;
   if (url.host.endsWith(".pages.dev")) return false;
