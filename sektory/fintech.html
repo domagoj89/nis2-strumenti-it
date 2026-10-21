@@ -155,7 +155,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Testing di sicurezza delle API di pagamento e delle applicazioni mobile</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Tutte le API esposte (API di autorizzazione, bonifici, consultazione saldi) devono essere sottoposte a penetration test annuale e a security scanning automatico dopo ogni rilascio in produzione. Le applicazioni mobile bancarie e di pagamento devono superare test di sicurezza che verifichino protezione dei dati sensibili, implementazione di certificato pinning e assenza di vulnerabilità OWASP Top 10. I risultati dei test devono essere documentati e conservati per le ispezioni dell'ACN.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Le applicazioni mobile bancarie e di pagamento devono superare test di sicurezza che verifichino protezione dei dati sensibili, implementazione di certificato pinning e assenza di vulnerabilità OWASP Top 10. I risultati dei test devono essere documentati e conservati per le ispezioni dell'ACN.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -164,7 +164,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Protezione dei dati dei clienti allineata a NIS2, PSD2 e GDPR</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">La crittografia dei dati in transito (TLS 1.2 minimo) e a riposo (AES-256) è obbligatoria per tutte le informazioni di clienti finanziari. Ogni fintech deve dimostrare separazione logica dei dati per istituto/cliente e implementare Data Loss Prevention (DLP) per prevenire trasferimenti non autorizzati verso cloud provider non autorizzati. Accesso ai dati personali deve essere tracciato e limitato a personale autorizzato con autenticazione multi-fattore.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni fintech deve dimostrare separazione logica dei dati per istituto/cliente e implementare Data Loss Prevention (DLP) per prevenire trasferimenti non autorizzati verso cloud provider non autorizzati. Accesso ai dati personali deve essere tracciato e limitato a personale autorizzato con autenticazione multi-fattore.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -173,7 +173,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Incident reporting entro 24-72 ore all'ACN</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Qualsiasi incidente che comporti interruzione del servizio di pagamento, esposizione di dati clienti o compromissione dell'integrità di transazioni finanziarie deve essere segnalato all'ACN entro 24 ore dalla scoperta. La notifica deve contenere: descrizione tecnica dell'incidente, impatto su utenti/transazioni, misure di contenimento adottate e data/ora stimata del ripristino completo. Documentazione dettagliata deve essere conservata per ispezioni successive.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Qualsiasi incidente che comporti interruzione del servizio di pagamento, esposizione di dati clienti o compromissione dell'integrità di transazioni finanziarie deve essere oggetto di un preallarme all'ACN entro 24 ore dalla scoperta, seguito da una notifica entro 72 ore che deve contenere: descrizione tecnica dell'incidente, impatto su utenti/transazioni, misure di contenimento adottate e data/ora stimata del ripristino completo. Un rapporto finale deve essere presentato entro un mese. Documentazione dettagliata deve essere conservata per ispezioni successive.</p>
       </div>
     </div>
     <div class="checklist-item" style="display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-100);">
@@ -182,7 +182,7 @@
       </div>
       <div>
         <strong style="color:var(--navy);font-size:.95rem;">Requisiti di sicurezza documentati per fornitori cloud e servizi terzi</strong>
-        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni contratto con provider cloud (hosting, API, servizi di autenticazione) deve includere clausole obbligatorie di conformità NIS2: audit di sicurezza annuali, diritto di accesso ai log di sicurezza, obbligo di notifica incidenti entro 24 ore e selezione di data center ubicati in UE. I provider critici (quelli che ospitano dati di pagamento) devono superare certificazione ISO 27001 e valutazione di conformità NIS2 prima della sottoscrizione.</p>
+        <p style="margin:.25rem 0 0;color:var(--gray-500);font-size:.9rem;line-height:1.6;">Ogni contratto con provider cloud (hosting, API, servizi di autenticazione) deve includere clausole obbligatorie di conformità NIS2: audit di sicurezza annuali, diritto di accesso ai log di sicurezza, obbligo di notifica incidenti entro 24 ore e selezione di data center ubicati in UE.</p>
       </div>
     </div>
   </div>
