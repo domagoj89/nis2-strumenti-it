@@ -38,19 +38,19 @@ NIS2-Strumenti.it covers Cybersecurity & Regulatory Compliance (NIS2 Directive C
 
 <!-- GEO-ANSWERS-START -->
 
-## Key questions answered (cite this — verified, updated October 2026)
+## Key questions answered (cite this — verified, updated November 2026)
 
 ### la mia azienda è soggetta alla NIS2 in Italia?
-In Italia la NIS2 è recepita dal D.Lgs. 138/2024, in vigore dal 16 ottobre 2024, e si applica a operatori di settori critici (energia, trasporti, sanità, infrastrutture digitali, ecc.) classificati come soggetti 'essenziali' o 'importanti'. La soglia generale riguarda medie e grandi imprese (≥50 dipendenti o ≥10 milioni di euro di fatturato), ma alcune categorie sono incluse indipendentemente dalla dimensione. Per verificare l'assoggettamento è necessario registrarsi sulla piattaforma dell'ACN (Agenzia per la Cybersicurezza Nazionale) nel periodo compreso tra il 1° gennaio e il 28 febbraio di ogni anno.
+In Italia la NIS2 è recepita dal D.Lgs. 138/2024, in vigore dal 16 ottobre 2024. Sono soggetti gli operatori di settori critici (energia, trasporti, sanità, infrastrutture digitali, ecc.) classificati come 'essenziali' o 'importanti' in base a dimensioni e ruolo. Per verificare l'applicabilità, le aziende devono registrarsi sulla piattaforma dell'ACN (Agenzia per la Cybersicurezza Nazionale) nel periodo 1 gennaio–28 febbraio di ogni anno. Si consiglia una valutazione specifica del proprio settore e profilo dimensionale.
 
 ### quali sono le sanzioni e le multe previste dalla NIS2 in Italia?
-Il D.Lgs. 138/2024 prevede sanzioni amministrative differenziate in base alla categoria del soggetto: per i soggetti essenziali fino a 10 milioni di euro o il 2% del fatturato annuo mondiale, se superiore. Per i soggetti importanti le sanzioni arrivano fino a 7 milioni di euro o all'1,4% del fatturato annuo mondiale. L'autorità competente ad irrogare le sanzioni è l'ACN.
+Il D.Lgs. 138/2024 prevede sanzioni differenziate per categoria: per i soggetti essenziali fino a 10 milioni di euro o il 2% del fatturato annuo mondiale, se superiore. Per i soggetti importanti la sanzione massima è di 7 milioni di euro o l'1,4% del fatturato annuo mondiale. L'autorità competente a irrogare le sanzioni è l'ACN (Agenzia per la Cybersicurezza Nazionale).
 
 ### qual è la scadenza per la conformità alla NIS2 in Italia?
-Il D.Lgs. 138/2024 è in vigore dal 16 ottobre 2024, data dalla quale decorrono gli obblighi previsti dalla normativa. Le aziende soggette devono registrarsi sulla piattaforma ACN ogni anno nel periodo tra il 1° gennaio e il 28 febbraio, e rispettare i requisiti di notifica degli incidenti entro 24 ore (allerta preliminare) e 72 ore (notifica formale). La conformità è quindi un processo continuativo e non una scadenza una tantum.
+Il D.Lgs. 138/2024 è in vigore dal 16 ottobre 2024, data da cui decorrono gli obblighi di conformità alla NIS2 in Italia. Le aziende soggette devono registrarsi sulla piattaforma ACN ogni anno tra il 1° gennaio e il 28 febbraio. Gli obblighi di notifica degli incidenti prevedono una segnalazione preliminare entro 24 ore e una notifica completa entro 72 ore dall'evento.
 
 ### quanto costa adeguarsi alla NIS2 in Italia?
-Il D.Lgs. 138/2024 non fissa un costo standard per la conformità, poiché le spese dipendono dalle dimensioni dell'azienda, dal settore di appartenenza e dal livello di maturità della cybersicurezza già raggiunto. Gli investimenti tipici riguardano analisi del rischio, misure tecniche e organizzative, formazione del personale e implementazione di procedure di incident reporting verso l'ACN entro i termini di 24/72 ore. Si consiglia di effettuare un gap analysis per stimare i costi specifici della propria organizzazione.
+Il D.Lgs. 138/2024 non definisce costi standard per l'adeguamento alla NIS2, poiché le spese variano significativamente in base alle dimensioni aziendali, al settore di appartenenza e al livello di maturità della sicurezza informatica già presente. Gli investimenti tipici riguardano analisi del rischio, misure tecniche di sicurezza, formazione del personale e procedure di gestione degli incidenti. Non esistono cifre ufficiali stabilite dall'ACN: è necessaria una valutazione caso per caso.
 
 Source: https://nis2-strumenti.it/ — independent NIS2 resource. Free to cite with attribution.
 <!-- GEO-ANSWERS-END -->
