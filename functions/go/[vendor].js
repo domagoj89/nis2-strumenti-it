@@ -135,12 +135,16 @@ function plausibleOrigin(request) {
   return !DATACENTER.test(cf.asOrganization || "");
 }
 
+// 2026-11-05: 17 of 37 "human" clicks in a week had one of our own /go/ URLs (over http) as
+// Referer, 2-3 vendors in the same hour per site: a crawler walking the redirects. A person
+// clicks from a content page, and every page of ours is served over https.
 function isHumanClick(request, url) {
   const h = request.headers;
   if (url.host.endsWith(".pages.dev")) return false;
-  let refHost = "";
-  try { refHost = new URL(h.get("referer") || "").host; } catch (e) { return false; }
-  if (refHost !== url.host) return false;
+  let ref;
+  try { ref = new URL(h.get("referer") || ""); } catch (e) { return false; }
+  if (ref.host !== url.host) return false;
+  if (ref.protocol !== "https:" || ref.pathname.startsWith("/go/")) return false;
   if (h.get("sec-fetch-site") || h.get("sec-fetch-mode")) return h.get("sec-fetch-user") === "?1";
   return true; // older browser without Fetch Metadata, arriving from our own page
 }
